@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+	<item 
+		android:id="@+id/dinnertable_menu_using_cancel"
+		android:title="@string/table_cmi_cancel" 
+	/>
+    <item 
+    	android:id="@+id/dinnertable_menu_using_exit"
+    	android:title="@string/common_cmi_exit" 
+    />
+
+</menu>

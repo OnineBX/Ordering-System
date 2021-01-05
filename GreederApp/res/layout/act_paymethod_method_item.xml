@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/default_lsv_item_height" >
+    <CheckBox 
+        android:id="@+id/paymethod_chb_name"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:onClick="onSelectClick"
+    />
+	<TextView
+	    android:id="@+id/paymethod_txv_code"
+	    android:layout_width="@dimen/default_column_width_normal"
+	    android:layout_height="match_parent" 
+	    android:gravity="center_vertical|left"
+	    android:textSize="@dimen/font_size_middle"
+	/>
+	<EditText
+	    android:id="@+id/paymethod_edt_money"
+	    android:layout_width="@dimen/default_column_width_big"
+	    android:layout_height="match_parent"	 
+	    android:numeric="decimal"
+        android:digits="1234567890."
+	       
+	/>
+</LinearLayout>

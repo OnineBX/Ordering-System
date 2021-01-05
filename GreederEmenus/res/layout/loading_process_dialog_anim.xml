@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+     >
+
+    <ProgressBar
+        android:id="@+id/progress_load"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="false"
+        android:indeterminateDrawable="@anim/loading"
+        />
+    <!-- 
+    <TextView android:layout_marginTop="10dp"
+        android:textColor="@color/cmn_bottom_container_background"
+        android:textSize="@dimen/font_size_middle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请稍后，正在加载菜品信息..."/>
+         -->
+</LinearLayout>

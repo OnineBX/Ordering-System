@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/default_row_height"
+    android:layout_gravity="center_vertical|center_horizontal"
+    android:background="@color/cmn_lsv_header_background" >
+
+    <TextView
+        style="@style/ListViewHeaderTxv"
+        android:id="@+id/cashing_txv_paymethod"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:gravity="left"
+        android:text="@string/pmethod_txv_header_method_text" />
+
+    <TextView
+        style="@style/ListViewHeaderTxv"
+        android:id="@+id/cashing_txv_paymoney_code"
+        android:gravity="left"
+        android:layout_width="@dimen/default_column_width_normal"
+        android:text="@string/cashing_txv_antipay_moneycode_text" />
+   <TextView
+        style="@style/ListViewHeaderTxv"
+        android:id="@+id/cashing_txv_paymoney"
+        android:gravity="left"
+        android:layout_width="@dimen/default_column_width_big"
+        android:text="@string/cashing_txv_antipay_moneyheader_text" />
+</LinearLayout>

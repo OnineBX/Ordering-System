@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+       	<TextView
+       	    style="@style/SettingDlgNotableTxv"	        
+	        android:text="@string/init_txv_direction_text"	               
+    	/> 
+    	<TextView
+    	    style="@style/SettingDlgNotableTxv"
+	        android:text="@string/init_txv_phone_text"	           
+    	/>
+    </LinearLayout>
+    
+    <TableLayout 
+    	android:layout_height="match_parent"
+    	android:layout_width="0dp"
+    	android:layout_weight="1"
+	    android:padding="10dp" >
+		<TableRow>
+		    <TextView	  		
+		  		style="@style/DialogLabel"	  		
+		  		android:text="@string/init_txv_server_text"  		
+		  	/>
+		  	<EditText
+		  	    style="@style/SettingDlgEdt"
+		  		android:id="@+id/init_edt_server"		  		
+		  		android:hint="@string/init_edt_server_hint"	  		  		
+		  	/>
+		</TableRow>
+		<TableRow>
+		    <TextView	  		
+		  		style="@style/DialogLabel"	  		
+		  		android:text="@string/init_txv_port_text"  		
+		  	/>
+		  	<EditText
+		  	    style="@style/SettingDlgEdt"
+		  		android:id="@+id/init_edt_port"		  		
+		  		android:inputType="number"
+		  		android:hint="@string/init_edt_port_hint"	  		  		
+		  	/>
+		</TableRow>
+		<TableRow>
+		    <TextView	  		
+		  		style="@style/DialogLabel"	  		
+		  		android:text="@string/init_txv_shop_text"  		
+		  	/>
+		  	<EditText
+		  	    style="@style/SettingDlgEdt"
+		  		android:id="@+id/init_edt_shop"		  		
+		  		android:inputType=""
+		  		android:hint="@string/init_edt_shop_hint"	  		  		
+		  	/>
+		</TableRow>
+    
+	</TableLayout>
+</LinearLayout>

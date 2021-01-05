@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp" >
+	<ImageButton
+		    android:id="@+id/setratio_btn_count_reduce"
+		    android:layout_width="@dimen/default_row_height"
+		    android:layout_height="match_parent"
+		    android:src="@drawable/ic_button_reduce"
+		    android:onClick="onAdjust"		    
+	/>
+    <SeekBar
+        android:id="@+id/setratio_skb_count"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"  
+        android:layout_margin="@dimen/default_layout_margin"                              
+        android:max="100"        
+    />
+	<ImageButton
+	    android:id="@+id/setratio_btn_count_add"
+	    android:layout_width="@dimen/default_row_height"
+	    android:layout_height="match_parent"
+	    android:src="@drawable/ic_button_plus"
+	    android:onClick="onAdjust"	    
+	/> 
+</LinearLayout>

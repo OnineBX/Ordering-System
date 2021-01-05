@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     style="@style/TitleBar">
+	    <TextView
+	        style="@style/TitleBarText"
+	        android:id="@+id/cmn_txv_title"
+	        android:gravity="left|center_vertical"
+	        android:layout_weight="4"
+	    />
+	    <DigitalClock
+	        style="@style/TitleBarText"
+	        android:gravity="right|center_vertical"
+	        android:layout_weight="1"
+	    />	   
+</LinearLayout>

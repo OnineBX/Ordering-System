@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    android:background="@drawable/cmn_bg_plain_item" >
+	<TextView
+	    android:id="@+id/cashing_txv_tablecode"
+	    android:layout_width="80dp"
+	    android:layout_height="match_parent"
+	    android:gravity="center_vertical" 
+	    android:textSize="@dimen/font_size_big"
+	/>
+    <TextView
+        android:id="@+id/cashing_txv_tablename"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical" 
+        android:textSize="@dimen/font_size_big" 
+    />
+
+</LinearLayout>

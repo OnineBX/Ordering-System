@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+	<include layout="@layout/cmn_titlebar"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+        
+        <LinearLayout
+            android:layout_width="@dimen/narrow_left_area_width"
+            android:layout_height="match_parent"
+            android:background="@color/cmn_left_area_background" >
+            <ListView
+                android:id="@+id/cashing_lsv_tables" 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="@color/cmn_opaque_background"
+            />
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <FrameLayout
+                android:id="@+id/cashing_container_setoffer"
+            	android:layout_width="match_parent"
+            	android:layout_height="0dp"
+            	android:layout_weight="1"    
+            />
+            <LinearLayout
+                android:layout_width="match_parent"                               
+                style="@style/BottomContainer" >  
+	            <TextView
+	                style="@style/BottomBarItem"	            			                
+	                android:text="@string/cashing_txv_joinbill_text"	                
+	                android:onClick="onOperate"	 
+	            /> 
+	            <TextView
+	                style="@style/BottomBarItem"	            			                
+	                android:text="@string/cashing_txv_printbill_text"	                
+	                android:onClick="onOperate"	 
+	            /> 
+	            <TextView
+	                style="@style/BottomBarItem"	            			                
+	                android:text="@string/cashing_txv_paybill_text"	                
+	                android:onClick="onOperate"	 
+	            /> 
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

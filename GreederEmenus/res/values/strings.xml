@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">电子菜单</string>
+   <!-- 公共部分 -->
+    <string name="common_btn_ok_text">确定</string>
+    <string name="common_btn_next_text">下一步</string>
+    <string name="common_btn_cancel_text">取消</string>
+    <string name="common_btn_retry_text">重试</string>
+    <string name="common_dlg_prompt_title">提示</string>   
+    <string name="common_cmn_operate_title">操作</string>
+    <string name="common_cmi_exit">退出</string>
+    <string name="common_btn_back_text">返回</string>
+    <string name="common_edt_search_hint">请输入要搜索的名称或索引</string> 
+     <string name="common_edt_authcode">授 权 码:</string>   
+     <string name="common_edt_authcode_hint">请输入您的授权码</string>     
+     <string name="common_dlg_error_authcode_title">您输入的授权码未能通过验证,请检查后重新输入!</string>
+    <!-- 主界面 -->    
+    
+    <string name="main_btn_stock_text">库存</string>
+    <string name="main_btn_waiter_text">楼面</string>
+    <string name="main_btn_serving_text">传菜</string>
+    <string name="main_btn_cashier_text">收银</string>
+    <string name="main_omi_syssetting">系统设置</string>    
+    <string name="main_omi_modifypwd">更改密码</string>
+    <string name="main_omi_about">关于</string>
+    <string name="main_txv_username_text">当前用户:</string>
+    <string name="main_txv_authcode_text">授权码:</string>
+    <string name="main_txv_authcode_hint">输入授权码</string>
+    <string name="main_txv_newpwd_text">新密码:</string>
+    <string name="main_txv_newpwd_hint">输入新密码</string>
+	<string name="main_txv_confirmpwd_text">确认新密码:</string>
+	<string name="main_txv_confirmpwd_hint">再次输入新密码</string>
+	<string name="main_txv_direction_text">当您修改密码后,可重启系统并用新密码登录,以验证新密码是否设置成功,也可以继续使用本系统,待下次登录时验证!</string>
+	<string name="main_txv_userinfo_text">当前用户:</string>
+	<string name="main_dlg_about_message">海泰信科技有限公司版权所有.</string>  
+	
+	    
+    <!-- 主界面。初始设置对话框 -->
+    <string name="init_dlg_title">初始设置</string>
+    <string name="init_txv_server_text">服务器:</string>
+    <string name="init_edt_server_hint">输入服务器IP地址或主机名</string>
+    <string name="init_txv_port_text">端口:</string>
+    <string name="init_edt_port_hint">输入服务器端口号</string>
+    <string name="init_txv_shop_text">企业编码:</string>
+    <string name="init_edt_shop_hint">输入企业编码</string>
+    <string name="init_txv_direction_text">当程序第一次运行时,需要为系统设置服务器IP地址(或主机名)、端口.如果您不知道以上信息,请和海泰信科技有限公司技术人员联系!</string>
+    <string name="init_txv_phone_text">电话:0755-XXXXXXXX</string>
+    <string name="init_dlg_failed_title">您输入的信息不完整,请检查后重新输入!</string>
+        
+    <!-- 主界面.登录对话框 -->
+    <string name="login_dlg_title">授权设置</string>    
+    <string name="login_dlg_prompt_wait">正在登录,请耐心等待...</string>
+    <string name="login_txv_user_text">终端编码:</string>
+    <string name="login_edt_user_hint">请输入终端编码</string>
+    <string name="login_txv_password_text">授权码:</string>
+    <string name="login_edt_password_hint">请输入授权码</string>
+    <string name="login_dlg_failed_title">登录失败!终端编码或授权码有误,请重新输入</string>
+    <string name="login_dlg_error_title">您的网络不稳定或存在异常,请检查后重试!</string>
+    
+    <!-- 主界面.资源刷新对话框 --> 
+    <string name="refresh_adlg_message">发现新数据,是否更新?</string>
+    <string name="refresh_pdlg_title">刷新数据</string>
+    
+    <!-- 设置界面 -->    
+    <string name="setting_cate_server_title">服务器设置</string>    
+    <string name="setting_pref_ip_title">服务器地址</string>
+    <string name="setting_pref_ip_dlgtitle">输入地址</string>
+    <string name="setting_pref_ip_summary">设置服务器IP地址或域名</string>    
+    <string name="setting_pref_port_title">端口</string>
+    <string name="setting_pref_port_dlgtitle">输入端口</string>
+    <string name="setting_pref_port_summary">设置服务器通讯端口</string>
+    
+    <string name="setting_cate_use_title">使用设置</string>
+    <string name="setting_pref_shop_title">店号</string>
+    <string name="setting_pref_shop_dlgtitle">输入店号</string>
+    <string name="setting_pref_shop_summary">设置使用本机的企业编号</string>
+    <string name="setting_pref_terminal_title">终端号</string>
+    <string name="setting_pref_terminal_dlgtitle">输入终端号</string>
+    <string name="setting_pref_terminal_summary">设置本机编号</string>
+    <string name="setting_pref_hallsort_title">分厅大类</string>
+    <string name="setting_pref_hallsort_dlgtitle">选择分厅大类</string>
+    <string name="setting_pref_hallsort_summary">设置使用本机的分厅大类</string>
+    <string name="setting_pref_hall_title">分厅</string>
+    <string name="setting_pref_hall_dlgtitle">选择分厅</string>
+    <string name="setting_pref_hall_summary">设置使用本机的分厅</string>            
+    <!-- 餐台界面 -->
+    <string name="table_dlg_loding_message">正在加载餐台状态,请稍候...</string>
+    <string name="table_dlg_apply_title">开台</string>
+    <string name="table_btn_spare_text">空闲</string>
+    <string name="table_btn_reserve_text">预定</string>
+    <string name="table_btn_using_text">使用</string>
+    <string name="table_btn_maintain_text">维修</string>
+    <string name="table_edt_tableId">餐     台 :</string>
+    <string name="table_edt_tableName_hint">请输入就餐台!</string> 
+    <string name="table_edt_customers">就餐人数:</string>
+    <string name="table_edt_customers_hint">请输入就餐人数!</string>    
+    <string name="table_cmi_cancel">清台</string>    
+    <!-- 服务员点单界面 -->
+    <string name="worder_omi_advance">高级</string>
+    <string name="worder_omi_cancelorder">全单取消</string>
+    <string name="worder_btn_placeorder_text">落单</string>
+    <string name="worder_btn_priororder_text">先落</string>
+    <string name="worder_dlg_count_title">设置数量和单位</string>    
+    <string name="worder_edt_authcode_hint">请输入您的授权码</string>
+    <string name="worder_dlg_error_authcode_title">您输入的授权码未能通过验证,请检查后重新输入!</string>
+    <string name="worder_dlg_prompt_return_title">您的账单中有尚未落单的菜品,若返回这些数据将丢失!</string>
+    <string name="worder_dlg_cash_return_title">您的账单中有新添加尚未落单的菜品;若返回,数据将丢失!</string>
+    <string name="worder_dlg_error_printer_title">您的打印服务器或打印机出现故障,请不要关闭系统,排除故障后按"重试"继续!</string>
+    <string name="worder_dlg_error_encode_title">编码打印数据时出现故障,系统将丢弃当前菜品,请按"重试"继续...</string>
+    <string name="worder_dlg_print_title">打印</string>
+    <string name="worder_dlg_print_message">正在打印,请稍候...</string>
+    <string name="worder_cmi_cancel">取消</string>
+    <string name="worder_txv_orderdemand_text">全单要求</string>
+    <!-- 设置做法和要求界面 -->
+    <string name="recdam_tbi_recipe_text">做法</string>
+    <string name="recdam_tbi_demand_text">要求</string>
+    <string name="recdam_edt_remark_hint">请在此记录其他做法或要求</string>
+    <string name="recdam_rdb_demand_text">无</string>
+    <!-- 操作菜品界面 -->
+    <string name="opefood_txv_title_format_cancel">%1$s:共%2$d%3$s,取消%4$d%5$s</string>
+    <string name="opefood_txv_title_format_present">%1$s:共%2$d%3$s,赠送%4$d%5$s</string>
+    <string name="opefood_txv_reason_text">原因</string>
+    <string name="opefood_rdb_reason_text">其他原因</string>
+    <string name="opefood_edt_reason_default_text">未填写原因</string>
+    <string name="opefood_edt_reason_hint">请在此输入其它原因</string>
+    <!-- 输入授权码界面 -->
+    <string name="acode_txv_title_placeorder">输入授权码-落单</string>
+    <string name="acode_txv_title_priororder">输入授权码-先落</string>
+    <string name="acode_txv_title_setoffer">输入授权码-优惠</string>
+    <string name="acode_txv_title_cancelorder">输入授权码-全单取消</string>
+    <string name="acode_txv_title_cash">输入授权码-收银</string>
+    <!-- 设置优惠界面 -->
+    <string name="setoffer_txv_header_food_text">菜品</string>
+    <string name="setoffer_txv_header_countunit_text">数量</string>
+    <string name="setoffer_txv_header_price_text">单价</string>    
+    <string name="setoffer_txv_header_prediscount_text">折前金额</string>    
+    <string name="setoffer_txv_header_discountratio_text">折扣率</string>
+    <string name="setoffer_txv_header_discountmoney_text">折扣金额</string>
+    <string name="setoffer_txv_header_postdiscount_text">折后金额</string>
+    <string name="setoffer_txv_header_candiscount_text">可折</string>
+    <string name="setoffer_txv_header_orderperson_text">点菜员</string>
+    <string name="setoffer_txv_header_ordertime_text">点菜时间</string>
+    <string name="setoffer_txv_text_format">%1$s%2$s</string>
+    <string name="setoffer_txv_consumetotal">消费合计:</string>
+    <string name="setoffer_txv_service">服务费:</string> 
+    <string name="setoffer_txv_sum">合计:</string>
+    <string name="setoffer_btn_text_format">%1$s\n%2$s</string>
+    <string name="setoffer_btn_service_text">服务费</string>
+    <string name="setoffer_btn_lowest_text">最低消费</string>
+    <string name="setoffer_btn_discountratio_text">折扣率</string>
+    <string name="setoffer_btn_discountmoney_text">折扣金额</string>
+    <string name="setoffer_btn_canceldiscount_text">取消折扣</string>
+    <string name="setoffer_rbn_allnoexception_text">照单</string>
+    <string name="setoffer_rbn_allwithexception_text">全单</string>  
+    <string name="setoffer_dlg_cancledisc_title">你确定要清除折扣率、折扣金额等数据吗？</string>  
+    <string name="setoffer_cmi_present">赠送</string>
+    <string name="setoffer_cmi_cancle">取消</string>
+    <!-- 收银界面 -->
+    <string name="cashing_txv_header_code">台号</string>
+    <string name="cashing_txv_header_name">餐台</string>
+    <string name="cashing_txv_header_hint">请输入台号或餐台名</string>
+    <string name="cashing_dlg_wait_message">正在载入收银数据,请等待...</string>    
+    <string name="cashing_txv_joinbill_text">入单</string>
+    <string name="cashing_txv_printbill_text">打单</string>
+    <string name="cashing_txv_paybill_text">埋单</string> 
+    <string name="cashing_omi_mybills">我的帐目</string>  
+    <string name="cashing_omi_changeshift">换班</string>
+    <string name="cashing_omi_changeday">清机</string>
+    <string name="cashing_omi_antipay">反结</string>
+    <string name="cashing_omi_paymethod">过角</string>
+    <string name="cashing_txv_cusbill">客账号 :</string>
+     <string name="cashing_txv_cusbill_content">XXX12345623445678896554334</string>
+    <string name="cashing_txv_applytime">开台时间：</string>
+    <string name="cashing_txv_applytime_content">12:00</string>
+    <string name="cashing_txv_allorderdisco">折扣率：</string>
+    <string name="cashing_txv_allorderdisco_content">1.00</string>
+    <string name="cashing_txv_applyoperator">开台操作员：</string>
+    <string name="cashing_txv_applyoperator_content">XXX</string>
+    <string name="cashing_txv_antipay_paytime_text">付款时间 : 12:00 </string>
+    <string name="cashing_txv_antipay_payorder_text">付款单号</string>
+    <string name="cashing_txv_antipay_moneyheader_text">已付金额</string>
+    <string name="cashing_txv_antipay_moneycode_text">编码</string>
+    <string name="setcashing_txv_header_waitor_text"> |收银员：</string>
+    <string name="cashing_dlg_changeshift_title">换班时间</string>
+    <string name="cashing_txv_changeday_header">每日清机</string>
+    <string name="cashing_txv_changeday_paypoint"> |收银点： </string>
+    <string name="cashing_txv_changeday_table">收银台</string>
+    <string name="cashing_txv_changeday_class"> |班次： </string>
+    <string name="cashing_txv_changeday_nextday">下一个营业日是： </string>
+    <string name="cashing_txv_changeday_date">2012年5月15日</string>
+    <!-- 设置折扣率界面 -->
+    <string name="setratio_title_text_format">%1$s-折扣率:%2$s</string>
+    <!-- 付款方式界面 -->
+    <string name="pmethod_rdb_change_text">找赎</string>
+    <string name="pmethod_rdb_actual_text">实收</string>
+    <string name="pmethod_txv_header_method_text">付款方式</string>
+    <string name="pmethod_txv_header_code_text">编码</string>
+    <string name="pmethod_txv_header_money_text">付款金额</string>
+    <string name="pmethod_dlg_title_text">%1$s(%2$s)-应收金额%3$s元</string>  
+    <!-- 计时消费界面 -->
+    <string name="waiterorder_txv_timeconsum">计时消费(5元/分钟)</string>
+    <string name="act_waiterorder_txv_timeconsum">计时消费: 0/0</string>
+    <string name="waiterorder_txv_starttime">开始时间：</string>
+    <string name="waiterorder_txv_cumulativetime">累计时间：</string>
+    <string name="waiterorder_txv_totalconsum">累计消费：</string>
+    <string name="waiterorder_txv_start">开始</string>
+    <string name="waiterorder_txv_stop">停止</string>
+    <string name="radio_time_moring_item">VIP早市房费</string>
+    <string name="radio_time_night_item">VIP晚市房费</string>
+    <string name="radio_time_bighouse_item">大房费</string>
+    <string name="radio_time_inhouse_item">中房费</string>
+    <string name="radio_time_smallhouse_item">小房费</string>
+</resources>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hithing"
+    android:versionCode="1"
+    android:versionName="1.0"
+    android:sharedUserId="com.hithing.hsc.appuser" >
+
+    <uses-sdk android:minSdkVersion="15" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:process=":greeder" >
+        <activity
+            android:name=".ActivityMenus"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="landscape"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ActivityDishDetail"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"
+            android:screenOrientation="landscape"></activity>
+        <activity
+            android:name=".ActivityRecipeDemand"
+            android:launchMode="singleTop"
+            android:theme="@style/DialogNotitleBar" />
+         <activity
+            android:name=".ActivityCountUnit"
+            android:launchMode="singleTop"
+            android:theme="@style/DialogNotitleBar" />
+         <activity
+            android:name=".ActivityAuthcode"
+            android:launchMode="singleTop"
+            android:theme="@style/DialogNotitleBar" />
+    </application>
+    <!-- 在SDCard中创建与删除文件权限 -->  
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>  
+    <!-- 往SDCard写入数据权限 -->  
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>  
+<uses-permission android:name="android.permission.INTERNET" />
+</manifest>

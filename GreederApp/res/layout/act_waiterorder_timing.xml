@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:gravity="center|left"
+    android:background="#c0c0c0"
+    >
+
+    <TextView
+        android:id="@+id/timing_txv_headername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:layout_gravity="center"
+        android:textSize="@dimen/font_size_middle"
+        android:text="@string/waiterorder_txv_timeconsum" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_margin="5dip"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="@dimen/font_size_normal"
+            android:text="@string/waiterorder_txv_starttime" />
+        <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="@dimen/font_size_normal"
+        android:text="00:00" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_margin="5dip"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/waiterorder_txv_cumulativetime" 
+            android:textSize="@dimen/font_size_normal"/>
+        <!-- android:format="消费计时:%s"  -->
+    <Chronometer
+        android:id="@+id/chm_timer"        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"  
+        android:layout_gravity="center"
+        android:textSize="@dimen/font_size_normal"       
+    />
+        
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:layout_margin="5dip"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_size_normal"
+            android:layout_gravity="center"
+            android:text="@string/waiterorder_txv_totalconsum" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="108" />
+
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dip"
+        android:gravity="center"
+        >
+        <Button
+		    android:id="@+id/btn_start_pause"
+		    android:layout_width="80dp"
+		    android:layout_height="60dp"
+		    android:layout_margin="10dip"
+		    android:text="@string/waiterorder_txv_start" 
+		/>
+        <Button
+            android:id="@+id/btn_stop" 
+            android:layout_width="80dp"
+		    android:layout_height="60dp"
+		    android:layout_margin="10dip"
+		    android:text="@string/waiterorder_txv_stop"
+        />
+        
+    </LinearLayout>	
+</LinearLayout>

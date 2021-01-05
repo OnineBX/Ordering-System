@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <include layout="@layout/cmn_titlebar"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ListView
+            android:id="@+id/cashing_lsv_orderitems"
+            android:layout_width="fill_parent"
+            android:layout_height="400dip"
+            android:background="@color/cmn_radio_item_font_color" 
+            android:layout_weight="2" >
+        </ListView>
+
+        <ListView
+            android:id="@+id/cashing_lsv_descitems"
+            android:layout_width="fill_parent"
+            android:layout_height="400dip"
+            android:background="@color/cmn_left_area_background" 
+            android:layout_weight="1" >
+        </ListView>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/cashing_lsv_priceitems"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white" 
+        android:layout_weight="1">
+
+    </ListView>
+
+</LinearLayout>

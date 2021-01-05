@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item 
+		android:id="@+id/opefood_cmi_format_present"
+		android:title="@string/setoffer_cmi_present" 
+	/>    
+    <item 
+    	android:id="@+id/opefood_cmi_format_cancel"
+    	android:title="@string/setoffer_cmi_cancle" 
+    />
+	<item 
+    	android:id="@+id/opefood_cmi_format_exit"
+    	android:title="@string/common_cmi_exit" 
+    />
+    
+    
+</menu>

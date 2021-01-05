@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/EntityLib"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/BizLogicLib"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/ComponentLib"/>
+	<classpathentry kind="lib" path="libs/ormlite-android-4.38.jar"/>
+	<classpathentry kind="lib" path="libs/ormlite-core-4.38.jar"/>
+	<classpathentry kind="lib" path="libs/protobuf.jar"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

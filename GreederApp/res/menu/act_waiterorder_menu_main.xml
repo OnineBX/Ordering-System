@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+	<item
+		android:id="@+id/waiterorder_menu_main_advance"
+		android:title="@string/worder_omi_advance"   
+	/>
+    <item
+        android:id="@+id/waiterorder_menu_main_cancelorder"
+        android:title="@string/worder_omi_cancelorder" 
+    />
+
+</menu>

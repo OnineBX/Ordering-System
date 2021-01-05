@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>    
+    <string name="app_name">ComponentLib</string>
+    <string name="comlib_dlg_print_title">正在打印&#8230;</string>
+    <string name="comlib_dlg_print_message_content">正在初始化打印内容&#8230;</string>
+    <string name="comlib_btn_ok_text">确定</string>
+    <string name="comlib_btn_cancel_text">取消</string>
+    
+    <string name="comlib_dlg_init_title">正在登录&#8230;</string>
+    <string name="comlib_dlg_init_message_connect">正在建立到服务器的连接&#8230;</string>
+    <string name="comlib_dlg_init_message_login">正在验证登录信息&#8230;</string>
+    <string name="comlib_dlg_init_message_refresh">正在检查数据更新&#8230;</string>
+    <string name="comlib_dlg_init_message_receiving">正在启动消息监听&#8230;</string>
+    
+    <string name="comlib_dlg_initcash_title">正在初始化收银数据&#8230;</string>
+    <string name="comlib_dlg_initcash_message_authcode">正在进行身份验证&#8230;</string>
+    <string name="comlib_dlg_initcash_message_context">正在完成初始设置&#8230;</string>
+    <string name="comlib_dlg_initcash_message_bill">正在完成初始化账单列表&#8230;</string>
+	    
+</resources>

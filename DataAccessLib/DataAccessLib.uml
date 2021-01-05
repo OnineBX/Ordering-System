@@ -1,0 +1,1488 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:JavaProfile_1="http:///_aZXakH6MEdmbwasWWc4yvw.profile.uml2" xmlns:Meta="http:///schemas/Meta/1" xmlns:Omondo_1="http:///_zrN_0SUoEdmNXYQzyImvfA.profile.uml2" xmlns:Standard="http://www.eclipse.org/uml2/schemas/Standard/1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http:///_aZXakH6MEdmbwasWWc4yvw.profile.uml2 platform:/plugin/com.omondo.uml.core/profiles/Java.profile.uml#_aZhLlH6MEdmbwasWWc4yvw http:///schemas/Meta/1 platform:/plugin/com.omondo.uml.core/profiles/Meta.profile.uml#_kycnUIE4EduiecUdqhZMrw http:///_zrN_0SUoEdmNXYQzyImvfA.profile.uml2 platform:/plugin/com.omondo.uml.core/profiles/Omondo.profile.uml#_zrN_1iUoEdmNXYQzyImvfA http://www.eclipse.org/uml2/schemas/Standard/1 platform:/plugin/org.eclipse.uml2.uml.resources/profiles/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w">
+  <uml:Model xmi:id="_94m_ERmFEeGCXPJzVJKbwA" name="DataAccessLib">
+    <eAnnotations xmi:id="_d_SDwBmKEeGCXPJzVJKbwA" source="General" references="_d_ISyBmKEeGCXPJzVJKbwA _d_uvtRmKEeGCXPJzVJKbwA"/>
+    <packageImport xmi:id="_97lakBmFEeGCXPJzVJKbwA">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_-LW78BmFEeGCXPJzVJKbwA" name="com">
+      <eAnnotations xmi:id="_EIOb0BmuEeGCXPJzVJKbwA" source="UML"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_-LW78RmFEeGCXPJzVJKbwA" name="hithing">
+        <eAnnotations xmi:id="_VVLIMBorEeGdMrbxvCzFIw" source="UML"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_-LW78hmFEeGCXPJzVJKbwA" name="hsc">
+          <packagedElement xmi:type="uml:Package" xmi:id="_-LW78xmFEeGCXPJzVJKbwA" name="dal">
+            <eAnnotations xmi:id="_Low1EBmuEeGCXPJzVJKbwA" source="UML"/>
+            <packagedElement xmi:type="uml:Package" xmi:id="_-LW79BmFEeGCXPJzVJKbwA" name="entity">
+              <eAnnotations xmi:id="_d0kokBmKEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd" references="_d0RtoBmKEeGCXPJzVJKbwA _8RzAABmKEeGCXPJzVJKbwA _sGaHwBmQEeGCXPJzVJKbwA _c2AjABmUEeGCXPJzVJKbwA _i9Wo0BmhEeGCXPJzVJKbwA _AhGTMBmlEeGCXPJzVJKbwA _YP48YBmoEeGCXPJzVJKbwA _0JGiIBmsEeGCXPJzVJKbwA _yvTKQBozEeGdMrbxvCzFIw"/>
+              <packagedElement xmi:type="uml:Class" xmi:id="_d0RtoBmKEeGCXPJzVJKbwA" name="BaseDalEnt" clientDependency="_d28nIBmKEeGCXPJzVJKbwA _d9NAJBmKEeGCXPJzVJKbwA _eDJ3JhmKEeGCXPJzVJKbwA _eF-hrBmKEeGCXPJzVJKbwA _eGkXihmKEeGCXPJzVJKbwA _hDqaxxmKEeGCXPJzVJKbwA _sskXlxmKEeGCXPJzVJKbwA _tlGiFxmKEeGCXPJzVJKbwA _t0SNlxmKEeGCXPJzVJKbwA _t9gbBhmKEeGCXPJzVJKbwA _uM-aYhmKEeGCXPJzVJKbwA _8SPr9xmKEeGCXPJzVJKbwA _8Sim7hmKEeGCXPJzVJKbwA _8b6lXhmKEeGCXPJzVJKbwA _OfSOtxmMEeGCXPJzVJKbwA _sHdQpxmQEeGCXPJzVJKbwA _sHvkhxmQEeGCXPJzVJKbwA _c4ZIpxmUEeGCXPJzVJKbwA _c4sDlxmUEeGCXPJzVJKbwA _i-NkdBmhEeGCXPJzVJKbwA _i-f4VxmhEeGCXPJzVJKbwA _AiVpVBmlEeGCXPJzVJKbwA _Ain9NhmlEeGCXPJzVJKbwA _YRIShxmoEeGCXPJzVJKbwA _YRgtAhmoEeGCXPJzVJKbwA _0KS0-RmsEeGCXPJzVJKbwA _0Klv6BmsEeGCXPJzVJKbwA _ywVsGhozEeGdMrbxvCzFIw _ywonDRozEeGdMrbxvCzFIw">
+                <eAnnotations xmi:id="_d0kokRmKEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd"/>
+                <generalization xmi:id="_d1UPeBmKEeGCXPJzVJKbwA" general="_ywe2ARozEeGdMrbxvCzFIw"/>
+                <ownedOperation xmi:id="_d16FUBmKEeGCXPJzVJKbwA" name="BaseDalEnt" visibility="public" concurrency="concurrent"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_8RzAABmKEeGCXPJzVJKbwA" name="TableDalEnt" clientDependency="_8UoRkBmKEeGCXPJzVJKbwA _SKBeQBmQEeGCXPJzVJKbwA" isLeaf="true">
+                <eAnnotations xmi:id="_8R8xABmKEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd"/>
+                <generalization xmi:id="_8R8xARmKEeGCXPJzVJKbwA" general="_d0RtoBmKEeGCXPJzVJKbwA"/>
+                <ownedAttribute xmi:id="_KWYYQBmPEeGCXPJzVJKbwA" name="id" visibility="private">
+                  <eAnnotations xmi:id="_KWYYQRmPEeGCXPJzVJKbwA" source="UML"/>
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KWYYQxmPEeGCXPJzVJKbwA" value="1"/>
+                  <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KWYYRBmPEeGCXPJzVJKbwA"/>
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_KWYYQhmPEeGCXPJzVJKbwA">
+                    <value xsi:nil="true"/>
+                  </defaultValue>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_O0wyoBmQEeGCXPJzVJKbwA" name="name" visibility="private" type="_eALbphmKEeGCXPJzVJKbwA">
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_O0wyoRmQEeGCXPJzVJKbwA">
+                    <value xsi:nil="true"/>
+                  </defaultValue>
+                </ownedAttribute>
+                <ownedOperation xmi:id="_8R8xAhmKEeGCXPJzVJKbwA" name="TableDalEnt" visibility="public" concurrency="concurrent"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_sGaHwBmQEeGCXPJzVJKbwA" name="HallSortDalEnt" clientDependency="_sGgOYhmQEeGCXPJzVJKbwA _cz2RwBmSEeGCXPJzVJKbwA" isLeaf="true">
+                <eAnnotations xmi:id="_sGaHwRmQEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd"/>
+                <generalization xmi:id="_sGgOYBmQEeGCXPJzVJKbwA" general="_d0RtoBmKEeGCXPJzVJKbwA"/>
+                <ownedAttribute xmi:id="_CJ0fIBmSEeGCXPJzVJKbwA" name="id" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_CJ0fIRmSEeGCXPJzVJKbwA">
+                    <value xsi:nil="true"/>
+                  </defaultValue>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_UP6h0BmSEeGCXPJzVJKbwA" name="name" visibility="private" type="_eALbphmKEeGCXPJzVJKbwA">
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_UQAocBmSEeGCXPJzVJKbwA">
+                    <value xsi:nil="true"/>
+                  </defaultValue>
+                </ownedAttribute>
+                <ownedOperation xmi:id="_sGgOYRmQEeGCXPJzVJKbwA" name="HallSortDalEnt" visibility="public" concurrency="concurrent"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_c2AjABmUEeGCXPJzVJKbwA" name="HallDalEnt" clientDependency="_c2KUABmUEeGCXPJzVJKbwA _Q7EhYhmcEeGCXPJzVJKbwA _8LjeABmeEeGCXPJzVJKbwA" isLeaf="true">
+                <eAnnotations xmi:id="_c2AjARmUEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd"/>
+                <generalization xmi:id="_c2AjAhmUEeGCXPJzVJKbwA" general="_d0RtoBmKEeGCXPJzVJKbwA"/>
+                <ownedAttribute xmi:id="_o-EEgBmVEeGCXPJzVJKbwA" name="id" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_o-EEgRmVEeGCXPJzVJKbwA">
+                    <value xsi:nil="true"/>
+                  </defaultValue>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_Q7EhYBmcEeGCXPJzVJKbwA" name="code" visibility="private" type="_eALbphmKEeGCXPJzVJKbwA">
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_Q7EhYRmcEeGCXPJzVJKbwA">
+                    <value xsi:nil="true"/>
+                  </defaultValue>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_uPBRsBmeEeGCXPJzVJKbwA" name="name" visibility="private" type="_eALbphmKEeGCXPJzVJKbwA">
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_uPBRsRmeEeGCXPJzVJKbwA">
+                    <value xsi:nil="true"/>
+                  </defaultValue>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_uPBRshmeEeGCXPJzVJKbwA" name="sort" visibility="private" type="_sGaHwBmQEeGCXPJzVJKbwA" association="_8MggQBmeEeGCXPJzVJKbwA">
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_uPBRsxmeEeGCXPJzVJKbwA">
+                    <value xsi:nil="true"/>
+                  </defaultValue>
+                </ownedAttribute>
+                <ownedOperation xmi:id="_c2AjAxmUEeGCXPJzVJKbwA" name="HallDalEnt" visibility="public" concurrency="concurrent"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_8MggQBmeEeGCXPJzVJKbwA" memberEnd="_uPBRshmeEeGCXPJzVJKbwA _8MggQRmeEeGCXPJzVJKbwA">
+                <ownedEnd xmi:id="_8MggQRmeEeGCXPJzVJKbwA" name="ownedEnd" type="_c2AjABmUEeGCXPJzVJKbwA" association="_8MggQBmeEeGCXPJzVJKbwA"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_i9Wo0BmhEeGCXPJzVJKbwA" name="DinnerTableTypeDalEnt" clientDependency="_i9i2EBmhEeGCXPJzVJKbwA _WWv4MBmiEeGCXPJzVJKbwA _hGcfoBmjEeGCXPJzVJKbwA" isLeaf="true">
+                <eAnnotations xmi:id="_i9Wo0RmhEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd"/>
+                <generalization xmi:id="_i9Wo0hmhEeGCXPJzVJKbwA" general="_d0RtoBmKEeGCXPJzVJKbwA"/>
+                <ownedAttribute xmi:id="_WWpxkBmiEeGCXPJzVJKbwA" name="id" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_WWpxkRmiEeGCXPJzVJKbwA">
+                    <value xsi:nil="true"/>
+                  </defaultValue>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_WWpxkhmiEeGCXPJzVJKbwA" name="code" visibility="private" type="_eALbphmKEeGCXPJzVJKbwA">
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_WWpxkxmiEeGCXPJzVJKbwA">
+                    <value xsi:nil="true"/>
+                  </defaultValue>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_RlcP4BmjEeGCXPJzVJKbwA" name="name" visibility="private" type="_eALbphmKEeGCXPJzVJKbwA">
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_RlcP4RmjEeGCXPJzVJKbwA">
+                    <value xsi:nil="true"/>
+                  </defaultValue>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_RlcP4hmjEeGCXPJzVJKbwA" name="hall" visibility="private" type="_c2AjABmUEeGCXPJzVJKbwA" association="_Rm3zQBmjEeGCXPJzVJKbwA">
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_RlcP4xmjEeGCXPJzVJKbwA">
+                    <value xsi:nil="true"/>
+                  </defaultValue>
+                </ownedAttribute>
+                <ownedOperation xmi:id="_i9cvcBmhEeGCXPJzVJKbwA" name="DinnerTableTypeDalEnt" visibility="public" concurrency="concurrent"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_Rm3zQBmjEeGCXPJzVJKbwA" memberEnd="_RlcP4hmjEeGCXPJzVJKbwA _Rm3zQRmjEeGCXPJzVJKbwA">
+                <ownedEnd xmi:id="_Rm3zQRmjEeGCXPJzVJKbwA" name="ownedEnd" type="_i9Wo0BmhEeGCXPJzVJKbwA" association="_Rm3zQBmjEeGCXPJzVJKbwA"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_AhGTMBmlEeGCXPJzVJKbwA" name="FoodDalEnt" clientDependency="_AhMZ0RmlEeGCXPJzVJKbwA _y7PPkBmmEeGCXPJzVJKbwA" isLeaf="true">
+                <eAnnotations xmi:id="_AhGTMRmlEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd"/>
+                <generalization xmi:id="_AhGTMhmlEeGCXPJzVJKbwA" general="_d0RtoBmKEeGCXPJzVJKbwA"/>
+                <ownedAttribute xmi:id="_Y0dT8BmmEeGCXPJzVJKbwA" name="id" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_Y0jakBmmEeGCXPJzVJKbwA">
+                    <value xsi:nil="true"/>
+                  </defaultValue>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_y7JI8BmmEeGCXPJzVJKbwA" name="code" visibility="private" type="_eALbphmKEeGCXPJzVJKbwA">
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_y7JI8RmmEeGCXPJzVJKbwA">
+                    <value xsi:nil="true"/>
+                  </defaultValue>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_P11WoBmnEeGCXPJzVJKbwA" name="name" visibility="private" type="_eALbphmKEeGCXPJzVJKbwA">
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_P11WoRmnEeGCXPJzVJKbwA">
+                    <value xsi:nil="true"/>
+                  </defaultValue>
+                </ownedAttribute>
+                <ownedOperation xmi:id="_AhMZ0BmlEeGCXPJzVJKbwA" name="FoodDalEnt" visibility="public" concurrency="concurrent"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_YP48YBmoEeGCXPJzVJKbwA" name="FoodPriceDalEnt" clientDependency="_YP_DARmoEeGCXPJzVJKbwA _Yj6HwBmsEeGCXPJzVJKbwA _YkD4wRmsEeGCXPJzVJKbwA" isLeaf="true">
+                <eAnnotations xmi:id="_YP48YRmoEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd"/>
+                <generalization xmi:id="_YP48YhmoEeGCXPJzVJKbwA" general="_d0RtoBmKEeGCXPJzVJKbwA"/>
+                <ownedAttribute xmi:id="_YjwWwBmsEeGCXPJzVJKbwA" name="id" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_YjwWwRmsEeGCXPJzVJKbwA">
+                    <value xsi:nil="true"/>
+                  </defaultValue>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_YjwWwhmsEeGCXPJzVJKbwA" name="unit" visibility="private" type="_eALbphmKEeGCXPJzVJKbwA">
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_YjwWwxmsEeGCXPJzVJKbwA">
+                    <value xsi:nil="true"/>
+                  </defaultValue>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_YjwWxBmsEeGCXPJzVJKbwA" name="price" visibility="private" type="_eALbphmKEeGCXPJzVJKbwA">
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_YjwWxRmsEeGCXPJzVJKbwA">
+                    <value xsi:nil="true"/>
+                  </defaultValue>
+                </ownedAttribute>
+                <ownedOperation xmi:id="_YP_DABmoEeGCXPJzVJKbwA" name="FoodPriceDalEnt" visibility="public" concurrency="concurrent"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_0JGiIBmsEeGCXPJzVJKbwA" name="DinnerTableItemDalEnt" clientDependency="_0JQTIxmsEeGCXPJzVJKbwA _wDwLcBmuEeGCXPJzVJKbwA _5aoJUBmwEeGCXPJzVJKbwA" isLeaf="true">
+                <eAnnotations xmi:id="_0JQTIBmsEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd"/>
+                <generalization xmi:id="_0JQTIRmsEeGCXPJzVJKbwA" general="_d0RtoBmKEeGCXPJzVJKbwA"/>
+                <ownedAttribute xmi:id="_rsBysBmtEeGCXPJzVJKbwA" name="id" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_rsBysRmtEeGCXPJzVJKbwA">
+                    <value xsi:nil="true"/>
+                  </defaultValue>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_wDcpcBmuEeGCXPJzVJKbwA" name="foodPrice" visibility="private" type="_YP48YBmoEeGCXPJzVJKbwA" association="_wD5VYBmuEeGCXPJzVJKbwA">
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_wDcpcRmuEeGCXPJzVJKbwA">
+                    <value xsi:nil="true"/>
+                  </defaultValue>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_5Z4icBmwEeGCXPJzVJKbwA" name="isFlyOrder" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_5Z4icRmwEeGCXPJzVJKbwA">
+                    <value xsi:nil="true"/>
+                  </defaultValue>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_5Z4ichmwEeGCXPJzVJKbwA" name="isCharged" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_5Z4icxmwEeGCXPJzVJKbwA">
+                    <value xsi:nil="true"/>
+                  </defaultValue>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_5Z4idBmwEeGCXPJzVJKbwA" name="number" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_5Z4idRmwEeGCXPJzVJKbwA">
+                    <value xsi:nil="true"/>
+                  </defaultValue>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_5Z4idhmwEeGCXPJzVJKbwA" name="type" visibility="private" type="_i9Wo0BmhEeGCXPJzVJKbwA" association="_5a7EQBmwEeGCXPJzVJKbwA">
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_5Z4idxmwEeGCXPJzVJKbwA">
+                    <value xsi:nil="true"/>
+                  </defaultValue>
+                </ownedAttribute>
+                <ownedOperation xmi:id="_0JQTIhmsEeGCXPJzVJKbwA" name="DinnerTableItemDalEnt" visibility="public" concurrency="concurrent"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_wD5VYBmuEeGCXPJzVJKbwA" memberEnd="_wDcpcBmuEeGCXPJzVJKbwA _wD5VYRmuEeGCXPJzVJKbwA">
+                <ownedEnd xmi:id="_wD5VYRmuEeGCXPJzVJKbwA" name="ownedEnd" type="_0JGiIBmsEeGCXPJzVJKbwA" association="_wD5VYBmuEeGCXPJzVJKbwA"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_5a7EQBmwEeGCXPJzVJKbwA" memberEnd="_5Z4idhmwEeGCXPJzVJKbwA _5a7EQRmwEeGCXPJzVJKbwA">
+                <ownedEnd xmi:id="_5a7EQRmwEeGCXPJzVJKbwA" name="ownedEnd" type="_0JGiIBmsEeGCXPJzVJKbwA" association="_5a7EQBmwEeGCXPJzVJKbwA"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_yvTKQBozEeGdMrbxvCzFIw" name="ServiceChargePolicyDalEnt" clientDependency="_yvcUMBozEeGdMrbxvCzFIw" isLeaf="true">
+                <eAnnotations xmi:id="_yvTKQRozEeGdMrbxvCzFIw" source="DataAccessLib/models/entity.ucd"/>
+                <generalization xmi:id="_yvTKQhozEeGdMrbxvCzFIw" general="_d0RtoBmKEeGCXPJzVJKbwA"/>
+                <ownedOperation xmi:id="_yvTKQxozEeGdMrbxvCzFIw" name="ServiceChargePolicyDalEnt" visibility="public" concurrency="concurrent"/>
+              </packagedElement>
+            </packagedElement>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_d1KecBmKEeGCXPJzVJKbwA" name="/jars/ORMLite/ormlite-core-4">
+      <packagedElement xmi:type="uml:Package" xmi:id="_d1KecRmKEeGCXPJzVJKbwA" name="com">
+        <packagedElement xmi:type="uml:Package" xmi:id="_d1KechmKEeGCXPJzVJKbwA" name="j256">
+          <packagedElement xmi:type="uml:Package" xmi:id="_d1KecxmKEeGCXPJzVJKbwA" name="ormlite">
+            <packagedElement xmi:type="uml:Package" xmi:id="_d1KedBmKEeGCXPJzVJKbwA" name="misc">
+              <eAnnotations xmi:id="_d1UPcRmKEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd" references="_d1UPcBmKEeGCXPJzVJKbwA _d2giQBmKEeGCXPJzVJKbwA _d85eIBmKEeGCXPJzVJKbwA _d9DPIBmKEeGCXPJzVJKbwA _d_ISwBmKEeGCXPJzVJKbwA _eBg4YRmKEeGCXPJzVJKbwA _eDAGIRmKEeGCXPJzVJKbwA _eDAGKBmKEeGCXPJzVJKbwA _eDTBERmKEeGCXPJzVJKbwA _eF0woBmKEeGCXPJzVJKbwA _eF-hpRmKEeGCXPJzVJKbwA _eGISoRmKEeGCXPJzVJKbwA _eGkXgxmKEeGCXPJzVJKbwA _hDgpwBmKEeGCXPJzVJKbwA _hDqawBmKEeGCXPJzVJKbwA _ssbNoBmKEeGCXPJzVJKbwA _sskXkBmKEeGCXPJzVJKbwA _tk9YIBmKEeGCXPJzVJKbwA _tlGiEBmKEeGCXPJzVJKbwA _t0IckBmKEeGCXPJzVJKbwA _t0SNkBmKEeGCXPJzVJKbwA _t9WqABmKEeGCXPJzVJKbwA _t9WqBxmKEeGCXPJzVJKbwA _uMrfcBmKEeGCXPJzVJKbwA _uM1QcxmKEeGCXPJzVJKbwA _8SGiABmKEeGCXPJzVJKbwA _8SPr8BmKEeGCXPJzVJKbwA _8Sim4BmKEeGCXPJzVJKbwA _8Sim5xmKEeGCXPJzVJKbwA _8b6lUBmKEeGCXPJzVJKbwA _8b6lVxmKEeGCXPJzVJKbwA _OfJEwBmMEeGCXPJzVJKbwA _OfSOsBmMEeGCXPJzVJKbwA _sHXKABmQEeGCXPJzVJKbwA _sHdQoBmQEeGCXPJzVJKbwA _sHpd4BmQEeGCXPJzVJKbwA _sHvkgBmQEeGCXPJzVJKbwA _c4PXoBmUEeGCXPJzVJKbwA _c4ZIoBmUEeGCXPJzVJKbwA _c4iSkRmUEeGCXPJzVJKbwA _c4sDkBmUEeGCXPJzVJKbwA _i-Hd0BmhEeGCXPJzVJKbwA _i-Hd1xmhEeGCXPJzVJKbwA _i-ZxsBmhEeGCXPJzVJKbwA _i-f4UBmhEeGCXPJzVJKbwA _AiPisBmlEeGCXPJzVJKbwA _AiPitxmlEeGCXPJzVJKbwA _Aih2kBmlEeGCXPJzVJKbwA _Aih2lxmlEeGCXPJzVJKbwA _YRCL4BmoEeGCXPJzVJKbwA _YRISgBmoEeGCXPJzVJKbwA _YRUfwRmoEeGCXPJzVJKbwA _YRamYRmoEeGCXPJzVJKbwA _0KJD8BmsEeGCXPJzVJKbwA _0KS08hmsEeGCXPJzVJKbwA _0Kcl8RmsEeGCXPJzVJKbwA _0Klv4RmsEeGCXPJzVJKbwA _ywL7EBozEeGdMrbxvCzFIw _ywVsExozEeGdMrbxvCzFIw _ywe2ARozEeGdMrbxvCzFIw _ywonBhozEeGdMrbxvCzFIw"/>
+              <packagedElement xmi:type="uml:Class" xmi:id="_d1UPcBmKEeGCXPJzVJKbwA" name="BaseDaoEnabled" isAbstract="true">
+                <eAnnotations xmi:id="_d1UPchmKEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd"/>
+                <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_d1UPcxmKEeGCXPJzVJKbwA" parameter="_d1UPdBmKEeGCXPJzVJKbwA _d1UPdhmKEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_d1UPdBmKEeGCXPJzVJKbwA" parameteredElement="_d1UPdRmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_d1UPdRmKEeGCXPJzVJKbwA" name="T" templateParameter="_d1UPdBmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_d1UPdhmKEeGCXPJzVJKbwA" parameteredElement="_d1UPdxmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_d1UPdxmKEeGCXPJzVJKbwA" name="ID" templateParameter="_d1UPdhmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                </ownedTemplateSignature>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_d2giQBmKEeGCXPJzVJKbwA" name="BaseDaoEnabled" isAbstract="true">
+                <eAnnotations xmi:id="_d2giQRmKEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd"/>
+                <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_d2giQhmKEeGCXPJzVJKbwA" parameter="_d2psMBmKEeGCXPJzVJKbwA _d2psMhmKEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_d2psMBmKEeGCXPJzVJKbwA" parameteredElement="_d2psMRmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_d2psMRmKEeGCXPJzVJKbwA" name="T" templateParameter="_d2psMBmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_d2psMhmKEeGCXPJzVJKbwA" parameteredElement="_d2psMxmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_d2psMxmKEeGCXPJzVJKbwA" name="ID" templateParameter="_d2psMhmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                </ownedTemplateSignature>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_d85eIBmKEeGCXPJzVJKbwA" name="BaseDaoEnabled" isAbstract="true">
+                <eAnnotations xmi:id="_d85eIRmKEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd"/>
+                <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_d85eIhmKEeGCXPJzVJKbwA" parameter="_d85eIxmKEeGCXPJzVJKbwA _d85eJRmKEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_d85eIxmKEeGCXPJzVJKbwA" parameteredElement="_d85eJBmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_d85eJBmKEeGCXPJzVJKbwA" name="T" templateParameter="_d85eIxmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_d85eJRmKEeGCXPJzVJKbwA" parameteredElement="_d85eJhmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_d85eJhmKEeGCXPJzVJKbwA" name="ID" templateParameter="_d85eJRmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                </ownedTemplateSignature>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_d9DPIBmKEeGCXPJzVJKbwA" name="BaseDaoEnabled" isAbstract="true">
+                <eAnnotations xmi:id="_d9DPIRmKEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd"/>
+                <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_d9DPIhmKEeGCXPJzVJKbwA" parameter="_d9NAIBmKEeGCXPJzVJKbwA _d9NAIhmKEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_d9NAIBmKEeGCXPJzVJKbwA" parameteredElement="_d9NAIRmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_d9NAIRmKEeGCXPJzVJKbwA" name="T" templateParameter="_d9NAIBmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_d9NAIhmKEeGCXPJzVJKbwA" parameteredElement="_d9NAIxmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_d9NAIxmKEeGCXPJzVJKbwA" name="ID" templateParameter="_d9NAIhmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                </ownedTemplateSignature>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_d_ISwBmKEeGCXPJzVJKbwA" name="BaseDaoEnabled" clientDependency="_eAngjRmKEeGCXPJzVJKbwA _eAxRgRmKEeGCXPJzVJKbwA _eBEMcRmKEeGCXPJzVJKbwA _eBN9cRmKEeGCXPJzVJKbwA" isAbstract="true">
+                <eAnnotations xmi:id="_d_ISwRmKEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd"/>
+                <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_d_ISwhmKEeGCXPJzVJKbwA" parameter="_d_ISwxmKEeGCXPJzVJKbwA _d_ISxRmKEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_d_ISwxmKEeGCXPJzVJKbwA" parameteredElement="_d_SDxRmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_d_SDxRmKEeGCXPJzVJKbwA" name="T" templateParameter="_d_ISwxmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_d_ISxRmKEeGCXPJzVJKbwA" parameteredElement="_d_SDxhmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_d_SDxhmKEeGCXPJzVJKbwA" name="ID" templateParameter="_d_ISxRmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                </ownedTemplateSignature>
+                <generalization xmi:id="_d_SDxBmKEeGCXPJzVJKbwA" general="_d_SDwRmKEeGCXPJzVJKbwA"/>
+                <ownedAttribute xmi:id="_d_b0wBmKEeGCXPJzVJKbwA" name="dao" visibility="protected">
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_d_b0whmKEeGCXPJzVJKbwA">
+                    <value xsi:nil="true"/>
+                  </defaultValue>
+                </ownedAttribute>
+                <ownedOperation xmi:id="_d_uvsBmKEeGCXPJzVJKbwA" name="updateId" visibility="public" concurrency="concurrent" raisedException="_d_uvthmKEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:id="_d_uvsRmKEeGCXPJzVJKbwA" name="newId">
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_d_uvshmKEeGCXPJzVJKbwA" value="1"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_d_uvsxmKEeGCXPJzVJKbwA" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_d_uvtBmKEeGCXPJzVJKbwA" value="1"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_eABqoBmKEeGCXPJzVJKbwA" name="BaseDaoEnabled" visibility="public" concurrency="concurrent"/>
+                <ownedOperation xmi:id="_eABqoRmKEeGCXPJzVJKbwA" name="setDao" visibility="public" concurrency="concurrent">
+                  <ownedParameter xmi:id="_eABqqRmKEeGCXPJzVJKbwA" name="dao">
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eABqqhmKEeGCXPJzVJKbwA" value="1"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_eABqqxmKEeGCXPJzVJKbwA" name="delete" visibility="public" concurrency="concurrent" raisedException="_d_uvthmKEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:id="_eABqrBmKEeGCXPJzVJKbwA" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eABqrRmKEeGCXPJzVJKbwA" value="1"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_eALboBmKEeGCXPJzVJKbwA" name="refresh" visibility="public" concurrency="concurrent" raisedException="_d_uvthmKEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:id="_eALboRmKEeGCXPJzVJKbwA" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eALbohmKEeGCXPJzVJKbwA" value="1"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_eALboxmKEeGCXPJzVJKbwA" name="checkForDao" visibility="private" concurrency="concurrent" raisedException="_d_uvthmKEeGCXPJzVJKbwA"/>
+                <ownedOperation xmi:id="_eALbpBmKEeGCXPJzVJKbwA" name="extractId" visibility="public" concurrency="concurrent" raisedException="_d_uvthmKEeGCXPJzVJKbwA"/>
+                <ownedOperation xmi:id="_eALbpRmKEeGCXPJzVJKbwA" name="objectToString" visibility="public" concurrency="concurrent">
+                  <ownedParameter xmi:id="_eALbqBmKEeGCXPJzVJKbwA" type="_eALbphmKEeGCXPJzVJKbwA" direction="return">
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eALbqRmKEeGCXPJzVJKbwA" value="1"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_eALbqhmKEeGCXPJzVJKbwA" name="create" visibility="public" concurrency="concurrent" raisedException="_d_uvthmKEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:id="_eALbqxmKEeGCXPJzVJKbwA" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eALbrBmKEeGCXPJzVJKbwA" value="1"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_eALbrRmKEeGCXPJzVJKbwA" name="objectsEqual" visibility="public" concurrency="concurrent" raisedException="_d_uvthmKEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:id="_eAUlkBmKEeGCXPJzVJKbwA" name="other">
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eAUlkRmKEeGCXPJzVJKbwA" value="1"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_eAUlkhmKEeGCXPJzVJKbwA" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eAUlkxmKEeGCXPJzVJKbwA" value="1"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_eAUllBmKEeGCXPJzVJKbwA" name="update" visibility="public" concurrency="concurrent" raisedException="_d_uvthmKEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:id="_eAUllRmKEeGCXPJzVJKbwA" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eAUllhmKEeGCXPJzVJKbwA" value="1"/>
+                  </ownedParameter>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_eBg4YRmKEeGCXPJzVJKbwA" name="BaseDaoEnabled" clientDependency="_eCGuRRmKEeGCXPJzVJKbwA _eCQfQRmKEeGCXPJzVJKbwA _eCaQQhmKEeGCXPJzVJKbwA _eCtLMRmKEeGCXPJzVJKbwA" isAbstract="true">
+                <eAnnotations xmi:id="_eBg4YhmKEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd"/>
+                <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_eBg4YxmKEeGCXPJzVJKbwA" parameter="_eBg4ZBmKEeGCXPJzVJKbwA _eBg4ZhmKEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_eBg4ZBmKEeGCXPJzVJKbwA" parameteredElement="_eBg4aRmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_eBg4aRmKEeGCXPJzVJKbwA" name="T" templateParameter="_eBg4ZBmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_eBg4ZhmKEeGCXPJzVJKbwA" parameteredElement="_eBg4ahmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_eBg4ahmKEeGCXPJzVJKbwA" name="ID" templateParameter="_eBg4ZhmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                </ownedTemplateSignature>
+                <generalization xmi:id="_eBg4aBmKEeGCXPJzVJKbwA" general="_d_SDwRmKEeGCXPJzVJKbwA"/>
+                <ownedAttribute xmi:id="_eBqpYBmKEeGCXPJzVJKbwA" name="dao" visibility="protected">
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_eBqpYhmKEeGCXPJzVJKbwA">
+                    <value xsi:nil="true"/>
+                  </defaultValue>
+                </ownedAttribute>
+                <ownedOperation xmi:id="_eBqpahmKEeGCXPJzVJKbwA" name="objectToString" visibility="public" concurrency="concurrent">
+                  <ownedParameter xmi:id="_eBqpaxmKEeGCXPJzVJKbwA" type="_eALbphmKEeGCXPJzVJKbwA" direction="return">
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eBqpbBmKEeGCXPJzVJKbwA" value="1"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_eBqpbRmKEeGCXPJzVJKbwA" name="objectsEqual" visibility="public" concurrency="concurrent" raisedException="_d_uvthmKEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:id="_eBqpbhmKEeGCXPJzVJKbwA" name="other">
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eBqpbxmKEeGCXPJzVJKbwA" value="1"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_eBqpcBmKEeGCXPJzVJKbwA" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eBqpcRmKEeGCXPJzVJKbwA" value="1"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_eBqpchmKEeGCXPJzVJKbwA" name="create" visibility="public" concurrency="concurrent" raisedException="_d_uvthmKEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:id="_eBqpcxmKEeGCXPJzVJKbwA" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eBqpdBmKEeGCXPJzVJKbwA" value="1"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_eBqpdRmKEeGCXPJzVJKbwA" name="setDao" visibility="public" concurrency="concurrent">
+                  <ownedParameter xmi:id="_eBzzVxmKEeGCXPJzVJKbwA" name="dao">
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eBzzWBmKEeGCXPJzVJKbwA" value="1"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_eBzzWRmKEeGCXPJzVJKbwA" name="checkForDao" visibility="private" concurrency="concurrent" raisedException="_d_uvthmKEeGCXPJzVJKbwA"/>
+                <ownedOperation xmi:id="_eBzzWhmKEeGCXPJzVJKbwA" name="extractId" visibility="public" concurrency="concurrent" raisedException="_d_uvthmKEeGCXPJzVJKbwA"/>
+                <ownedOperation xmi:id="_eBzzWxmKEeGCXPJzVJKbwA" name="updateId" visibility="public" concurrency="concurrent" raisedException="_d_uvthmKEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:id="_eBzzXBmKEeGCXPJzVJKbwA" name="newId">
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eBzzXRmKEeGCXPJzVJKbwA" value="1"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_eBzzXhmKEeGCXPJzVJKbwA" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eBzzXxmKEeGCXPJzVJKbwA" value="1"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_eBzzYBmKEeGCXPJzVJKbwA" name="update" visibility="public" concurrency="concurrent" raisedException="_d_uvthmKEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:id="_eBzzYRmKEeGCXPJzVJKbwA" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eBzzYhmKEeGCXPJzVJKbwA" value="1"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_eBzzYxmKEeGCXPJzVJKbwA" name="refresh" visibility="public" concurrency="concurrent" raisedException="_d_uvthmKEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:id="_eBzzZBmKEeGCXPJzVJKbwA" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eBzzZRmKEeGCXPJzVJKbwA" value="1"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_eB9kUBmKEeGCXPJzVJKbwA" name="delete" visibility="public" concurrency="concurrent" raisedException="_d_uvthmKEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:id="_eB9kURmKEeGCXPJzVJKbwA" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eB9kUhmKEeGCXPJzVJKbwA" value="1"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_eB9kUxmKEeGCXPJzVJKbwA" name="BaseDaoEnabled" visibility="public" concurrency="concurrent"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_eDAGIRmKEeGCXPJzVJKbwA" name="BaseDaoEnabled" isAbstract="true">
+                <eAnnotations xmi:id="_eDAGIhmKEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd"/>
+                <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_eDAGIxmKEeGCXPJzVJKbwA" parameter="_eDAGJBmKEeGCXPJzVJKbwA _eDAGJhmKEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_eDAGJBmKEeGCXPJzVJKbwA" parameteredElement="_eDAGJRmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_eDAGJRmKEeGCXPJzVJKbwA" name="T" templateParameter="_eDAGJBmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_eDAGJhmKEeGCXPJzVJKbwA" parameteredElement="_eDAGJxmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_eDAGJxmKEeGCXPJzVJKbwA" name="ID" templateParameter="_eDAGJhmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                </ownedTemplateSignature>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_eDAGKBmKEeGCXPJzVJKbwA" name="BaseDaoEnabled" isAbstract="true">
+                <eAnnotations xmi:id="_eDJ3IBmKEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd"/>
+                <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_eDJ3IRmKEeGCXPJzVJKbwA" parameter="_eDJ3IhmKEeGCXPJzVJKbwA _eDJ3JBmKEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_eDJ3IhmKEeGCXPJzVJKbwA" parameteredElement="_eDJ3IxmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_eDJ3IxmKEeGCXPJzVJKbwA" name="T" templateParameter="_eDJ3IhmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_eDJ3JBmKEeGCXPJzVJKbwA" parameteredElement="_eDJ3JRmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_eDJ3JRmKEeGCXPJzVJKbwA" name="ID" templateParameter="_eDJ3JBmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                </ownedTemplateSignature>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_eDTBERmKEeGCXPJzVJKbwA" name="BaseDaoEnabled" clientDependency="_eECn9xmKEeGCXPJzVJKbwA _eEMY8RmKEeGCXPJzVJKbwA _eEfT4RmKEeGCXPJzVJKbwA _eEpE4RmKEeGCXPJzVJKbwA" isAbstract="true">
+                <eAnnotations xmi:id="_eDTBEhmKEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd"/>
+                <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_eDTBExmKEeGCXPJzVJKbwA" parameter="_eDTBFBmKEeGCXPJzVJKbwA _eDTBFhmKEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_eDTBFBmKEeGCXPJzVJKbwA" parameteredElement="_eDTBGRmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_eDTBGRmKEeGCXPJzVJKbwA" name="T" templateParameter="_eDTBFBmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_eDTBFhmKEeGCXPJzVJKbwA" parameteredElement="_eDTBGhmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_eDTBGhmKEeGCXPJzVJKbwA" name="ID" templateParameter="_eDTBFhmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                </ownedTemplateSignature>
+                <generalization xmi:id="_eDTBGBmKEeGCXPJzVJKbwA" general="_d_SDwRmKEeGCXPJzVJKbwA"/>
+                <ownedAttribute xmi:id="_eDTBGxmKEeGCXPJzVJKbwA" name="dao" visibility="protected">
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_eDTBHRmKEeGCXPJzVJKbwA">
+                    <value xsi:nil="true"/>
+                  </defaultValue>
+                </ownedAttribute>
+                <ownedOperation xmi:id="_eDcyFxmKEeGCXPJzVJKbwA" name="updateId" visibility="public" concurrency="concurrent" raisedException="_d_uvthmKEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:id="_eDcyGBmKEeGCXPJzVJKbwA" name="newId">
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eDcyGRmKEeGCXPJzVJKbwA" value="1"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_eDcyGhmKEeGCXPJzVJKbwA" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eDcyGxmKEeGCXPJzVJKbwA" value="1"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_eDcyHBmKEeGCXPJzVJKbwA" name="update" visibility="public" concurrency="concurrent" raisedException="_d_uvthmKEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:id="_eDcyHRmKEeGCXPJzVJKbwA" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eDcyHhmKEeGCXPJzVJKbwA" value="1"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_eDcyHxmKEeGCXPJzVJKbwA" name="objectsEqual" visibility="public" concurrency="concurrent" raisedException="_d_uvthmKEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:id="_eDcyIBmKEeGCXPJzVJKbwA" name="other">
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eDcyIRmKEeGCXPJzVJKbwA" value="1"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_eDl8ABmKEeGCXPJzVJKbwA" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eDl8ARmKEeGCXPJzVJKbwA" value="1"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_eDl8AhmKEeGCXPJzVJKbwA" name="refresh" visibility="public" concurrency="concurrent" raisedException="_d_uvthmKEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:id="_eDl8AxmKEeGCXPJzVJKbwA" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eDl8BBmKEeGCXPJzVJKbwA" value="1"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_eDl8BRmKEeGCXPJzVJKbwA" name="objectToString" visibility="public" concurrency="concurrent">
+                  <ownedParameter xmi:id="_eDl8BhmKEeGCXPJzVJKbwA" type="_eALbphmKEeGCXPJzVJKbwA" direction="return">
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eDl8BxmKEeGCXPJzVJKbwA" value="1"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_eDl8CBmKEeGCXPJzVJKbwA" name="delete" visibility="public" concurrency="concurrent" raisedException="_d_uvthmKEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:id="_eDl8CRmKEeGCXPJzVJKbwA" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eDl8ChmKEeGCXPJzVJKbwA" value="1"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_eDl8CxmKEeGCXPJzVJKbwA" name="BaseDaoEnabled" visibility="public" concurrency="concurrent"/>
+                <ownedOperation xmi:id="_eDvtABmKEeGCXPJzVJKbwA" name="setDao" visibility="public" concurrency="concurrent">
+                  <ownedParameter xmi:id="_eDvtCBmKEeGCXPJzVJKbwA" name="dao">
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eDvtCRmKEeGCXPJzVJKbwA" value="1"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_eDvtChmKEeGCXPJzVJKbwA" name="checkForDao" visibility="private" concurrency="concurrent" raisedException="_d_uvthmKEeGCXPJzVJKbwA"/>
+                <ownedOperation xmi:id="_eDvtCxmKEeGCXPJzVJKbwA" name="extractId" visibility="public" concurrency="concurrent" raisedException="_d_uvthmKEeGCXPJzVJKbwA"/>
+                <ownedOperation xmi:id="_eDvtDBmKEeGCXPJzVJKbwA" name="create" visibility="public" concurrency="concurrent" raisedException="_d_uvthmKEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:id="_eDvtDRmKEeGCXPJzVJKbwA" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eDvtDhmKEeGCXPJzVJKbwA" value="1"/>
+                  </ownedParameter>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_eF0woBmKEeGCXPJzVJKbwA" name="BaseDaoEnabled" isAbstract="true">
+                <eAnnotations xmi:id="_eF0woRmKEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd"/>
+                <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_eF-hoBmKEeGCXPJzVJKbwA" parameter="_eF-hoRmKEeGCXPJzVJKbwA _eF-hoxmKEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_eF-hoRmKEeGCXPJzVJKbwA" parameteredElement="_eF-hohmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_eF-hohmKEeGCXPJzVJKbwA" name="T" templateParameter="_eF-hoRmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_eF-hoxmKEeGCXPJzVJKbwA" parameteredElement="_eF-hpBmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_eF-hpBmKEeGCXPJzVJKbwA" name="ID" templateParameter="_eF-hoxmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                </ownedTemplateSignature>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_eF-hpRmKEeGCXPJzVJKbwA" name="BaseDaoEnabled" isAbstract="true">
+                <eAnnotations xmi:id="_eF-hphmKEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd"/>
+                <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_eF-hpxmKEeGCXPJzVJKbwA" parameter="_eF-hqBmKEeGCXPJzVJKbwA _eF-hqhmKEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_eF-hqBmKEeGCXPJzVJKbwA" parameteredElement="_eF-hqRmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_eF-hqRmKEeGCXPJzVJKbwA" name="T" templateParameter="_eF-hqBmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_eF-hqhmKEeGCXPJzVJKbwA" parameteredElement="_eF-hqxmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_eF-hqxmKEeGCXPJzVJKbwA" name="ID" templateParameter="_eF-hqhmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                </ownedTemplateSignature>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_eGISoRmKEeGCXPJzVJKbwA" name="BaseDaoEnabled" isAbstract="true">
+                <eAnnotations xmi:id="_eGISohmKEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd"/>
+                <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_eGISoxmKEeGCXPJzVJKbwA" parameter="_eGISpBmKEeGCXPJzVJKbwA _eGkXgRmKEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_eGISpBmKEeGCXPJzVJKbwA" parameteredElement="_eGkXgBmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_eGkXgBmKEeGCXPJzVJKbwA" name="T" templateParameter="_eGISpBmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_eGkXgRmKEeGCXPJzVJKbwA" parameteredElement="_eGkXghmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_eGkXghmKEeGCXPJzVJKbwA" name="ID" templateParameter="_eGkXgRmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                </ownedTemplateSignature>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_eGkXgxmKEeGCXPJzVJKbwA" name="BaseDaoEnabled" isAbstract="true">
+                <eAnnotations xmi:id="_eGkXhBmKEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd"/>
+                <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_eGkXhRmKEeGCXPJzVJKbwA" parameter="_eGkXhhmKEeGCXPJzVJKbwA _eGkXiBmKEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_eGkXhhmKEeGCXPJzVJKbwA" parameteredElement="_eGkXhxmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_eGkXhxmKEeGCXPJzVJKbwA" name="T" templateParameter="_eGkXhhmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_eGkXiBmKEeGCXPJzVJKbwA" parameteredElement="_eGkXiRmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_eGkXiRmKEeGCXPJzVJKbwA" name="ID" templateParameter="_eGkXiBmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                </ownedTemplateSignature>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_hDgpwBmKEeGCXPJzVJKbwA" name="BaseDaoEnabled" isAbstract="true">
+                <eAnnotations xmi:id="_hDgpwRmKEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd"/>
+                <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_hDgpwhmKEeGCXPJzVJKbwA" parameter="_hDgpwxmKEeGCXPJzVJKbwA _hDgpxRmKEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_hDgpwxmKEeGCXPJzVJKbwA" parameteredElement="_hDgpxBmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_hDgpxBmKEeGCXPJzVJKbwA" name="T" templateParameter="_hDgpwxmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_hDgpxRmKEeGCXPJzVJKbwA" parameteredElement="_hDgpxhmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_hDgpxhmKEeGCXPJzVJKbwA" name="ID" templateParameter="_hDgpxRmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                </ownedTemplateSignature>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_hDqawBmKEeGCXPJzVJKbwA" name="BaseDaoEnabled" isAbstract="true">
+                <eAnnotations xmi:id="_hDqawRmKEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd"/>
+                <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_hDqawhmKEeGCXPJzVJKbwA" parameter="_hDqawxmKEeGCXPJzVJKbwA _hDqaxRmKEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_hDqawxmKEeGCXPJzVJKbwA" parameteredElement="_hDqaxBmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_hDqaxBmKEeGCXPJzVJKbwA" name="T" templateParameter="_hDqawxmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_hDqaxRmKEeGCXPJzVJKbwA" parameteredElement="_hDqaxhmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_hDqaxhmKEeGCXPJzVJKbwA" name="ID" templateParameter="_hDqaxRmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                </ownedTemplateSignature>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_ssbNoBmKEeGCXPJzVJKbwA" name="BaseDaoEnabled" isAbstract="true">
+                <eAnnotations xmi:id="_ssbNoRmKEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd"/>
+                <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_ssbNohmKEeGCXPJzVJKbwA" parameter="_ssbNoxmKEeGCXPJzVJKbwA _ssbNpRmKEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_ssbNoxmKEeGCXPJzVJKbwA" parameteredElement="_ssbNpBmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_ssbNpBmKEeGCXPJzVJKbwA" name="T" templateParameter="_ssbNoxmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_ssbNpRmKEeGCXPJzVJKbwA" parameteredElement="_ssbNphmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_ssbNphmKEeGCXPJzVJKbwA" name="ID" templateParameter="_ssbNpRmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                </ownedTemplateSignature>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_sskXkBmKEeGCXPJzVJKbwA" name="BaseDaoEnabled" isAbstract="true">
+                <eAnnotations xmi:id="_sskXkRmKEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd"/>
+                <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_sskXkhmKEeGCXPJzVJKbwA" parameter="_sskXkxmKEeGCXPJzVJKbwA _sskXlRmKEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_sskXkxmKEeGCXPJzVJKbwA" parameteredElement="_sskXlBmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_sskXlBmKEeGCXPJzVJKbwA" name="T" templateParameter="_sskXkxmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_sskXlRmKEeGCXPJzVJKbwA" parameteredElement="_sskXlhmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_sskXlhmKEeGCXPJzVJKbwA" name="ID" templateParameter="_sskXlRmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                </ownedTemplateSignature>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_tk9YIBmKEeGCXPJzVJKbwA" name="BaseDaoEnabled" isAbstract="true">
+                <eAnnotations xmi:id="_tk9YIRmKEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd"/>
+                <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_tk9YIhmKEeGCXPJzVJKbwA" parameter="_tk9YIxmKEeGCXPJzVJKbwA _tk9YJRmKEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_tk9YIxmKEeGCXPJzVJKbwA" parameteredElement="_tk9YJBmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_tk9YJBmKEeGCXPJzVJKbwA" name="T" templateParameter="_tk9YIxmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_tk9YJRmKEeGCXPJzVJKbwA" parameteredElement="_tk9YJhmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_tk9YJhmKEeGCXPJzVJKbwA" name="ID" templateParameter="_tk9YJRmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                </ownedTemplateSignature>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_tlGiEBmKEeGCXPJzVJKbwA" name="BaseDaoEnabled" isAbstract="true">
+                <eAnnotations xmi:id="_tlGiERmKEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd"/>
+                <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_tlGiEhmKEeGCXPJzVJKbwA" parameter="_tlGiExmKEeGCXPJzVJKbwA _tlGiFRmKEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_tlGiExmKEeGCXPJzVJKbwA" parameteredElement="_tlGiFBmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_tlGiFBmKEeGCXPJzVJKbwA" name="T" templateParameter="_tlGiExmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_tlGiFRmKEeGCXPJzVJKbwA" parameteredElement="_tlGiFhmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_tlGiFhmKEeGCXPJzVJKbwA" name="ID" templateParameter="_tlGiFRmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                </ownedTemplateSignature>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_t0IckBmKEeGCXPJzVJKbwA" name="BaseDaoEnabled" isAbstract="true">
+                <eAnnotations xmi:id="_t0IckRmKEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd"/>
+                <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_t0IckhmKEeGCXPJzVJKbwA" parameter="_t0IckxmKEeGCXPJzVJKbwA _t0IclRmKEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_t0IckxmKEeGCXPJzVJKbwA" parameteredElement="_t0IclBmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_t0IclBmKEeGCXPJzVJKbwA" name="T" templateParameter="_t0IckxmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_t0IclRmKEeGCXPJzVJKbwA" parameteredElement="_t0IclhmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_t0IclhmKEeGCXPJzVJKbwA" name="ID" templateParameter="_t0IclRmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                </ownedTemplateSignature>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_t0SNkBmKEeGCXPJzVJKbwA" name="BaseDaoEnabled" isAbstract="true">
+                <eAnnotations xmi:id="_t0SNkRmKEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd"/>
+                <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_t0SNkhmKEeGCXPJzVJKbwA" parameter="_t0SNkxmKEeGCXPJzVJKbwA _t0SNlRmKEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_t0SNkxmKEeGCXPJzVJKbwA" parameteredElement="_t0SNlBmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_t0SNlBmKEeGCXPJzVJKbwA" name="T" templateParameter="_t0SNkxmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_t0SNlRmKEeGCXPJzVJKbwA" parameteredElement="_t0SNlhmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_t0SNlhmKEeGCXPJzVJKbwA" name="ID" templateParameter="_t0SNlRmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                </ownedTemplateSignature>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_t9WqABmKEeGCXPJzVJKbwA" name="BaseDaoEnabled" isAbstract="true">
+                <eAnnotations xmi:id="_t9WqARmKEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd"/>
+                <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_t9WqAhmKEeGCXPJzVJKbwA" parameter="_t9WqAxmKEeGCXPJzVJKbwA _t9WqBRmKEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_t9WqAxmKEeGCXPJzVJKbwA" parameteredElement="_t9WqBBmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_t9WqBBmKEeGCXPJzVJKbwA" name="T" templateParameter="_t9WqAxmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_t9WqBRmKEeGCXPJzVJKbwA" parameteredElement="_t9WqBhmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_t9WqBhmKEeGCXPJzVJKbwA" name="ID" templateParameter="_t9WqBRmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                </ownedTemplateSignature>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_t9WqBxmKEeGCXPJzVJKbwA" name="BaseDaoEnabled" isAbstract="true">
+                <eAnnotations xmi:id="_t9gbABmKEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd"/>
+                <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_t9gbARmKEeGCXPJzVJKbwA" parameter="_t9gbAhmKEeGCXPJzVJKbwA _t9gbBBmKEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_t9gbAhmKEeGCXPJzVJKbwA" parameteredElement="_t9gbAxmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_t9gbAxmKEeGCXPJzVJKbwA" name="T" templateParameter="_t9gbAhmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_t9gbBBmKEeGCXPJzVJKbwA" parameteredElement="_t9gbBRmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_t9gbBRmKEeGCXPJzVJKbwA" name="ID" templateParameter="_t9gbBBmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                </ownedTemplateSignature>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_uMrfcBmKEeGCXPJzVJKbwA" name="BaseDaoEnabled" isAbstract="true">
+                <eAnnotations xmi:id="_uMrfcRmKEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd"/>
+                <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_uMrfchmKEeGCXPJzVJKbwA" parameter="_uMrfcxmKEeGCXPJzVJKbwA _uM1QcRmKEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_uMrfcxmKEeGCXPJzVJKbwA" parameteredElement="_uM1QcBmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_uM1QcBmKEeGCXPJzVJKbwA" name="T" templateParameter="_uMrfcxmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_uM1QcRmKEeGCXPJzVJKbwA" parameteredElement="_uM1QchmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_uM1QchmKEeGCXPJzVJKbwA" name="ID" templateParameter="_uM1QcRmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                </ownedTemplateSignature>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_uM1QcxmKEeGCXPJzVJKbwA" name="BaseDaoEnabled" isAbstract="true">
+                <eAnnotations xmi:id="_uM1QdBmKEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd"/>
+                <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_uM1QdRmKEeGCXPJzVJKbwA" parameter="_uM1QdhmKEeGCXPJzVJKbwA _uM-aYBmKEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_uM1QdhmKEeGCXPJzVJKbwA" parameteredElement="_uM1QdxmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_uM1QdxmKEeGCXPJzVJKbwA" name="T" templateParameter="_uM1QdhmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_uM-aYBmKEeGCXPJzVJKbwA" parameteredElement="_uM-aYRmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_uM-aYRmKEeGCXPJzVJKbwA" name="ID" templateParameter="_uM-aYBmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                </ownedTemplateSignature>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_8SGiABmKEeGCXPJzVJKbwA" name="BaseDaoEnabled" isAbstract="true">
+                <eAnnotations xmi:id="_8SGiARmKEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd"/>
+                <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_8SGiAhmKEeGCXPJzVJKbwA" parameter="_8SGiAxmKEeGCXPJzVJKbwA _8SGiBRmKEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_8SGiAxmKEeGCXPJzVJKbwA" parameteredElement="_8SGiBBmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_8SGiBBmKEeGCXPJzVJKbwA" name="T" templateParameter="_8SGiAxmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_8SGiBRmKEeGCXPJzVJKbwA" parameteredElement="_8SGiBhmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_8SGiBhmKEeGCXPJzVJKbwA" name="ID" templateParameter="_8SGiBRmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                </ownedTemplateSignature>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_8SPr8BmKEeGCXPJzVJKbwA" name="BaseDaoEnabled" isAbstract="true">
+                <eAnnotations xmi:id="_8SPr8RmKEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd"/>
+                <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_8SPr8hmKEeGCXPJzVJKbwA" parameter="_8SPr8xmKEeGCXPJzVJKbwA _8SPr9RmKEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_8SPr8xmKEeGCXPJzVJKbwA" parameteredElement="_8SPr9BmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_8SPr9BmKEeGCXPJzVJKbwA" name="T" templateParameter="_8SPr8xmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_8SPr9RmKEeGCXPJzVJKbwA" parameteredElement="_8SPr9hmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_8SPr9hmKEeGCXPJzVJKbwA" name="ID" templateParameter="_8SPr9RmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                </ownedTemplateSignature>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_8Sim4BmKEeGCXPJzVJKbwA" name="BaseDaoEnabled" isAbstract="true">
+                <eAnnotations xmi:id="_8Sim4RmKEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd"/>
+                <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_8Sim4hmKEeGCXPJzVJKbwA" parameter="_8Sim4xmKEeGCXPJzVJKbwA _8Sim5RmKEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_8Sim4xmKEeGCXPJzVJKbwA" parameteredElement="_8Sim5BmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_8Sim5BmKEeGCXPJzVJKbwA" name="T" templateParameter="_8Sim4xmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_8Sim5RmKEeGCXPJzVJKbwA" parameteredElement="_8Sim5hmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_8Sim5hmKEeGCXPJzVJKbwA" name="ID" templateParameter="_8Sim5RmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                </ownedTemplateSignature>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_8Sim5xmKEeGCXPJzVJKbwA" name="BaseDaoEnabled" isAbstract="true">
+                <eAnnotations xmi:id="_8Sim6BmKEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd"/>
+                <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_8Sim6RmKEeGCXPJzVJKbwA" parameter="_8Sim6hmKEeGCXPJzVJKbwA _8Sim7BmKEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_8Sim6hmKEeGCXPJzVJKbwA" parameteredElement="_8Sim6xmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_8Sim6xmKEeGCXPJzVJKbwA" name="T" templateParameter="_8Sim6hmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_8Sim7BmKEeGCXPJzVJKbwA" parameteredElement="_8Sim7RmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_8Sim7RmKEeGCXPJzVJKbwA" name="ID" templateParameter="_8Sim7BmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                </ownedTemplateSignature>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_8b6lUBmKEeGCXPJzVJKbwA" name="BaseDaoEnabled" isAbstract="true">
+                <eAnnotations xmi:id="_8b6lURmKEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd"/>
+                <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_8b6lUhmKEeGCXPJzVJKbwA" parameter="_8b6lUxmKEeGCXPJzVJKbwA _8b6lVRmKEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_8b6lUxmKEeGCXPJzVJKbwA" parameteredElement="_8b6lVBmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_8b6lVBmKEeGCXPJzVJKbwA" name="T" templateParameter="_8b6lUxmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_8b6lVRmKEeGCXPJzVJKbwA" parameteredElement="_8b6lVhmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_8b6lVhmKEeGCXPJzVJKbwA" name="ID" templateParameter="_8b6lVRmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                </ownedTemplateSignature>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_8b6lVxmKEeGCXPJzVJKbwA" name="BaseDaoEnabled" isAbstract="true">
+                <eAnnotations xmi:id="_8b6lWBmKEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd"/>
+                <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_8b6lWRmKEeGCXPJzVJKbwA" parameter="_8b6lWhmKEeGCXPJzVJKbwA _8b6lXBmKEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_8b6lWhmKEeGCXPJzVJKbwA" parameteredElement="_8b6lWxmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_8b6lWxmKEeGCXPJzVJKbwA" name="T" templateParameter="_8b6lWhmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_8b6lXBmKEeGCXPJzVJKbwA" parameteredElement="_8b6lXRmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_8b6lXRmKEeGCXPJzVJKbwA" name="ID" templateParameter="_8b6lXBmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                </ownedTemplateSignature>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_OfJEwBmMEeGCXPJzVJKbwA" name="BaseDaoEnabled" isAbstract="true">
+                <eAnnotations xmi:id="_OfJEwRmMEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd"/>
+                <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_OfJEwhmMEeGCXPJzVJKbwA" parameter="_OfJEwxmMEeGCXPJzVJKbwA _OfJExRmMEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_OfJEwxmMEeGCXPJzVJKbwA" parameteredElement="_OfJExBmMEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_OfJExBmMEeGCXPJzVJKbwA" name="T" templateParameter="_OfJEwxmMEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_OfJExRmMEeGCXPJzVJKbwA" parameteredElement="_OfJExhmMEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_OfJExhmMEeGCXPJzVJKbwA" name="ID" templateParameter="_OfJExRmMEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                </ownedTemplateSignature>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_OfSOsBmMEeGCXPJzVJKbwA" name="BaseDaoEnabled" isAbstract="true">
+                <eAnnotations xmi:id="_OfSOsRmMEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd"/>
+                <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_OfSOshmMEeGCXPJzVJKbwA" parameter="_OfSOsxmMEeGCXPJzVJKbwA _OfSOtRmMEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_OfSOsxmMEeGCXPJzVJKbwA" parameteredElement="_OfSOtBmMEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_OfSOtBmMEeGCXPJzVJKbwA" name="T" templateParameter="_OfSOsxmMEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_OfSOtRmMEeGCXPJzVJKbwA" parameteredElement="_OfSOthmMEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_OfSOthmMEeGCXPJzVJKbwA" name="ID" templateParameter="_OfSOtRmMEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                </ownedTemplateSignature>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_sHXKABmQEeGCXPJzVJKbwA" name="BaseDaoEnabled" isAbstract="true">
+                <eAnnotations xmi:id="_sHXKARmQEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd"/>
+                <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_sHXKAhmQEeGCXPJzVJKbwA" parameter="_sHXKAxmQEeGCXPJzVJKbwA _sHXKBRmQEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_sHXKAxmQEeGCXPJzVJKbwA" parameteredElement="_sHXKBBmQEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_sHXKBBmQEeGCXPJzVJKbwA" name="T" templateParameter="_sHXKAxmQEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_sHXKBRmQEeGCXPJzVJKbwA" parameteredElement="_sHXKBhmQEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_sHXKBhmQEeGCXPJzVJKbwA" name="ID" templateParameter="_sHXKBRmQEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                </ownedTemplateSignature>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_sHdQoBmQEeGCXPJzVJKbwA" name="BaseDaoEnabled" isAbstract="true">
+                <eAnnotations xmi:id="_sHdQoRmQEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd"/>
+                <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_sHdQohmQEeGCXPJzVJKbwA" parameter="_sHdQoxmQEeGCXPJzVJKbwA _sHdQpRmQEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_sHdQoxmQEeGCXPJzVJKbwA" parameteredElement="_sHdQpBmQEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_sHdQpBmQEeGCXPJzVJKbwA" name="T" templateParameter="_sHdQoxmQEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_sHdQpRmQEeGCXPJzVJKbwA" parameteredElement="_sHdQphmQEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_sHdQphmQEeGCXPJzVJKbwA" name="ID" templateParameter="_sHdQpRmQEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                </ownedTemplateSignature>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_sHpd4BmQEeGCXPJzVJKbwA" name="BaseDaoEnabled" isAbstract="true">
+                <eAnnotations xmi:id="_sHpd4RmQEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd"/>
+                <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_sHpd4hmQEeGCXPJzVJKbwA" parameter="_sHpd4xmQEeGCXPJzVJKbwA _sHpd5RmQEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_sHpd4xmQEeGCXPJzVJKbwA" parameteredElement="_sHpd5BmQEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_sHpd5BmQEeGCXPJzVJKbwA" name="T" templateParameter="_sHpd4xmQEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_sHpd5RmQEeGCXPJzVJKbwA" parameteredElement="_sHpd5hmQEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_sHpd5hmQEeGCXPJzVJKbwA" name="ID" templateParameter="_sHpd5RmQEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                </ownedTemplateSignature>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_sHvkgBmQEeGCXPJzVJKbwA" name="BaseDaoEnabled" isAbstract="true">
+                <eAnnotations xmi:id="_sHvkgRmQEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd"/>
+                <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_sHvkghmQEeGCXPJzVJKbwA" parameter="_sHvkgxmQEeGCXPJzVJKbwA _sHvkhRmQEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_sHvkgxmQEeGCXPJzVJKbwA" parameteredElement="_sHvkhBmQEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_sHvkhBmQEeGCXPJzVJKbwA" name="T" templateParameter="_sHvkgxmQEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_sHvkhRmQEeGCXPJzVJKbwA" parameteredElement="_sHvkhhmQEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_sHvkhhmQEeGCXPJzVJKbwA" name="ID" templateParameter="_sHvkhRmQEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                </ownedTemplateSignature>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_c4PXoBmUEeGCXPJzVJKbwA" name="BaseDaoEnabled" isAbstract="true">
+                <eAnnotations xmi:id="_c4PXoRmUEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd"/>
+                <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_c4PXohmUEeGCXPJzVJKbwA" parameter="_c4PXoxmUEeGCXPJzVJKbwA _c4PXpRmUEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_c4PXoxmUEeGCXPJzVJKbwA" parameteredElement="_c4PXpBmUEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_c4PXpBmUEeGCXPJzVJKbwA" name="T" templateParameter="_c4PXoxmUEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_c4PXpRmUEeGCXPJzVJKbwA" parameteredElement="_c4PXphmUEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_c4PXphmUEeGCXPJzVJKbwA" name="ID" templateParameter="_c4PXpRmUEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                </ownedTemplateSignature>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_c4ZIoBmUEeGCXPJzVJKbwA" name="BaseDaoEnabled" isAbstract="true">
+                <eAnnotations xmi:id="_c4ZIoRmUEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd"/>
+                <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_c4ZIohmUEeGCXPJzVJKbwA" parameter="_c4ZIoxmUEeGCXPJzVJKbwA _c4ZIpRmUEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_c4ZIoxmUEeGCXPJzVJKbwA" parameteredElement="_c4ZIpBmUEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_c4ZIpBmUEeGCXPJzVJKbwA" name="T" templateParameter="_c4ZIoxmUEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_c4ZIpRmUEeGCXPJzVJKbwA" parameteredElement="_c4ZIphmUEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_c4ZIphmUEeGCXPJzVJKbwA" name="ID" templateParameter="_c4ZIpRmUEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                </ownedTemplateSignature>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_c4iSkRmUEeGCXPJzVJKbwA" name="BaseDaoEnabled" isAbstract="true">
+                <eAnnotations xmi:id="_c4iSkhmUEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd"/>
+                <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_c4iSkxmUEeGCXPJzVJKbwA" parameter="_c4iSlBmUEeGCXPJzVJKbwA _c4iSlhmUEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_c4iSlBmUEeGCXPJzVJKbwA" parameteredElement="_c4iSlRmUEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_c4iSlRmUEeGCXPJzVJKbwA" name="T" templateParameter="_c4iSlBmUEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_c4iSlhmUEeGCXPJzVJKbwA" parameteredElement="_c4iSlxmUEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_c4iSlxmUEeGCXPJzVJKbwA" name="ID" templateParameter="_c4iSlhmUEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                </ownedTemplateSignature>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_c4sDkBmUEeGCXPJzVJKbwA" name="BaseDaoEnabled" isAbstract="true">
+                <eAnnotations xmi:id="_c4sDkRmUEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd"/>
+                <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_c4sDkhmUEeGCXPJzVJKbwA" parameter="_c4sDkxmUEeGCXPJzVJKbwA _c4sDlRmUEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_c4sDkxmUEeGCXPJzVJKbwA" parameteredElement="_c4sDlBmUEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_c4sDlBmUEeGCXPJzVJKbwA" name="T" templateParameter="_c4sDkxmUEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_c4sDlRmUEeGCXPJzVJKbwA" parameteredElement="_c4sDlhmUEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_c4sDlhmUEeGCXPJzVJKbwA" name="ID" templateParameter="_c4sDlRmUEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                </ownedTemplateSignature>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_i-Hd0BmhEeGCXPJzVJKbwA" name="BaseDaoEnabled" isAbstract="true">
+                <eAnnotations xmi:id="_i-Hd0RmhEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd"/>
+                <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_i-Hd0hmhEeGCXPJzVJKbwA" parameter="_i-Hd0xmhEeGCXPJzVJKbwA _i-Hd1RmhEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_i-Hd0xmhEeGCXPJzVJKbwA" parameteredElement="_i-Hd1BmhEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_i-Hd1BmhEeGCXPJzVJKbwA" name="T" templateParameter="_i-Hd0xmhEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_i-Hd1RmhEeGCXPJzVJKbwA" parameteredElement="_i-Hd1hmhEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_i-Hd1hmhEeGCXPJzVJKbwA" name="ID" templateParameter="_i-Hd1RmhEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                </ownedTemplateSignature>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_i-Hd1xmhEeGCXPJzVJKbwA" name="BaseDaoEnabled" isAbstract="true">
+                <eAnnotations xmi:id="_i-Hd2BmhEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd"/>
+                <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_i-Hd2RmhEeGCXPJzVJKbwA" parameter="_i-NkcBmhEeGCXPJzVJKbwA _i-NkchmhEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_i-NkcBmhEeGCXPJzVJKbwA" parameteredElement="_i-NkcRmhEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_i-NkcRmhEeGCXPJzVJKbwA" name="T" templateParameter="_i-NkcBmhEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_i-NkchmhEeGCXPJzVJKbwA" parameteredElement="_i-NkcxmhEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_i-NkcxmhEeGCXPJzVJKbwA" name="ID" templateParameter="_i-NkchmhEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                </ownedTemplateSignature>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_i-ZxsBmhEeGCXPJzVJKbwA" name="BaseDaoEnabled" isAbstract="true">
+                <eAnnotations xmi:id="_i-ZxsRmhEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd"/>
+                <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_i-ZxshmhEeGCXPJzVJKbwA" parameter="_i-ZxsxmhEeGCXPJzVJKbwA _i-ZxtRmhEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_i-ZxsxmhEeGCXPJzVJKbwA" parameteredElement="_i-ZxtBmhEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_i-ZxtBmhEeGCXPJzVJKbwA" name="T" templateParameter="_i-ZxsxmhEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_i-ZxtRmhEeGCXPJzVJKbwA" parameteredElement="_i-ZxthmhEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_i-ZxthmhEeGCXPJzVJKbwA" name="ID" templateParameter="_i-ZxtRmhEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                </ownedTemplateSignature>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_i-f4UBmhEeGCXPJzVJKbwA" name="BaseDaoEnabled" isAbstract="true">
+                <eAnnotations xmi:id="_i-f4URmhEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd"/>
+                <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_i-f4UhmhEeGCXPJzVJKbwA" parameter="_i-f4UxmhEeGCXPJzVJKbwA _i-f4VRmhEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_i-f4UxmhEeGCXPJzVJKbwA" parameteredElement="_i-f4VBmhEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_i-f4VBmhEeGCXPJzVJKbwA" name="T" templateParameter="_i-f4UxmhEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_i-f4VRmhEeGCXPJzVJKbwA" parameteredElement="_i-f4VhmhEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_i-f4VhmhEeGCXPJzVJKbwA" name="ID" templateParameter="_i-f4VRmhEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                </ownedTemplateSignature>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_AiPisBmlEeGCXPJzVJKbwA" name="BaseDaoEnabled" isAbstract="true">
+                <eAnnotations xmi:id="_AiPisRmlEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd"/>
+                <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_AiPishmlEeGCXPJzVJKbwA" parameter="_AiPisxmlEeGCXPJzVJKbwA _AiPitRmlEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_AiPisxmlEeGCXPJzVJKbwA" parameteredElement="_AiPitBmlEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_AiPitBmlEeGCXPJzVJKbwA" name="T" templateParameter="_AiPisxmlEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_AiPitRmlEeGCXPJzVJKbwA" parameteredElement="_AiPithmlEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_AiPithmlEeGCXPJzVJKbwA" name="ID" templateParameter="_AiPitRmlEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                </ownedTemplateSignature>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_AiPitxmlEeGCXPJzVJKbwA" name="BaseDaoEnabled" isAbstract="true">
+                <eAnnotations xmi:id="_AiPiuBmlEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd"/>
+                <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_AiPiuRmlEeGCXPJzVJKbwA" parameter="_AiVpUBmlEeGCXPJzVJKbwA _AiVpUhmlEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_AiVpUBmlEeGCXPJzVJKbwA" parameteredElement="_AiVpURmlEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_AiVpURmlEeGCXPJzVJKbwA" name="T" templateParameter="_AiVpUBmlEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_AiVpUhmlEeGCXPJzVJKbwA" parameteredElement="_AiVpUxmlEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_AiVpUxmlEeGCXPJzVJKbwA" name="ID" templateParameter="_AiVpUhmlEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                </ownedTemplateSignature>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_Aih2kBmlEeGCXPJzVJKbwA" name="BaseDaoEnabled" isAbstract="true">
+                <eAnnotations xmi:id="_Aih2kRmlEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd"/>
+                <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_Aih2khmlEeGCXPJzVJKbwA" parameter="_Aih2kxmlEeGCXPJzVJKbwA _Aih2lRmlEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_Aih2kxmlEeGCXPJzVJKbwA" parameteredElement="_Aih2lBmlEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_Aih2lBmlEeGCXPJzVJKbwA" name="T" templateParameter="_Aih2kxmlEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_Aih2lRmlEeGCXPJzVJKbwA" parameteredElement="_Aih2lhmlEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_Aih2lhmlEeGCXPJzVJKbwA" name="ID" templateParameter="_Aih2lRmlEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                </ownedTemplateSignature>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_Aih2lxmlEeGCXPJzVJKbwA" name="BaseDaoEnabled" isAbstract="true">
+                <eAnnotations xmi:id="_Ain9MBmlEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd"/>
+                <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_Ain9MRmlEeGCXPJzVJKbwA" parameter="_Ain9MhmlEeGCXPJzVJKbwA _Ain9NBmlEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_Ain9MhmlEeGCXPJzVJKbwA" parameteredElement="_Ain9MxmlEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_Ain9MxmlEeGCXPJzVJKbwA" name="T" templateParameter="_Ain9MhmlEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_Ain9NBmlEeGCXPJzVJKbwA" parameteredElement="_Ain9NRmlEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_Ain9NRmlEeGCXPJzVJKbwA" name="ID" templateParameter="_Ain9NBmlEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                </ownedTemplateSignature>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_YRCL4BmoEeGCXPJzVJKbwA" name="BaseDaoEnabled" isAbstract="true">
+                <eAnnotations xmi:id="_YRCL4RmoEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd"/>
+                <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_YRCL4hmoEeGCXPJzVJKbwA" parameter="_YRCL4xmoEeGCXPJzVJKbwA _YRCL5RmoEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_YRCL4xmoEeGCXPJzVJKbwA" parameteredElement="_YRCL5BmoEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_YRCL5BmoEeGCXPJzVJKbwA" name="T" templateParameter="_YRCL4xmoEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_YRCL5RmoEeGCXPJzVJKbwA" parameteredElement="_YRCL5hmoEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_YRCL5hmoEeGCXPJzVJKbwA" name="ID" templateParameter="_YRCL5RmoEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                </ownedTemplateSignature>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_YRISgBmoEeGCXPJzVJKbwA" name="BaseDaoEnabled" isAbstract="true">
+                <eAnnotations xmi:id="_YRISgRmoEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd"/>
+                <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_YRISghmoEeGCXPJzVJKbwA" parameter="_YRISgxmoEeGCXPJzVJKbwA _YRIShRmoEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_YRISgxmoEeGCXPJzVJKbwA" parameteredElement="_YRIShBmoEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_YRIShBmoEeGCXPJzVJKbwA" name="T" templateParameter="_YRISgxmoEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_YRIShRmoEeGCXPJzVJKbwA" parameteredElement="_YRIShhmoEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_YRIShhmoEeGCXPJzVJKbwA" name="ID" templateParameter="_YRIShRmoEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                </ownedTemplateSignature>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_YRUfwRmoEeGCXPJzVJKbwA" name="BaseDaoEnabled" isAbstract="true">
+                <eAnnotations xmi:id="_YRUfwhmoEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd"/>
+                <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_YRUfwxmoEeGCXPJzVJKbwA" parameter="_YRUfxBmoEeGCXPJzVJKbwA _YRUfxhmoEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_YRUfxBmoEeGCXPJzVJKbwA" parameteredElement="_YRUfxRmoEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_YRUfxRmoEeGCXPJzVJKbwA" name="T" templateParameter="_YRUfxBmoEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_YRUfxhmoEeGCXPJzVJKbwA" parameteredElement="_YRamYBmoEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_YRamYBmoEeGCXPJzVJKbwA" name="ID" templateParameter="_YRUfxhmoEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                </ownedTemplateSignature>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_YRamYRmoEeGCXPJzVJKbwA" name="BaseDaoEnabled" isAbstract="true">
+                <eAnnotations xmi:id="_YRamYhmoEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd"/>
+                <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_YRamYxmoEeGCXPJzVJKbwA" parameter="_YRamZBmoEeGCXPJzVJKbwA _YRgtABmoEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_YRamZBmoEeGCXPJzVJKbwA" parameteredElement="_YRamZRmoEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_YRamZRmoEeGCXPJzVJKbwA" name="T" templateParameter="_YRamZBmoEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_YRgtABmoEeGCXPJzVJKbwA" parameteredElement="_YRgtARmoEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_YRgtARmoEeGCXPJzVJKbwA" name="ID" templateParameter="_YRgtABmoEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                </ownedTemplateSignature>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_0KJD8BmsEeGCXPJzVJKbwA" name="BaseDaoEnabled" isAbstract="true">
+                <eAnnotations xmi:id="_0KJD8RmsEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd"/>
+                <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_0KJD8hmsEeGCXPJzVJKbwA" parameter="_0KJD8xmsEeGCXPJzVJKbwA _0KS08BmsEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_0KJD8xmsEeGCXPJzVJKbwA" parameteredElement="_0KJD9BmsEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_0KJD9BmsEeGCXPJzVJKbwA" name="T" templateParameter="_0KJD8xmsEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_0KS08BmsEeGCXPJzVJKbwA" parameteredElement="_0KS08RmsEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_0KS08RmsEeGCXPJzVJKbwA" name="ID" templateParameter="_0KS08BmsEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                </ownedTemplateSignature>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_0KS08hmsEeGCXPJzVJKbwA" name="BaseDaoEnabled" isAbstract="true">
+                <eAnnotations xmi:id="_0KS08xmsEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd"/>
+                <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_0KS09BmsEeGCXPJzVJKbwA" parameter="_0KS09RmsEeGCXPJzVJKbwA _0KS09xmsEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_0KS09RmsEeGCXPJzVJKbwA" parameteredElement="_0KS09hmsEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_0KS09hmsEeGCXPJzVJKbwA" name="T" templateParameter="_0KS09RmsEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_0KS09xmsEeGCXPJzVJKbwA" parameteredElement="_0KS0-BmsEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_0KS0-BmsEeGCXPJzVJKbwA" name="ID" templateParameter="_0KS09xmsEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                </ownedTemplateSignature>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_0Kcl8RmsEeGCXPJzVJKbwA" name="BaseDaoEnabled" isAbstract="true">
+                <eAnnotations xmi:id="_0Kcl8hmsEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd"/>
+                <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_0Kcl8xmsEeGCXPJzVJKbwA" parameter="_0Kcl9BmsEeGCXPJzVJKbwA _0Kcl9hmsEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_0Kcl9BmsEeGCXPJzVJKbwA" parameteredElement="_0Kcl9RmsEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_0Kcl9RmsEeGCXPJzVJKbwA" name="T" templateParameter="_0Kcl9BmsEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_0Kcl9hmsEeGCXPJzVJKbwA" parameteredElement="_0Klv4BmsEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_0Klv4BmsEeGCXPJzVJKbwA" name="ID" templateParameter="_0Kcl9hmsEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                </ownedTemplateSignature>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_0Klv4RmsEeGCXPJzVJKbwA" name="BaseDaoEnabled" isAbstract="true">
+                <eAnnotations xmi:id="_0Klv4hmsEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd"/>
+                <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_0Klv4xmsEeGCXPJzVJKbwA" parameter="_0Klv5BmsEeGCXPJzVJKbwA _0Klv5hmsEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_0Klv5BmsEeGCXPJzVJKbwA" parameteredElement="_0Klv5RmsEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_0Klv5RmsEeGCXPJzVJKbwA" name="T" templateParameter="_0Klv5BmsEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_0Klv5hmsEeGCXPJzVJKbwA" parameteredElement="_0Klv5xmsEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_0Klv5xmsEeGCXPJzVJKbwA" name="ID" templateParameter="_0Klv5hmsEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                </ownedTemplateSignature>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_ywL7EBozEeGdMrbxvCzFIw" name="BaseDaoEnabled" isAbstract="true">
+                <eAnnotations xmi:id="_ywL7ERozEeGdMrbxvCzFIw" source="DataAccessLib/models/entity.ucd"/>
+                <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_ywL7EhozEeGdMrbxvCzFIw" parameter="_ywL7ExozEeGdMrbxvCzFIw _ywVsERozEeGdMrbxvCzFIw">
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_ywL7ExozEeGdMrbxvCzFIw" parameteredElement="_ywVsEBozEeGdMrbxvCzFIw">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_ywVsEBozEeGdMrbxvCzFIw" name="T" templateParameter="_ywL7ExozEeGdMrbxvCzFIw"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_ywVsERozEeGdMrbxvCzFIw" parameteredElement="_ywVsEhozEeGdMrbxvCzFIw">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_ywVsEhozEeGdMrbxvCzFIw" name="ID" templateParameter="_ywVsERozEeGdMrbxvCzFIw"/>
+                  </ownedParameter>
+                </ownedTemplateSignature>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_ywVsExozEeGdMrbxvCzFIw" name="BaseDaoEnabled" isAbstract="true">
+                <eAnnotations xmi:id="_ywVsFBozEeGdMrbxvCzFIw" source="DataAccessLib/models/entity.ucd"/>
+                <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_ywVsFRozEeGdMrbxvCzFIw" parameter="_ywVsFhozEeGdMrbxvCzFIw _ywVsGBozEeGdMrbxvCzFIw">
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_ywVsFhozEeGdMrbxvCzFIw" parameteredElement="_ywVsFxozEeGdMrbxvCzFIw">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_ywVsFxozEeGdMrbxvCzFIw" name="T" templateParameter="_ywVsFhozEeGdMrbxvCzFIw"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_ywVsGBozEeGdMrbxvCzFIw" parameteredElement="_ywVsGRozEeGdMrbxvCzFIw">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_ywVsGRozEeGdMrbxvCzFIw" name="ID" templateParameter="_ywVsGBozEeGdMrbxvCzFIw"/>
+                  </ownedParameter>
+                </ownedTemplateSignature>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_ywe2ARozEeGdMrbxvCzFIw" name="BaseDaoEnabled" isAbstract="true">
+                <eAnnotations xmi:id="_ywonABozEeGdMrbxvCzFIw" source="DataAccessLib/models/entity.ucd"/>
+                <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_ywonARozEeGdMrbxvCzFIw" parameter="_ywonAhozEeGdMrbxvCzFIw _ywonBBozEeGdMrbxvCzFIw">
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_ywonAhozEeGdMrbxvCzFIw" parameteredElement="_ywonAxozEeGdMrbxvCzFIw">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_ywonAxozEeGdMrbxvCzFIw" name="T" templateParameter="_ywonAhozEeGdMrbxvCzFIw"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_ywonBBozEeGdMrbxvCzFIw" parameteredElement="_ywonBRozEeGdMrbxvCzFIw">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_ywonBRozEeGdMrbxvCzFIw" name="ID" templateParameter="_ywonBBozEeGdMrbxvCzFIw"/>
+                  </ownedParameter>
+                </ownedTemplateSignature>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_ywonBhozEeGdMrbxvCzFIw" name="BaseDaoEnabled" isAbstract="true">
+                <eAnnotations xmi:id="_ywonBxozEeGdMrbxvCzFIw" source="DataAccessLib/models/entity.ucd"/>
+                <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_ywonCBozEeGdMrbxvCzFIw" parameter="_ywonCRozEeGdMrbxvCzFIw _ywonCxozEeGdMrbxvCzFIw">
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_ywonCRozEeGdMrbxvCzFIw" parameteredElement="_ywonChozEeGdMrbxvCzFIw">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_ywonChozEeGdMrbxvCzFIw" name="T" templateParameter="_ywonCRozEeGdMrbxvCzFIw"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_ywonCxozEeGdMrbxvCzFIw" parameteredElement="_ywonDBozEeGdMrbxvCzFIw">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_ywonDBozEeGdMrbxvCzFIw" name="ID" templateParameter="_ywonCxozEeGdMrbxvCzFIw"/>
+                  </ownedParameter>
+                </ownedTemplateSignature>
+              </packagedElement>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Package" xmi:id="_d_b0wxmKEeGCXPJzVJKbwA" name="dao">
+              <eAnnotations xmi:id="_d_k-sRmKEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd" references="_d_k-sBmKEeGCXPJzVJKbwA _eABqohmKEeGCXPJzVJKbwA _eAeWkBmKEeGCXPJzVJKbwA _eAeWmRmKEeGCXPJzVJKbwA _eAnghhmKEeGCXPJzVJKbwA _eBqpYxmKEeGCXPJzVJKbwA _eBzzUBmKEeGCXPJzVJKbwA _eB9kVBmKEeGCXPJzVJKbwA _eB9kWxmKEeGCXPJzVJKbwA _eB9kYhmKEeGCXPJzVJKbwA _eDcyEBmKEeGCXPJzVJKbwA _eDvtARmKEeGCXPJzVJKbwA _eD5eABmKEeGCXPJzVJKbwA _eD5eBxmKEeGCXPJzVJKbwA _eECn8BmKEeGCXPJzVJKbwA"/>
+              <packagedElement xmi:type="uml:Interface" xmi:id="_d_k-sBmKEeGCXPJzVJKbwA" name="Dao" isAbstract="true">
+                <eAnnotations xmi:id="_d_k-shmKEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd"/>
+                <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_d_k-sxmKEeGCXPJzVJKbwA" parameter="_d_k-tBmKEeGCXPJzVJKbwA _d_k-thmKEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_d_k-tBmKEeGCXPJzVJKbwA" parameteredElement="_d_k-tRmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_d_k-tRmKEeGCXPJzVJKbwA" name="T" templateParameter="_d_k-tBmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_d_k-thmKEeGCXPJzVJKbwA" parameteredElement="_d_k-txmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_d_k-txmKEeGCXPJzVJKbwA" name="ID" templateParameter="_d_k-thmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                </ownedTemplateSignature>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Interface" xmi:id="_eABqohmKEeGCXPJzVJKbwA" name="Dao" isAbstract="true">
+                <eAnnotations xmi:id="_eABqoxmKEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd"/>
+                <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_eABqpBmKEeGCXPJzVJKbwA" parameter="_eABqpRmKEeGCXPJzVJKbwA _eABqpxmKEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_eABqpRmKEeGCXPJzVJKbwA" parameteredElement="_eABqphmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_eABqphmKEeGCXPJzVJKbwA" name="T" templateParameter="_eABqpRmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_eABqpxmKEeGCXPJzVJKbwA" parameteredElement="_eABqqBmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_eABqqBmKEeGCXPJzVJKbwA" name="ID" templateParameter="_eABqpxmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                </ownedTemplateSignature>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Interface" xmi:id="_eAeWkBmKEeGCXPJzVJKbwA" name="Dao" isAbstract="true">
+                <eAnnotations xmi:id="_eAeWkRmKEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd"/>
+                <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_eAeWkhmKEeGCXPJzVJKbwA" parameter="_eAeWkxmKEeGCXPJzVJKbwA _eAeWlRmKEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_eAeWkxmKEeGCXPJzVJKbwA" parameteredElement="_eAeWlBmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_eAeWlBmKEeGCXPJzVJKbwA" name="T" templateParameter="_eAeWkxmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_eAeWlRmKEeGCXPJzVJKbwA" parameteredElement="_eAeWlhmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_eAeWlhmKEeGCXPJzVJKbwA" name="ID" templateParameter="_eAeWlRmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                </ownedTemplateSignature>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Interface" xmi:id="_eAeWmRmKEeGCXPJzVJKbwA" name="Dao" isAbstract="true">
+                <eAnnotations xmi:id="_eAnggBmKEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd"/>
+                <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_eAnggRmKEeGCXPJzVJKbwA" parameter="_eAngghmKEeGCXPJzVJKbwA _eAnghBmKEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_eAngghmKEeGCXPJzVJKbwA" parameteredElement="_eAnggxmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_eAnggxmKEeGCXPJzVJKbwA" name="T" templateParameter="_eAngghmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_eAnghBmKEeGCXPJzVJKbwA" parameteredElement="_eAnghRmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_eAnghRmKEeGCXPJzVJKbwA" name="ID" templateParameter="_eAnghBmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                </ownedTemplateSignature>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Interface" xmi:id="_eAnghhmKEeGCXPJzVJKbwA" name="Dao" isAbstract="true">
+                <eAnnotations xmi:id="_eAnghxmKEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd"/>
+                <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_eAngiBmKEeGCXPJzVJKbwA" parameter="_eAngiRmKEeGCXPJzVJKbwA _eAngixmKEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_eAngiRmKEeGCXPJzVJKbwA" parameteredElement="_eAngihmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_eAngihmKEeGCXPJzVJKbwA" name="T" templateParameter="_eAngiRmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_eAngixmKEeGCXPJzVJKbwA" parameteredElement="_eAngjBmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_eAngjBmKEeGCXPJzVJKbwA" name="ID" templateParameter="_eAngixmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                </ownedTemplateSignature>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Interface" xmi:id="_eBqpYxmKEeGCXPJzVJKbwA" name="Dao" isAbstract="true">
+                <eAnnotations xmi:id="_eBqpZBmKEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd"/>
+                <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_eBqpZRmKEeGCXPJzVJKbwA" parameter="_eBqpZhmKEeGCXPJzVJKbwA _eBqpaBmKEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_eBqpZhmKEeGCXPJzVJKbwA" parameteredElement="_eBqpZxmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_eBqpZxmKEeGCXPJzVJKbwA" name="T" templateParameter="_eBqpZhmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_eBqpaBmKEeGCXPJzVJKbwA" parameteredElement="_eBqpaRmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_eBqpaRmKEeGCXPJzVJKbwA" name="ID" templateParameter="_eBqpaBmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                </ownedTemplateSignature>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Interface" xmi:id="_eBzzUBmKEeGCXPJzVJKbwA" name="Dao" isAbstract="true">
+                <eAnnotations xmi:id="_eBzzURmKEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd"/>
+                <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_eBzzUhmKEeGCXPJzVJKbwA" parameter="_eBzzUxmKEeGCXPJzVJKbwA _eBzzVRmKEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_eBzzUxmKEeGCXPJzVJKbwA" parameteredElement="_eBzzVBmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_eBzzVBmKEeGCXPJzVJKbwA" name="T" templateParameter="_eBzzUxmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_eBzzVRmKEeGCXPJzVJKbwA" parameteredElement="_eBzzVhmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_eBzzVhmKEeGCXPJzVJKbwA" name="ID" templateParameter="_eBzzVRmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                </ownedTemplateSignature>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Interface" xmi:id="_eB9kVBmKEeGCXPJzVJKbwA" name="Dao" isAbstract="true">
+                <eAnnotations xmi:id="_eB9kVRmKEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd"/>
+                <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_eB9kVhmKEeGCXPJzVJKbwA" parameter="_eB9kVxmKEeGCXPJzVJKbwA _eB9kWRmKEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_eB9kVxmKEeGCXPJzVJKbwA" parameteredElement="_eB9kWBmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_eB9kWBmKEeGCXPJzVJKbwA" name="T" templateParameter="_eB9kVxmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_eB9kWRmKEeGCXPJzVJKbwA" parameteredElement="_eB9kWhmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_eB9kWhmKEeGCXPJzVJKbwA" name="ID" templateParameter="_eB9kWRmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                </ownedTemplateSignature>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Interface" xmi:id="_eB9kWxmKEeGCXPJzVJKbwA" name="Dao" isAbstract="true">
+                <eAnnotations xmi:id="_eB9kXBmKEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd"/>
+                <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_eB9kXRmKEeGCXPJzVJKbwA" parameter="_eB9kXhmKEeGCXPJzVJKbwA _eB9kYBmKEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_eB9kXhmKEeGCXPJzVJKbwA" parameteredElement="_eB9kXxmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_eB9kXxmKEeGCXPJzVJKbwA" name="T" templateParameter="_eB9kXhmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_eB9kYBmKEeGCXPJzVJKbwA" parameteredElement="_eB9kYRmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_eB9kYRmKEeGCXPJzVJKbwA" name="ID" templateParameter="_eB9kYBmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                </ownedTemplateSignature>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Interface" xmi:id="_eB9kYhmKEeGCXPJzVJKbwA" name="Dao" isAbstract="true">
+                <eAnnotations xmi:id="_eB9kYxmKEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd"/>
+                <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_eCGuQBmKEeGCXPJzVJKbwA" parameter="_eCGuQRmKEeGCXPJzVJKbwA _eCGuQxmKEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_eCGuQRmKEeGCXPJzVJKbwA" parameteredElement="_eCGuQhmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_eCGuQhmKEeGCXPJzVJKbwA" name="T" templateParameter="_eCGuQRmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_eCGuQxmKEeGCXPJzVJKbwA" parameteredElement="_eCGuRBmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_eCGuRBmKEeGCXPJzVJKbwA" name="ID" templateParameter="_eCGuQxmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                </ownedTemplateSignature>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Interface" xmi:id="_eDcyEBmKEeGCXPJzVJKbwA" name="Dao" isAbstract="true">
+                <eAnnotations xmi:id="_eDcyERmKEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd"/>
+                <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_eDcyEhmKEeGCXPJzVJKbwA" parameter="_eDcyExmKEeGCXPJzVJKbwA _eDcyFRmKEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_eDcyExmKEeGCXPJzVJKbwA" parameteredElement="_eDcyFBmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_eDcyFBmKEeGCXPJzVJKbwA" name="T" templateParameter="_eDcyExmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_eDcyFRmKEeGCXPJzVJKbwA" parameteredElement="_eDcyFhmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_eDcyFhmKEeGCXPJzVJKbwA" name="ID" templateParameter="_eDcyFRmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                </ownedTemplateSignature>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Interface" xmi:id="_eDvtARmKEeGCXPJzVJKbwA" name="Dao" isAbstract="true">
+                <eAnnotations xmi:id="_eDvtAhmKEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd"/>
+                <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_eDvtAxmKEeGCXPJzVJKbwA" parameter="_eDvtBBmKEeGCXPJzVJKbwA _eDvtBhmKEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_eDvtBBmKEeGCXPJzVJKbwA" parameteredElement="_eDvtBRmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_eDvtBRmKEeGCXPJzVJKbwA" name="T" templateParameter="_eDvtBBmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_eDvtBhmKEeGCXPJzVJKbwA" parameteredElement="_eDvtBxmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_eDvtBxmKEeGCXPJzVJKbwA" name="ID" templateParameter="_eDvtBhmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                </ownedTemplateSignature>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Interface" xmi:id="_eD5eABmKEeGCXPJzVJKbwA" name="Dao" isAbstract="true">
+                <eAnnotations xmi:id="_eD5eARmKEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd"/>
+                <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_eD5eAhmKEeGCXPJzVJKbwA" parameter="_eD5eAxmKEeGCXPJzVJKbwA _eD5eBRmKEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_eD5eAxmKEeGCXPJzVJKbwA" parameteredElement="_eD5eBBmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_eD5eBBmKEeGCXPJzVJKbwA" name="T" templateParameter="_eD5eAxmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_eD5eBRmKEeGCXPJzVJKbwA" parameteredElement="_eD5eBhmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_eD5eBhmKEeGCXPJzVJKbwA" name="ID" templateParameter="_eD5eBRmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                </ownedTemplateSignature>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Interface" xmi:id="_eD5eBxmKEeGCXPJzVJKbwA" name="Dao" isAbstract="true">
+                <eAnnotations xmi:id="_eD5eCBmKEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd"/>
+                <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_eD5eCRmKEeGCXPJzVJKbwA" parameter="_eD5eChmKEeGCXPJzVJKbwA _eD5eDBmKEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_eD5eChmKEeGCXPJzVJKbwA" parameteredElement="_eD5eCxmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_eD5eCxmKEeGCXPJzVJKbwA" name="T" templateParameter="_eD5eChmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_eD5eDBmKEeGCXPJzVJKbwA" parameteredElement="_eD5eDRmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_eD5eDRmKEeGCXPJzVJKbwA" name="ID" templateParameter="_eD5eDBmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                </ownedTemplateSignature>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Interface" xmi:id="_eECn8BmKEeGCXPJzVJKbwA" name="Dao" isAbstract="true">
+                <eAnnotations xmi:id="_eECn8RmKEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd"/>
+                <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_eECn8hmKEeGCXPJzVJKbwA" parameter="_eECn8xmKEeGCXPJzVJKbwA _eECn9RmKEeGCXPJzVJKbwA">
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_eECn8xmKEeGCXPJzVJKbwA" parameteredElement="_eECn9BmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_eECn9BmKEeGCXPJzVJKbwA" name="T" templateParameter="_eECn8xmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_eECn9RmKEeGCXPJzVJKbwA" parameteredElement="_eECn9hmKEeGCXPJzVJKbwA">
+                    <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_eECn9hmKEeGCXPJzVJKbwA" name="ID" templateParameter="_eECn9RmKEeGCXPJzVJKbwA"/>
+                  </ownedParameter>
+                </ownedTemplateSignature>
+              </packagedElement>
+            </packagedElement>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_d28nIBmKEeGCXPJzVJKbwA" supplier="_d2giQBmKEeGCXPJzVJKbwA" client="_d0RtoBmKEeGCXPJzVJKbwA"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_d9NAJBmKEeGCXPJzVJKbwA" supplier="_d9DPIBmKEeGCXPJzVJKbwA" client="_d0RtoBmKEeGCXPJzVJKbwA"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_d_ISxxmKEeGCXPJzVJKbwA" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="_d_ISyBmKEeGCXPJzVJKbwA" name="lang">
+        <eAnnotations xmi:id="_d_SDwhmKEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd" references="_d_SDwRmKEeGCXPJzVJKbwA _eALbphmKEeGCXPJzVJKbwA _eAeWlxmKEeGCXPJzVJKbwA"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_d_SDwRmKEeGCXPJzVJKbwA" name="Object">
+          <eAnnotations xmi:id="_d_SDwxmKEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_eALbphmKEeGCXPJzVJKbwA" name="String" isLeaf="true">
+          <eAnnotations xmi:id="_eALbpxmKEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_eAeWlxmKEeGCXPJzVJKbwA" name="StringBuilder" isLeaf="true">
+          <eAnnotations xmi:id="_eAeWmBmKEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_d_uvtRmKEeGCXPJzVJKbwA" name="sql">
+        <eAnnotations xmi:id="_d_uvtxmKEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd" references="_d_uvthmKEeGCXPJzVJKbwA"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_d_uvthmKEeGCXPJzVJKbwA" name="SQLException">
+          <eAnnotations xmi:id="_d_uvuBmKEeGCXPJzVJKbwA" source="DataAccessLib/models/entity.ucd"/>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_eAngjRmKEeGCXPJzVJKbwA" supplier="_eALbphmKEeGCXPJzVJKbwA" client="_d_ISwBmKEeGCXPJzVJKbwA"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_eAxRgRmKEeGCXPJzVJKbwA" supplier="_eAeWkBmKEeGCXPJzVJKbwA" client="_d_ISwBmKEeGCXPJzVJKbwA"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_eBEMcRmKEeGCXPJzVJKbwA" supplier="_eAeWlxmKEeGCXPJzVJKbwA" client="_d_ISwBmKEeGCXPJzVJKbwA"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_eBN9cRmKEeGCXPJzVJKbwA" supplier="_d_uvthmKEeGCXPJzVJKbwA" client="_d_ISwBmKEeGCXPJzVJKbwA"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_eCGuRRmKEeGCXPJzVJKbwA" supplier="_eALbphmKEeGCXPJzVJKbwA" client="_eBg4YRmKEeGCXPJzVJKbwA"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_eCQfQRmKEeGCXPJzVJKbwA" supplier="_eB9kVBmKEeGCXPJzVJKbwA" client="_eBg4YRmKEeGCXPJzVJKbwA"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_eCaQQhmKEeGCXPJzVJKbwA" supplier="_eAeWlxmKEeGCXPJzVJKbwA" client="_eBg4YRmKEeGCXPJzVJKbwA"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_eCtLMRmKEeGCXPJzVJKbwA" supplier="_d_uvthmKEeGCXPJzVJKbwA" client="_eBg4YRmKEeGCXPJzVJKbwA"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_eDJ3JhmKEeGCXPJzVJKbwA" supplier="_eDAGKBmKEeGCXPJzVJKbwA" client="_d0RtoBmKEeGCXPJzVJKbwA"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_eECn9xmKEeGCXPJzVJKbwA" supplier="_eALbphmKEeGCXPJzVJKbwA" client="_eDTBERmKEeGCXPJzVJKbwA"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_eEMY8RmKEeGCXPJzVJKbwA" supplier="_eD5eABmKEeGCXPJzVJKbwA" client="_eDTBERmKEeGCXPJzVJKbwA"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_eEfT4RmKEeGCXPJzVJKbwA" supplier="_eAeWlxmKEeGCXPJzVJKbwA" client="_eDTBERmKEeGCXPJzVJKbwA"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_eEpE4RmKEeGCXPJzVJKbwA" supplier="_d_uvthmKEeGCXPJzVJKbwA" client="_eDTBERmKEeGCXPJzVJKbwA"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_eF-hrBmKEeGCXPJzVJKbwA" supplier="_eF-hpRmKEeGCXPJzVJKbwA" client="_d0RtoBmKEeGCXPJzVJKbwA"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_eGkXihmKEeGCXPJzVJKbwA" supplier="_eGkXgxmKEeGCXPJzVJKbwA" client="_d0RtoBmKEeGCXPJzVJKbwA"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_hDqaxxmKEeGCXPJzVJKbwA" supplier="_hDqawBmKEeGCXPJzVJKbwA" client="_d0RtoBmKEeGCXPJzVJKbwA"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_sskXlxmKEeGCXPJzVJKbwA" supplier="_sskXkBmKEeGCXPJzVJKbwA" client="_d0RtoBmKEeGCXPJzVJKbwA"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_tlGiFxmKEeGCXPJzVJKbwA" supplier="_tlGiEBmKEeGCXPJzVJKbwA" client="_d0RtoBmKEeGCXPJzVJKbwA"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_t0SNlxmKEeGCXPJzVJKbwA" supplier="_t0SNkBmKEeGCXPJzVJKbwA" client="_d0RtoBmKEeGCXPJzVJKbwA"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_t9gbBhmKEeGCXPJzVJKbwA" supplier="_t9WqBxmKEeGCXPJzVJKbwA" client="_d0RtoBmKEeGCXPJzVJKbwA"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_uM-aYhmKEeGCXPJzVJKbwA" supplier="_uM1QcxmKEeGCXPJzVJKbwA" client="_d0RtoBmKEeGCXPJzVJKbwA"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_8SPr9xmKEeGCXPJzVJKbwA" supplier="_8SPr8BmKEeGCXPJzVJKbwA" client="_d0RtoBmKEeGCXPJzVJKbwA"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_8Sim7hmKEeGCXPJzVJKbwA" supplier="_8Sim5xmKEeGCXPJzVJKbwA" client="_d0RtoBmKEeGCXPJzVJKbwA"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_8UoRkBmKEeGCXPJzVJKbwA" supplier="_d0RtoBmKEeGCXPJzVJKbwA" client="_8RzAABmKEeGCXPJzVJKbwA"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_8b6lXhmKEeGCXPJzVJKbwA" supplier="_8b6lVxmKEeGCXPJzVJKbwA" client="_d0RtoBmKEeGCXPJzVJKbwA"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_OfSOtxmMEeGCXPJzVJKbwA" supplier="_OfSOsBmMEeGCXPJzVJKbwA" client="_d0RtoBmKEeGCXPJzVJKbwA"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_SKBeQBmQEeGCXPJzVJKbwA" supplier="_eALbphmKEeGCXPJzVJKbwA" client="_8RzAABmKEeGCXPJzVJKbwA"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_sGgOYhmQEeGCXPJzVJKbwA" supplier="_d0RtoBmKEeGCXPJzVJKbwA" client="_sGaHwBmQEeGCXPJzVJKbwA"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_sHdQpxmQEeGCXPJzVJKbwA" supplier="_sHdQoBmQEeGCXPJzVJKbwA" client="_d0RtoBmKEeGCXPJzVJKbwA"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_sHvkhxmQEeGCXPJzVJKbwA" supplier="_sHvkgBmQEeGCXPJzVJKbwA" client="_d0RtoBmKEeGCXPJzVJKbwA"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_cz2RwBmSEeGCXPJzVJKbwA" supplier="_eALbphmKEeGCXPJzVJKbwA" client="_sGaHwBmQEeGCXPJzVJKbwA"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_c2KUABmUEeGCXPJzVJKbwA" supplier="_d0RtoBmKEeGCXPJzVJKbwA" client="_c2AjABmUEeGCXPJzVJKbwA"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_c4ZIpxmUEeGCXPJzVJKbwA" supplier="_c4ZIoBmUEeGCXPJzVJKbwA" client="_d0RtoBmKEeGCXPJzVJKbwA"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_c4sDlxmUEeGCXPJzVJKbwA" supplier="_c4sDkBmUEeGCXPJzVJKbwA" client="_d0RtoBmKEeGCXPJzVJKbwA"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_Q7EhYhmcEeGCXPJzVJKbwA" supplier="_eALbphmKEeGCXPJzVJKbwA" client="_c2AjABmUEeGCXPJzVJKbwA"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_8LjeABmeEeGCXPJzVJKbwA" supplier="_sGaHwBmQEeGCXPJzVJKbwA" client="_c2AjABmUEeGCXPJzVJKbwA"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_i9i2EBmhEeGCXPJzVJKbwA" supplier="_d0RtoBmKEeGCXPJzVJKbwA" client="_i9Wo0BmhEeGCXPJzVJKbwA"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_i-NkdBmhEeGCXPJzVJKbwA" supplier="_i-Hd1xmhEeGCXPJzVJKbwA" client="_d0RtoBmKEeGCXPJzVJKbwA"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_i-f4VxmhEeGCXPJzVJKbwA" supplier="_i-f4UBmhEeGCXPJzVJKbwA" client="_d0RtoBmKEeGCXPJzVJKbwA"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_WWv4MBmiEeGCXPJzVJKbwA" supplier="_eALbphmKEeGCXPJzVJKbwA" client="_i9Wo0BmhEeGCXPJzVJKbwA"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_hGcfoBmjEeGCXPJzVJKbwA" supplier="_c2AjABmUEeGCXPJzVJKbwA" client="_i9Wo0BmhEeGCXPJzVJKbwA"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_AhMZ0RmlEeGCXPJzVJKbwA" supplier="_d0RtoBmKEeGCXPJzVJKbwA" client="_AhGTMBmlEeGCXPJzVJKbwA"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_AiVpVBmlEeGCXPJzVJKbwA" supplier="_AiPitxmlEeGCXPJzVJKbwA" client="_d0RtoBmKEeGCXPJzVJKbwA"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_Ain9NhmlEeGCXPJzVJKbwA" supplier="_Aih2lxmlEeGCXPJzVJKbwA" client="_d0RtoBmKEeGCXPJzVJKbwA"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_y7PPkBmmEeGCXPJzVJKbwA" supplier="_eALbphmKEeGCXPJzVJKbwA" client="_AhGTMBmlEeGCXPJzVJKbwA"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_YP_DARmoEeGCXPJzVJKbwA" supplier="_d0RtoBmKEeGCXPJzVJKbwA" client="_YP48YBmoEeGCXPJzVJKbwA"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_YRIShxmoEeGCXPJzVJKbwA" supplier="_YRISgBmoEeGCXPJzVJKbwA" client="_d0RtoBmKEeGCXPJzVJKbwA"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_YRgtAhmoEeGCXPJzVJKbwA" supplier="_YRamYRmoEeGCXPJzVJKbwA" client="_d0RtoBmKEeGCXPJzVJKbwA"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_Yj6HwBmsEeGCXPJzVJKbwA" supplier="_eALbphmKEeGCXPJzVJKbwA" client="_YP48YBmoEeGCXPJzVJKbwA"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_YkD4wRmsEeGCXPJzVJKbwA" supplier="_AhGTMBmlEeGCXPJzVJKbwA" client="_YP48YBmoEeGCXPJzVJKbwA"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_0JQTIxmsEeGCXPJzVJKbwA" supplier="_d0RtoBmKEeGCXPJzVJKbwA" client="_0JGiIBmsEeGCXPJzVJKbwA"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_0KS0-RmsEeGCXPJzVJKbwA" supplier="_0KS08hmsEeGCXPJzVJKbwA" client="_d0RtoBmKEeGCXPJzVJKbwA"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_0Klv6BmsEeGCXPJzVJKbwA" supplier="_0Klv4RmsEeGCXPJzVJKbwA" client="_d0RtoBmKEeGCXPJzVJKbwA"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_wDwLcBmuEeGCXPJzVJKbwA" supplier="_YP48YBmoEeGCXPJzVJKbwA" client="_0JGiIBmsEeGCXPJzVJKbwA"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_5aoJUBmwEeGCXPJzVJKbwA" supplier="_i9Wo0BmhEeGCXPJzVJKbwA" client="_0JGiIBmsEeGCXPJzVJKbwA"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_yvcUMBozEeGdMrbxvCzFIw" supplier="_d0RtoBmKEeGCXPJzVJKbwA" client="_yvTKQBozEeGdMrbxvCzFIw"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_ywVsGhozEeGdMrbxvCzFIw" supplier="_ywVsExozEeGdMrbxvCzFIw" client="_d0RtoBmKEeGCXPJzVJKbwA"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_ywonDRozEeGdMrbxvCzFIw" supplier="_ywonBhozEeGdMrbxvCzFIw" client="_d0RtoBmKEeGCXPJzVJKbwA"/>
+    <profileApplication xmi:id="_-BPWuxmFEeGCXPJzVJKbwA">
+      <eAnnotations xmi:id="_-BZHoBmFEeGCXPJzVJKbwA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="platform:/plugin/com.omondo.uml.core/profiles/Omondo_Persistence_3.2_SN.profile.uml#_AevloCK6EdujMN-Mf6X4Bw"/>
+      </eAnnotations>
+      <appliedProfile href="platform:/plugin/com.omondo.uml.core/profiles/Omondo_Persistence_3.2_SN.profile.uml#_RgVfdiK2Edu07u_JJk0LDQ"/>
+    </profileApplication>
+    <profileApplication xmi:id="_-BiRkBmFEeGCXPJzVJKbwA">
+      <eAnnotations xmi:id="_-BiRkRmFEeGCXPJzVJKbwA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="platform:/plugin/com.omondo.uml.core/profiles/Omondo_Webservice_3.2_SN.profile.uml#_6jgWRSK5EdujMN-Mf6X4Bw"/>
+      </eAnnotations>
+      <appliedProfile href="platform:/plugin/com.omondo.uml.core/profiles/Omondo_Webservice_3.2_SN.profile.uml#_RgVmWCK2Edu07u_JJk0LDQ"/>
+    </profileApplication>
+    <profileApplication xmi:id="_-BiRkhmFEeGCXPJzVJKbwA">
+      <eAnnotations xmi:id="_-BiRkxmFEeGCXPJzVJKbwA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="platform:/plugin/com.omondo.uml.core/profiles/Omondo_Meta_3.2_SN.profile.uml#_7sFH4CK5EdujMN-Mf6X4Bw"/>
+      </eAnnotations>
+      <appliedProfile href="platform:/plugin/com.omondo.uml.core/profiles/Omondo_Meta_3.2_SN.profile.uml#_RgVcYiK2Edu07u_JJk0LDQ"/>
+    </profileApplication>
+    <profileApplication xmi:id="_-BiRlBmFEeGCXPJzVJKbwA">
+      <eAnnotations xmi:id="_-BiRlRmFEeGCXPJzVJKbwA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="platform:/plugin/org.eclipse.uml2.uml.resources/profiles/UML2.profile.uml#_f9NXwJIyEd2ymsRPCrfQAQ"/>
+      </eAnnotations>
+      <appliedProfile href="platform:/plugin/org.eclipse.uml2.uml.resources/profiles/UML2.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:id="_-BiRlhmFEeGCXPJzVJKbwA">
+      <eAnnotations xmi:id="_-BiRlxmFEeGCXPJzVJKbwA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="platform:/plugin/com.omondo.uml.core/profiles/Omondo_Common_3.2_SN.profile.uml#_7hMtlSK5EdujMN-Mf6X4Bw"/>
+      </eAnnotations>
+      <appliedProfile href="platform:/plugin/com.omondo.uml.core/profiles/Omondo_Common_3.2_SN.profile.uml#_RgfPHCK2Edu07u_JJk0LDQ"/>
+    </profileApplication>
+    <profileApplication xmi:id="_-BsCkBmFEeGCXPJzVJKbwA">
+      <eAnnotations xmi:id="_-B1zkBmFEeGCXPJzVJKbwA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="platform:/plugin/org.eclipse.uml2.uml.resources/profiles/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+      </eAnnotations>
+      <appliedProfile href="platform:/plugin/org.eclipse.uml2.uml.resources/profiles/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:id="_-B1zkRmFEeGCXPJzVJKbwA">
+      <eAnnotations xmi:id="_-B1zkhmFEeGCXPJzVJKbwA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="platform:/plugin/com.omondo.uml.core/profiles/Java.profile.uml#_aZhLlH6MEdmbwasWWc4yvw"/>
+      </eAnnotations>
+      <appliedProfile href="platform:/plugin/com.omondo.uml.core/profiles/Java.profile.uml#_aZhLkH6MEdmbwasWWc4yvw"/>
+    </profileApplication>
+    <profileApplication xmi:id="_-B1zkxmFEeGCXPJzVJKbwA">
+      <eAnnotations xmi:id="_-B1zlBmFEeGCXPJzVJKbwA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="platform:/plugin/com.omondo.uml.core/profiles/Omondo_Service_3.2_SN.profile.uml#_6VpgcCK5EdujMN-Mf6X4Bw"/>
+      </eAnnotations>
+      <appliedProfile href="platform:/plugin/com.omondo.uml.core/profiles/Omondo_Service_3.2_SN.profile.uml#_RgMRQCK2Edu07u_JJk0LDQ"/>
+    </profileApplication>
+    <profileApplication xmi:id="_-B1zlRmFEeGCXPJzVJKbwA">
+      <eAnnotations xmi:id="_-B1zlhmFEeGCXPJzVJKbwA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="platform:/plugin/com.omondo.uml.core/profiles/Omondo_Process_3.2_SN.profile.uml#_7D2DMCK5EdujMN-Mf6X4Bw"/>
+      </eAnnotations>
+      <appliedProfile href="platform:/plugin/com.omondo.uml.core/profiles/Omondo_Process_3.2_SN.profile.uml#_RgfOnSK2Edu07u_JJk0LDQ"/>
+    </profileApplication>
+    <profileApplication xmi:id="_-B1zlxmFEeGCXPJzVJKbwA">
+      <eAnnotations xmi:id="_-B1zmBmFEeGCXPJzVJKbwA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="platform:/plugin/com.omondo.uml.core/profiles/Omondo_Xml_3.2_SN.profile.uml#_7JNEVSK5EdujMN-Mf6X4Bw"/>
+      </eAnnotations>
+      <appliedProfile href="platform:/plugin/com.omondo.uml.core/profiles/Omondo_Xml_3.2_SN.profile.uml#_RgVfXCK2Edu07u_JJk0LDQ"/>
+    </profileApplication>
+    <profileApplication xmi:id="_-B1zmRmFEeGCXPJzVJKbwA">
+      <eAnnotations xmi:id="_-B1zmhmFEeGCXPJzVJKbwA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="platform:/plugin/com.omondo.uml.core/profiles/Meta.profile.uml#_kycnUIE4EduiecUdqhZMrw"/>
+      </eAnnotations>
+      <appliedProfile href="platform:/plugin/com.omondo.uml.core/profiles/Meta.profile.uml#_EJn30IE0EduiecUdqhZMrw"/>
+    </profileApplication>
+    <profileApplication xmi:id="_-B1zmxmFEeGCXPJzVJKbwA">
+      <eAnnotations xmi:id="_-B1znBmFEeGCXPJzVJKbwA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="platform:/plugin/com.omondo.uml.core/profiles/Omondo_Presentation_3.2_SN.profile.uml#_4Um1wCK5EdujMN-Mf6X4Bw"/>
+      </eAnnotations>
+      <appliedProfile href="platform:/plugin/com.omondo.uml.core/profiles/Omondo_Presentation_3.2_SN.profile.uml#_RgVcjiK2Edu07u_JJk0LDQ"/>
+    </profileApplication>
+    <profileApplication xmi:id="_-B1znRmFEeGCXPJzVJKbwA">
+      <eAnnotations xmi:id="_-B1znhmFEeGCXPJzVJKbwA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="platform:/plugin/com.omondo.uml.core/profiles/Archetype.profile.uml#_f6v3QOROEduiB7qvAtFfTA"/>
+      </eAnnotations>
+      <appliedProfile href="platform:/plugin/com.omondo.uml.core/profiles/Archetype.profile.uml#_j-cLoORNEduiB7qvAtFfTA"/>
+    </profileApplication>
+    <profileApplication xmi:id="_-B1znxmFEeGCXPJzVJKbwA">
+      <eAnnotations xmi:id="_-B1zoBmFEeGCXPJzVJKbwA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="platform:/plugin/com.omondo.uml.core/profiles/Omondo.profile.uml#_zrN_1iUoEdmNXYQzyImvfA"/>
+      </eAnnotations>
+      <appliedProfile href="platform:/plugin/com.omondo.uml.core/profiles/Omondo.profile.uml#_zrN_0iUoEdmNXYQzyImvfA"/>
+    </profileApplication>
+    <profileApplication xmi:id="_-B1zoRmFEeGCXPJzVJKbwA">
+      <eAnnotations xmi:id="_-B1zohmFEeGCXPJzVJKbwA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="platform:/plugin/com.omondo.uml.core/profiles/Deployment.profile.uml#_gPzkoXlkEdyC2_BXA89-Eg"/>
+      </eAnnotations>
+      <appliedProfile href="platform:/plugin/com.omondo.uml.core/profiles/Deployment.profile.uml#_69q0IGkDEd2C2vBXA89-Eg"/>
+    </profileApplication>
+  </uml:Model>
+  <Meta:derive xmi:id="_d3QJIBmKEeGCXPJzVJKbwA" base_Dependency="_d28nIBmKEeGCXPJzVJKbwA"/>
+  <Meta:derive xmi:id="_d9WKEBmKEeGCXPJzVJKbwA" base_Dependency="_d9NAJBmKEeGCXPJzVJKbwA"/>
+  <JavaProfile_1:JavaProfile__Transient xmi:id="_d_b0wRmKEeGCXPJzVJKbwA" base_Property="_d_b0wBmKEeGCXPJzVJKbwA"/>
+  <Omondo_1:Omondo__Import xmi:id="_eAxRgBmKEeGCXPJzVJKbwA" base_Usage="_eAngjRmKEeGCXPJzVJKbwA"/>
+  <Standard:Call xmi:id="_eA7CgBmKEeGCXPJzVJKbwA" base_Usage="_eAxRgRmKEeGCXPJzVJKbwA"/>
+  <Omondo_1:Omondo__Import xmi:id="_eBEMcBmKEeGCXPJzVJKbwA" base_Usage="_eAxRgRmKEeGCXPJzVJKbwA"/>
+  <Standard:Call xmi:id="_eBEMchmKEeGCXPJzVJKbwA" base_Usage="_eBEMcRmKEeGCXPJzVJKbwA"/>
+  <Standard:Instantiate xmi:id="_eBN9cBmKEeGCXPJzVJKbwA" base_Usage="_eBEMcRmKEeGCXPJzVJKbwA"/>
+  <Standard:Send xmi:id="_eBXHYBmKEeGCXPJzVJKbwA" base_Usage="_eBN9cRmKEeGCXPJzVJKbwA"/>
+  <Omondo_1:Omondo__Import xmi:id="_eBg4YBmKEeGCXPJzVJKbwA" base_Usage="_eBN9cRmKEeGCXPJzVJKbwA"/>
+  <JavaProfile_1:JavaProfile__Transient xmi:id="_eBqpYRmKEeGCXPJzVJKbwA" base_Property="_eBqpYBmKEeGCXPJzVJKbwA"/>
+  <Omondo_1:Omondo__Import xmi:id="_eCQfQBmKEeGCXPJzVJKbwA" base_Usage="_eCGuRRmKEeGCXPJzVJKbwA"/>
+  <Standard:Call xmi:id="_eCaQQBmKEeGCXPJzVJKbwA" base_Usage="_eCQfQRmKEeGCXPJzVJKbwA"/>
+  <Omondo_1:Omondo__Import xmi:id="_eCaQQRmKEeGCXPJzVJKbwA" base_Usage="_eCQfQRmKEeGCXPJzVJKbwA"/>
+  <Standard:Call xmi:id="_eCjaMBmKEeGCXPJzVJKbwA" base_Usage="_eCaQQhmKEeGCXPJzVJKbwA"/>
+  <Standard:Instantiate xmi:id="_eCtLMBmKEeGCXPJzVJKbwA" base_Usage="_eCaQQhmKEeGCXPJzVJKbwA"/>
+  <Standard:Send xmi:id="_eC2VIBmKEeGCXPJzVJKbwA" base_Usage="_eCtLMRmKEeGCXPJzVJKbwA"/>
+  <Omondo_1:Omondo__Import xmi:id="_eDAGIBmKEeGCXPJzVJKbwA" base_Usage="_eCtLMRmKEeGCXPJzVJKbwA"/>
+  <Meta:derive xmi:id="_eDTBEBmKEeGCXPJzVJKbwA" base_Dependency="_eDJ3JhmKEeGCXPJzVJKbwA"/>
+  <JavaProfile_1:JavaProfile__Transient xmi:id="_eDTBHBmKEeGCXPJzVJKbwA" base_Property="_eDTBGxmKEeGCXPJzVJKbwA"/>
+  <Omondo_1:Omondo__Import xmi:id="_eEMY8BmKEeGCXPJzVJKbwA" base_Usage="_eECn9xmKEeGCXPJzVJKbwA"/>
+  <Standard:Call xmi:id="_eEVi4BmKEeGCXPJzVJKbwA" base_Usage="_eEMY8RmKEeGCXPJzVJKbwA"/>
+  <Omondo_1:Omondo__Import xmi:id="_eEfT4BmKEeGCXPJzVJKbwA" base_Usage="_eEMY8RmKEeGCXPJzVJKbwA"/>
+  <Standard:Call xmi:id="_eEfT4hmKEeGCXPJzVJKbwA" base_Usage="_eEfT4RmKEeGCXPJzVJKbwA"/>
+  <Standard:Instantiate xmi:id="_eEpE4BmKEeGCXPJzVJKbwA" base_Usage="_eEfT4RmKEeGCXPJzVJKbwA"/>
+  <Standard:Send xmi:id="_eEyO0BmKEeGCXPJzVJKbwA" base_Usage="_eEpE4RmKEeGCXPJzVJKbwA"/>
+  <Omondo_1:Omondo__Import xmi:id="_eE7_0BmKEeGCXPJzVJKbwA" base_Usage="_eEpE4RmKEeGCXPJzVJKbwA"/>
+  <Meta:derive xmi:id="_eGISoBmKEeGCXPJzVJKbwA" base_Dependency="_eF-hrBmKEeGCXPJzVJKbwA"/>
+  <Meta:derive xmi:id="_eGuIgBmKEeGCXPJzVJKbwA" base_Dependency="_eGkXihmKEeGCXPJzVJKbwA"/>
+  <Meta:derive xmi:id="_hD0LwBmKEeGCXPJzVJKbwA" base_Dependency="_hDqaxxmKEeGCXPJzVJKbwA"/>
+  <Meta:derive xmi:id="_ssuIkBmKEeGCXPJzVJKbwA" base_Dependency="_sskXlxmKEeGCXPJzVJKbwA"/>
+  <Meta:derive xmi:id="_tlQTEBmKEeGCXPJzVJKbwA" base_Dependency="_tlGiFxmKEeGCXPJzVJKbwA"/>
+  <Meta:derive xmi:id="_t0bXgBmKEeGCXPJzVJKbwA" base_Dependency="_t0SNlxmKEeGCXPJzVJKbwA"/>
+  <Meta:derive xmi:id="_t9pk8BmKEeGCXPJzVJKbwA" base_Dependency="_t9gbBhmKEeGCXPJzVJKbwA"/>
+  <Meta:derive xmi:id="_uNILYBmKEeGCXPJzVJKbwA" base_Dependency="_uM-aYhmKEeGCXPJzVJKbwA"/>
+  <Meta:derive xmi:id="_8SZc8BmKEeGCXPJzVJKbwA" base_Dependency="_8SPr9xmKEeGCXPJzVJKbwA"/>
+  <Meta:derive xmi:id="_8SsX4BmKEeGCXPJzVJKbwA" base_Dependency="_8Sim7hmKEeGCXPJzVJKbwA"/>
+  <Meta:derive xmi:id="_8UxbgBmKEeGCXPJzVJKbwA" base_Dependency="_8UoRkBmKEeGCXPJzVJKbwA"/>
+  <Meta:derive xmi:id="_8cEWUBmKEeGCXPJzVJKbwA" base_Dependency="_8b6lXhmKEeGCXPJzVJKbwA"/>
+  <Meta:derive xmi:id="_Ofb_sBmMEeGCXPJzVJKbwA" base_Dependency="_OfSOtxmMEeGCXPJzVJKbwA"/>
+  <Omondo_1:Omondo__Import xmi:id="_SKHk4BmQEeGCXPJzVJKbwA" base_Usage="_SKBeQBmQEeGCXPJzVJKbwA"/>
+  <Meta:derive xmi:id="_sGsboBmQEeGCXPJzVJKbwA" base_Dependency="_sGgOYhmQEeGCXPJzVJKbwA"/>
+  <Meta:derive xmi:id="_sHjXQBmQEeGCXPJzVJKbwA" base_Dependency="_sHdQpxmQEeGCXPJzVJKbwA"/>
+  <Meta:derive xmi:id="_sH1rIBmQEeGCXPJzVJKbwA" base_Dependency="_sHvkhxmQEeGCXPJzVJKbwA"/>
+  <Omondo_1:Omondo__Import xmi:id="_c0CfABmSEeGCXPJzVJKbwA" base_Usage="_cz2RwBmSEeGCXPJzVJKbwA"/>
+  <Meta:derive xmi:id="_c2Td8BmUEeGCXPJzVJKbwA" base_Dependency="_c2KUABmUEeGCXPJzVJKbwA"/>
+  <Meta:derive xmi:id="_c4iSkBmUEeGCXPJzVJKbwA" base_Dependency="_c4ZIpxmUEeGCXPJzVJKbwA"/>
+  <Meta:derive xmi:id="_c41NgBmUEeGCXPJzVJKbwA" base_Dependency="_c4sDlxmUEeGCXPJzVJKbwA"/>
+  <Omondo_1:Omondo__Import xmi:id="_Q7QuoBmcEeGCXPJzVJKbwA" base_Usage="_Q7EhYhmcEeGCXPJzVJKbwA"/>
+  <Omondo_1:Omondo__Import xmi:id="_8LpkoBmeEeGCXPJzVJKbwA" base_Usage="_8LjeABmeEeGCXPJzVJKbwA"/>
+  <Meta:derive xmi:id="_i9vDUBmhEeGCXPJzVJKbwA" base_Dependency="_i9i2EBmhEeGCXPJzVJKbwA"/>
+  <Meta:derive xmi:id="_i-TrEBmhEeGCXPJzVJKbwA" base_Dependency="_i-NkdBmhEeGCXPJzVJKbwA"/>
+  <Meta:derive xmi:id="_i_EgEBmhEeGCXPJzVJKbwA" base_Dependency="_i-f4VxmhEeGCXPJzVJKbwA"/>
+  <Omondo_1:Omondo__Import xmi:id="_WW1-0BmiEeGCXPJzVJKbwA" base_Usage="_WWv4MBmiEeGCXPJzVJKbwA"/>
+  <Omondo_1:Omondo__Import xmi:id="_hGimQBmjEeGCXPJzVJKbwA" base_Usage="_hGcfoBmjEeGCXPJzVJKbwA"/>
+  <Meta:derive xmi:id="_AhSgcBmlEeGCXPJzVJKbwA" base_Dependency="_AhMZ0RmlEeGCXPJzVJKbwA"/>
+  <Meta:derive xmi:id="_Aibv8BmlEeGCXPJzVJKbwA" base_Dependency="_AiVpVBmlEeGCXPJzVJKbwA"/>
+  <Meta:derive xmi:id="_AiuD0BmlEeGCXPJzVJKbwA" base_Dependency="_Ain9NhmlEeGCXPJzVJKbwA"/>
+  <Omondo_1:Omondo__Import xmi:id="_y7VWMBmmEeGCXPJzVJKbwA" base_Usage="_y7PPkBmmEeGCXPJzVJKbwA"/>
+  <Meta:derive xmi:id="_YQLQQBmoEeGCXPJzVJKbwA" base_Dependency="_YP_DARmoEeGCXPJzVJKbwA"/>
+  <Meta:derive xmi:id="_YRUfwBmoEeGCXPJzVJKbwA" base_Dependency="_YRIShxmoEeGCXPJzVJKbwA"/>
+  <Meta:derive xmi:id="_YSdvQBmoEeGCXPJzVJKbwA" base_Dependency="_YRgtAhmoEeGCXPJzVJKbwA"/>
+  <Omondo_1:Omondo__Import xmi:id="_YkD4wBmsEeGCXPJzVJKbwA" base_Usage="_Yj6HwBmsEeGCXPJzVJKbwA"/>
+  <Omondo_1:Omondo__Import xmi:id="_YkNCsBmsEeGCXPJzVJKbwA" base_Usage="_YkD4wRmsEeGCXPJzVJKbwA"/>
+  <Meta:derive xmi:id="_0JZdEBmsEeGCXPJzVJKbwA" base_Dependency="_0JQTIxmsEeGCXPJzVJKbwA"/>
+  <Meta:derive xmi:id="_0Kcl8BmsEeGCXPJzVJKbwA" base_Dependency="_0KS0-RmsEeGCXPJzVJKbwA"/>
+  <Meta:derive xmi:id="_0Kvg4BmsEeGCXPJzVJKbwA" base_Dependency="_0Klv6BmsEeGCXPJzVJKbwA"/>
+  <Omondo_1:Omondo__Import xmi:id="_wDwLcRmuEeGCXPJzVJKbwA" base_Usage="_wDwLcBmuEeGCXPJzVJKbwA"/>
+  <Omondo_1:Omondo__Import xmi:id="_5axTQBmwEeGCXPJzVJKbwA" base_Usage="_5aoJUBmwEeGCXPJzVJKbwA"/>
+  <Meta:derive xmi:id="_yvvPIBozEeGdMrbxvCzFIw" base_Dependency="_yvcUMBozEeGdMrbxvCzFIw"/>
+  <Meta:derive xmi:id="_ywe2ABozEeGdMrbxvCzFIw" base_Dependency="_ywVsGhozEeGdMrbxvCzFIw"/>
+  <Meta:derive xmi:id="_ywyYABozEeGdMrbxvCzFIw" base_Dependency="_ywonDRozEeGdMrbxvCzFIw"/>
+</xmi:XMI>

@@ -1,0 +1,25 @@
+//	private final int 								SERIALID_SUBSTRING_STAND_LENGTH = 3;		//点单序列号构成部分子串标准长度				
+
+//产生账单流水号,已废弃
+	/*
+	private String generateOrderSerialId(int authCode){
+		StringBuilder serialId;
+		
+		//日期字符串格式-年月日时分秒毫秒:2012 01 13 12 05 486
+		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMddHHmmssSSS");   
+        String dateStr = dateFormat.format(new Date(System.currentTimeMillis()));
+        
+        //加入餐台标识:039
+        serialId = new StringBuilder(dateStr);        
+        serialId.append(String.format("%03d", tableId));
+        
+        //加入授权码:大于三位取末三位-19234:234;小于三位补零-98:098
+        String authCodeStr = String.valueOf(authCode);
+        if(authCodeStr.length() > SERIALID_SUBSTRING_STAND_LENGTH){
+        	serialId.append(authCodeStr.substring(authCodeStr.length() - SERIALID_SUBSTRING_STAND_LENGTH));
+        }else{
+        	serialId.append(String.format("%03d", authCode));
+        }
+        return serialId.toString();
+	}						
+	*/		

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >	
+	<ListView 
+	    android:id="@+id/paymethod_lsv_method"
+	    android:layout_width="match_parent" 
+	    android:layout_height="wrap_content"
+	    android:layout_margin="@dimen/default_layout_margin"
+	/>
+	<LinearLayout
+	    android:orientation="horizontal"
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="1" 
+	>
+		<RadioGroup 
+	        android:id="@+id/paymethod_rdg_mode"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:checkedButton="@+id/paymethod_rdb_change"
+	        android:gravity="center_vertical|left"
+	        android:orientation="horizontal" >
+	        <RadioButton
+	            android:id="@+id/paymethod_rdb_change"
+	            android:layout_width="wrap_content"
+	            android:layout_height="match_parent" 
+	            android:layout_margin="@dimen/default_layout_margin"
+	            android:text="@string/pmethod_rdb_change_text"           
+	        />
+	        <RadioButton
+	            android:id="@+id/paymethod_rdb_actual"
+	            android:layout_width="wrap_content"
+	            android:layout_height="match_parent" 
+	            android:layout_margin="@dimen/default_layout_margin"
+	            android:text="@string/pmethod_rdb_actual_text"           
+	        />       
+   	 	</RadioGroup>
+		<TextView
+	        android:id="@+id/tv_paymethod"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:layout_marginLeft="25dip"   
+	        android:gravity="center"     
+	        android:textSize="@dimen/font_size_middle"
+	        android:text="@string/default_money"
+	    />	
+	    <CheckBox
+	        android:id="@+id/paymethod_chb_print"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:layout_marginLeft="25dip"
+	        android:textSize="@dimen/font_size_middle"
+	        android:text="@string/pmethod_chb_print_text"
+	        android:checked="true"
+	    />
+	</LinearLayout>
+
+</LinearLayout>

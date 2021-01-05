@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item 
+		android:id="@+id/waiterorder_cmi_food_cancel"
+		android:title="@string/worder_cmi_cancel" 
+	/>    
+    <item 
+    	android:id="@+id/waiterorder_cmi_food_exit"
+    	android:title="@string/common_cmi_exit" 
+    />
+
+</menu>

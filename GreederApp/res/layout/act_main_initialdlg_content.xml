@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+	<ImageView
+  		android:layout_width="120dp"
+  		android:layout_height="match_parent"
+  		android:layout_weight="2"
+  		android:background="#94AB45" 
+  		android:layout_margin="10dp"
+  	/>
+  	<RelativeLayout
+  		android:layout_width="200dp"
+  		android:layout_height="wrap_content"
+  		android:layout_weight="3"
+  	>
+	  	<TextView
+	  		android:id="@+id/auth_user_label"
+	  		style="@style/LoginDialogLabel.TextView"
+	  		android:layout_alignParentTop="true"			 
+	  		android:text="@string/login_txv_user_text"  		
+	  	/>
+	  	<EditText
+	  		android:id="@+id/auth_user_edit"
+	  		style="@style/LoginFaceEdit"
+	  		android:layout_toRightOf="@id/auth_user_label"
+	  		android:layout_alignTop="@id/auth_user_label"
+	  		android:inputType="number" 		
+	  		android:hint="@string/login_edt_user_hint"	  		
+	  	/>
+	  	<TextView
+	  		android:id="@+id/auth_password_label"
+	  		style="@style/LoginDialogLabel.TextView"
+	  		android:layout_marginBottom="15dp"
+	  		android:layout_below="@id/auth_user_label"
+	  		android:text="@string/login_txv_password_text"
+	  	/>
+	  	<EditText
+	  		android:id="@+id/auth_password_edit"
+	  		style="@style/LoginFaceEdit"
+	  		android:layout_toRightOf="@id/auth_password_label" 
+	  		android:layout_below="@id/auth_user_edit"
+	  		android:layout_marginBottom="15dp"
+	  		android:layout_alignTop="@id/auth_password_label"
+	  		android:inputType="textPassword"
+	  		android:hint="@string/login_edt_password_hint" 
+	  	/>
+	  	<!-- <CheckBox
+	  		android:id="@+id/login_rempass_check"
+	  		style="@style/LoginDialogLabel.CheckBox"  		
+	  		android:layout_below="@id/login_password_edit"
+	  		android:text="@string/login_chk_rempass_text"  			
+	  	/>
+	  	<CheckBox
+	  		android:id="@+id/login_autologin_check" 
+			style="@style/LoginDialogLabel.CheckBox"
+			android:layout_toRightOf="@id/login_rempass_check"
+	  		android:layout_below="@id/login_password_edit"
+	  		android:text="@string/login_chk_autologin_text"  		
+	  	/> -->   	
+    </RelativeLayout>
+    
+
+</LinearLayout>

@@ -1,0 +1,1385 @@
+package momsg;
+
+/*********************************START BASE MSG***********************/
+//出品部门
+message CMsgFrom
+{
+    required int32 id   = 1;//出品部门编号
+    required bytes name = 2;//出品部门名
+}
+//主类别
+message CMsgMainType
+{
+    required int32 id   = 1;//主类别编号
+    required bytes name = 2;//主类别名
+}
+//子类别
+message CMsgSubType
+{
+    required int32 id     = 1;//子类别编号
+    required int32 mainid = 2;//所属主类别编号
+    required int32 fromid = 3;//所属出品部门编号
+    required bytes name   = 4;//子类别名
+}
+
+//菜品信息
+message CMsgProduct
+{
+    required int32  id        = 1;//菜品编号
+    optional int32  mtypeid   = 2;//主类别编号
+    optional int32  stypeid   = 3;//子类别编号
+    optional int32  fromid    = 4;//出品部门版本号
+    optional int32  priceid   = 5;//
+    optional int32  unitid    = 6;
+    optional bytes  name      = 7[default = ""];//菜品名
+    optional sint32 count     = 8[default = -999];//剩余份数
+    optional bytes  price     = 9[default = "0.00"];//菜品单价
+    optional bytes  unit      = 10;//菜品单位
+    optional bytes  code      = 11;//菜品编码
+    optional bytes  discount  = 12[default = "1.00"];//默认折扣系数                  
+    optional bytes  disamount = 13[default = "0.00"];//默认折扣系数
+    optional bytes  desc      = 14;//菜品说明
+    optional bytes  remark    = 15;//菜品备注
+    optional bytes  simcode   = 16;//搜索简码
+}
+
+/******************************************END BASE MSG********************************************/
+
+//登陆
+message CMsgLoginReq
+{
+	optional int32  shopseq = 1; //店编号
+	optional int32  termseq = 2; //终端编号
+	required int32  userid  = 3; //用户名
+	required bytes  pwd     = 4; //密码
+    optional int32  type    = 5;//登陆类型，0-终端登陆,1-WEB平台登陆
+}
+
+message CMsgLoginRsp
+{
+	required sint32 status      = 1;		//??½״̬
+	optional bytes  username    = 2;		//?û???
+	optional int32  permission  = 3;   //?û?Ȩ??
+    optional int32  authcode    = 4;   //??Ȩ??
+    optional int32  termversion = 5;   //?ն˰汾??
+    optional bytes  termurl     = 6;   //???ص?ַ
+    optional int32  shopseq     = 7;
+    optional bytes  shopname    = 8;
+}
+
+//?˳???????Ϣ
+message CMsgLogoutReq
+{
+  required int32  shopseq = 1;//
+  required int32  termseq = 2;//
+  required int32  userid  = 3;//?û?????
+  optional sint32 ret     = 4;//?˳???
+}
+
+//?˳???Ϣ????
+message CMsgLogoutRsp
+{
+  required sint32 status = 1;//?˳?״̬
+}
+
+//??????Ϣ
+message CMsgHeartBeatReq
+{
+  required int32 shopseq = 1;
+  required int32 termseq = 2;
+  required int32 userid  = 3;//?û?????
+  optional bytes data    = 4;//??????Ϣ
+}
+
+//????????
+message CMsgHeartBeatRsp
+{
+  required sint32 status = 1;//????״̬
+  optional bytes  data   = 2;//??????Ϣ
+}
+
+//?µ???????Ϣ
+message CMsgOrderReq
+{
+  required int32 shopseq  = 1;
+  required int32 termseq  = 2;
+  required int32 userid   = 3;// ?µ??û??˺?
+  required int32 authcode = 4;// ??Ȩ??
+  required int32 tableid  = 5;// ?��?
+  optional bytes remark   = 6; //??????ע
+  
+  //下单
+  message CMsgMealOrder
+  {
+    required string id = 1;//下单流水号    
+
+    //菜品信息
+    message CMsgMealInfo
+    {
+      required int32  id         = 1;//菜品编号 
+      required int32  priceid    = 2;//单价编号
+      required int32  count      = 3;//份数
+      optional string addamount  = 4;//做法加价
+      optional bytes  remark     = 5;//备注
+      optional int32  cookingreq = 6;//做法编号
+      optional int32  deliver    = 7;//传菜要求
+      optional int32  flag       = 8;//标识符,不填充
+    }
+    repeated CMsgMealInfo meal = 2;
+  }
+  repeated CMsgMealOrder serial = 7;
+
+  //菜品取消
+  message CMsgMealCancel
+  {
+    required string serialid = 1;//下单流水号
+    required int32  id       = 2;//菜品编号
+    required int32  priceid  = 3;//单价编号
+    required int32  count    = 4;//份数
+    optional bytes  remark   = 5;//退菜理由
+  }
+  repeated CMsgMealCancel cancel = 8;
+
+  //赠送下单
+  message CMsgMealHandsel
+  {
+    required string serialid = 1;//下单流水号
+    required int32  id       = 2;//菜品编号
+    required int32  priceid  = 3;//单价编号
+    required int32  count    = 4;//份数
+    optional bytes  remark   = 5;//赠送理由
+  }
+  repeated CMsgMealHandsel handlesel = 9;
+}
+
+//?µ?????
+message CMsgOrderRsp
+{
+  required sint32 status  = 1;//?µ?״̬
+  optional int32  tableid = 2;//?µ??��?
+  optional bytes  table_name = 3;
+  optional int32  userid     = 4;
+  optional bytes  user_name  = 5;
+  optional int32  count   = 6;//?ɹ??µ??Ĳ?Ʒ??��
+}
+
+//?˵??鿴????
+message CMsgViewOrderReq
+{
+  required int32 shopseq = 1;//??????
+  required int32 termseq = 2;//?ն????? 
+  required int32 userid  = 3;// ?û?id
+  optional int32 tableid = 4;// ?��?
+}
+
+//?˵??鿴????
+message CMsgViewOrderRsp
+{
+  required sint32 status          = 1;
+  optional int32  tableid         = 2;
+  optional int32  dis_type        = 3;//账单折扣类型，1-照单，2-全单金额折扣
+  optional string order_discount  = 4;//全折系数
+  optional string order_disamount = 5;//全折金额
+  optional string service_charge  = 6;//服务费率
+  optional string consume_limit   = 7;//最低消费
+
+  //??????Ϣ
+  message CMsgSerial
+  {
+    required string id     = 1;//下单流水号
+    required bytes  name   = 2;//下单
+    required bytes  time   = 3;//下单时间
+
+    //菜品信息
+    message CMsgMeal
+    { 
+      required int32  id           = 1;//菜品编号
+      required int32  unit         = 2;//菜品单位
+      required string price        = 3;//菜品单价
+      required int32  priceid      = 4;//单价编号
+      optional int32  vcount       = 5;//有效份数
+      optional int32  icount       = 6;//取消的份数
+      optional int32  hcount       = 7;//赠送的份数 
+      optional int32  fcount       = 8;//转出的份数
+      optional int32  mergerid     = 9;//转出的餐台编号
+      optional int32  transferid   = 10;//合并的餐台编号 
+      optional bytes  claim        = 11;//备注
+      optional int32  deliver      = 12;//传菜要求
+      optional int32  pack         = 13;//打包要求
+      optional int32  cookingreq   = 14;//做法要求
+      optional string cookadd      = 15;//做法加价
+      optional int32  dis          = 16;//是否可折价  
+      optional string discount     = 17;//打折系数
+      optional string disamount    = 18;//折扣金额
+    }
+    repeated CMsgMeal meal = 4; //??ˮ???µĲ?Ʒ??Ϣ
+  }
+  repeated CMsgSerial serial = 8;//?????µ???ˮ??
+}
+
+//?޸?????????
+
+//??Ʒȡ??
+message CMsgCancelMealReq
+{
+  required int32 shopseq  = 1;//??????
+  required int32 termseq  = 2;//?ն?????
+  required int32 userid   = 3;//ȡ?????û?ID
+  required int32 tableid  = 4;//?��?
+  required int32 authcode = 5;//??Ȩ??
+  optional int32 option   = 6;//
+  optional bytes remark   = 7;//ȡ????ע
+  
+  message CMsgMeal
+  {
+    required string serialid = 1;//??ˮ??
+    required int32  id       = 2;//??Ʒ????
+    required int32  unit     = 3;
+    required int32  count    = 4;//????
+    optional bytes  remark   = 5;//?˲?????
+  }
+  repeated CMsgMeal meal = 8;
+}
+
+//??Ʒȡ??????
+message CMsgCancelMealRsp
+{
+  required sint32 status = 1;//????״̬
+  optional int32  tableid = 2;//???��?
+  optional int32  count   = 3;//ȡ???ĸ???
+}
+//餐台预定
+message CMsgOrdainTableReq
+{
+  required int32  shopseq = 1;
+  required int32  termseq = 2;
+  required int32  userid  = 3;
+  required int32  tableid = 4;//预定的餐台编号]
+  required bytes  name    = 5;//预定联系人姓名
+  required string phone   = 6;//预定联系人联系电话
+  optional int32  option  = 7;//预定类型
+  optional int32  seat    = 8;//预定的席数
+  required int32  people  = 9;//预定的人数
+  required bytes  time    = 10;//预定的时间
+  optional bytes  remark  = 11;//预定备注
+}
+//餐台预定返回
+message CMsgOrdainTableRsp
+{
+  required sint32 status   = 1;//预定状态
+  optional string ordainid = 2;//预定流水号
+}
+
+//餐台预定查看
+
+message CMsgViewOrdainReq
+{
+  required int32 shopseq = 1;
+  required int32 termseq = 2;
+  required int32 userid  = 3;
+  required int32 tableid = 4;//要查看的餐桌编号
+}
+//餐台预定查看返回
+message CMsgViewOrdainRsp
+{
+  required sint32 status = 1;//返回状态
+  
+  message CMsgOrdain
+  {
+    required string id     = 1;//预订流水号
+    required bytes  name   = 2;//预定联系人姓名
+    required string phone  = 3;//预定联系人联系电话
+    optional int32  option = 4;//预定类型
+    optional int32  seat   = 5;//预定的席
+    required int32  people = 6;//预定的人数
+    required bytes  time   = 7;//预定的时间
+    optional bytes  remark = 8;//预定备注
+  }
+  repeated CMsgOrdain ordain = 2;//预订信息
+}
+
+//餐台预定取消
+message CMsgCancelOrdainReq
+{
+  required int32  shopseq  = 1;
+  required int32  termseq  = 2;
+  required int32  userid   = 3;
+  required string ordainid = 4;//预定流水号
+  optional int32  tableid  = 5;//预定的餐台编号
+}
+//餐台预定取消返回
+message CMsgCancelOrdainRsp
+{
+  required sint32 status = 1;//预定取消返回状态
+}
+
+//开台
+message CMsgApplyTableReq
+{
+  required int32 shopseq   = 1;
+  required int32 termseq   = 2;
+  required int32 userid    = 3;
+  required int32 tableid   = 4;//桌编号
+  required int32 actype    = 5;//开台类型
+  optional int32 tabletype = 6;//餐台类型
+  optional int32 people    = 7;//人数
+}
+//开台返回
+message CMsgApplyTableRsp
+{
+  required sint32 status   = 1;
+  optional int32  tableid  = 2;
+  optional string serialid = 3;//下单流水号
+}
+
+//传菜
+message CMsgDeliverMealReq
+{
+  required int32 shopseq = 1;//店序号
+  required int32 termseq = 2;//终端序号
+  required int32 userid  = 3;// 操作的用户编号
+  required int32 tableid = 4;// 对应桌号
+  required int32 type    = 5;//传菜类型
+  
+  message CMsgMeal
+  {
+    required int32 id    = 1;//菜品编号
+    required int32 unit  = 2;//单位编号
+    optional int32 count = 3;//份数
+  }
+  repeated CMsgMeal meal = 6;
+}
+//传菜返回
+message CMsgDeliverMealRsp
+{
+  required sint32 status = 1;//状态
+  optional int32 tableid = 2;//餐台编号
+}
+
+//出品
+message CMsgProductedMealReq
+{
+  required int32 shopseq = 1;//店序号
+  required int32 termseq = 2;//终端序号
+  required int32 userid  = 3;//用户编号
+  required int32 tableid = 4;//出品的餐台编号
+  
+  message CMsgMeal
+  {
+    required string serialid = 1;//下单流水号
+    required int32  id       = 2;//菜品编号
+    required int32  unit     = 3;//单位编号
+    required int32  count    = 4;//出品的份数
+  }
+  repeated CMsgMeal meal = 5;
+}
+//出品返回
+message CMsgProductedMealRsp
+{
+  required sint32 status  = 1;
+  optional int32  tableid = 2;
+  optional int32  count   = 3;//出品的菜品的数据
+}
+
+//转菜
+message CMsgTransferMealReq
+{
+  required int32 shopseq = 1;//店序号
+  required int32 termseq = 2;//终端序号
+  required int32 userid  = 3;//用户编号
+  required int32 from    = 4;//转出的餐台编号
+  required int32 to      = 5;//转入的餐台编号
+  
+  message CMsgSerial
+  {
+    required string id = 1;//下单流水号
+    
+    message CMsgMeal
+    {
+      required int32 id    = 1;//转出的菜品编号
+      required int32 unit  = 2;//单位编号
+      required int32 count = 3;//该菜品转出的份数
+    }
+    repeated CMsgMeal meal = 2;//
+  }
+  repeated CMsgSerial serial = 6;//转出的菜品信息
+}
+//转菜返回
+message CMsgTransferMealRsp
+{
+  required sint32 status  = 1;//状态
+  optional int32  tableid = 2;//转入的餐台编号
+}
+
+//转台
+message CMsgTransferTableReq
+{
+  required int32 shopseq = 1;//店序号
+  required int32 termseq = 2;//终端序号
+  required int32 userid  = 3;//用户编号
+  required int32 from    = 4;//旧的餐台编号
+  required int32 to      = 5;//新的餐台编号
+}
+//转台返回
+message CMsgTransferTableRsp
+{
+  required sint32 status = 1;//状态
+  optional int32 tableid = 2;//转台后的的餐台编号 
+}
+
+//并台
+message CMsgMergerTableReq
+{
+  required int32 shopseq = 1;//店序号
+  required int32 termseq = 2;//终端序号
+  required int32 userid  = 3;//用户编号
+  required int32 to      = 4;//合并后的餐台编号
+  
+  message CMsgTable
+  {
+    required int32 id = 1;//需要合并的餐台编号
+  }
+  repeated CMsgTable from = 5;//要合并的餐台，不包含合并后的餐台编号
+}
+//并台返回
+message CMsgMergerTableRsp
+{
+  required sint32 status = 1;//并台状态
+  optional int32 tableid = 2;//合并后的餐台编号
+}
+
+//结账
+message CMsgCheckoutReq
+{
+  required int32  shopseq        = 1;//店序号
+  required int32  termseq        = 2;//终端序号
+  required int32  userid         = 3;// 操作的用户编号
+  required int32  authcode       = 4;//授权码
+  required int32  tableid        = 5;//结账的餐台编号
+}
+
+//结账返回
+message CMsgCheckoutRsp
+{
+  required sint32 status           = 1;//返回状态
+  optional int32  tableid          = 2;//餐台编号
+  optional string paidid           = 3;//结账流水号
+  optional string amount           = 4;//折扣、打折之前的总费用
+  optional string paid             = 5;//实收额
+  optional int32  dis_type         = 6;//折扣类型,1-照单，2-全单
+  optional string order_discount   = 7;//账单全折系数
+  optional string order_disamount  = 8;//账单金额折扣
+  optional string service_charge   = 9;//服务费率
+  optional string consume_limit    = 10;//最低消费
+  optional bytes  name             = 11;//结账人名
+  optional bytes  time             = 12;//结账时间
+
+  message CMsgSerial
+  {
+    required string id   = 1;//下单流水号
+    required bytes  name = 2;//下单用户名
+    required bytes  time = 3;//下单时间
+    
+    message CMsgMeal
+    {
+      required int32  id          = 1;//菜品编号    
+      required string price       = 2;//菜品价格
+      optional string discount    = 3;//单道打折系数
+      optional string disamount   = 4;//单道折扣额
+      optional int32  vcount      = 5;//有效份
+      optional int32  icount      = 6;//取消的份数
+      optional int32  hcount      = 7;//赠送的份数
+      optional int32  fcount      = 8;//转出的份数
+      optional int32  transferid  = 9;//转出的餐台编号
+      optional int32  mergerid    = 10;//合并的餐台编号
+      optional string addamount   = 11;//做法加价
+      optional bytes  remark      = 12;//
+    }
+    repeated CMsgMeal meal = 4;//流水号下的菜品信息
+  }
+  repeated CMsgSerial serial = 13;//下单流水号
+}
+
+//结账查看
+message CMsgViewCheckoutReq
+{
+  required int32 shopseq  = 1;//店序号
+  required int32 termseq  = 2;//终端序号
+  required int32 viewtype = 3;//查看类型，1-全部，2-某一桌,3-分厅下未结账餐台
+  optional int32 hallid   = 4;//分厅编号 
+  optional int32 tableid  = 5;//餐台编号
+}
+
+//结账查看返回
+message CMsgViewCheckoutRsp
+{
+  required sint32 status = 1;//返回状态
+  
+  //已结账信息
+  message CMsgBill
+  {
+    required bytes  billid          = 1;//客账号
+    optional int32  tableid         = 2;//餐台编号
+    optional string paidid          = 3;//客账号
+    optional string amount          = 4;//总费用(打折/折扣之前的费用)
+    optional string paid            = 5;//实收额
+    optional int32  dis_type        = 6;//折扣类型，1-照单，2-全单
+    optional string order_discount  = 7;//折扣系数
+    optional string order_disamount = 8;//折扣金额
+    optional string service_charge  = 9;//服务费率
+    optional string consume_limit   = 10;//最低消费
+    optional bytes  name            = 11;//结账人名
+    optional bytes  time            = 12;//结账时间
+    
+    message CMsgSerial
+    {
+      required string id  = 1;//下单流水号
+      required bytes name = 2;//下单的用户名
+      required bytes time = 3;//下单时间
+      
+      message CMsgMeal
+      {
+        required int32  id         = 1;//菜品编号    
+        required string price      = 2;//菜品价格
+        optional string discount   = 3;//单道打折系数
+        optional string disamount  = 4;//单道折扣金额
+        optional int32  vcount     = 5;//有效份数
+        optional int32  icount     = 6;//取消的份数
+        optional int32  hcount     = 7;//赠送的份数
+        optional int32  fcount     = 8;//转出的份数
+        optional int32  transferid = 9;//转出的餐台编号
+        optional int32  mergerid   = 10;//合并的餐台编号
+        optional string addamount  = 11;//做法加价
+        optional bytes  remark     = 12;//备注
+      }
+      repeated CMsgMeal meal = 4;//流水号下的菜品信息
+    }
+    repeated CMsgSerial serial = 13;//下单流水号
+  }
+  repeated CMsgBill bill = 2;
+
+  //分厅下未结账餐台
+  message CMsgTableNotCheckout
+  {
+    required int32 tableid = 1;//餐台编号
+    optional bytes billid  = 2;//客账号
+    optional bytes time    = 3;//开台时间
+  }
+  repeated CMsgTableNotCheckout table = 3;
+}
+
+//反结
+message CMsgCancelCheckoutReq
+{
+  required int32  shopseq  = 1;//店序号
+  required int32  termseq  = 2;//终端序号
+  required int32  userid   = 3;//操作的用户编号
+  required int32  authcode = 4;//授权码
+  required int32  tableid  = 5;//反结账的餐台编号
+  required string paidid   = 6;//结账流水号
+}
+//反结返回
+message CMsgCancelCheckoutRsp
+{
+  required sint32 status  = 1;//反结状态
+  optional int32  tableid = 2;
+}
+
+//流水查看
+message CMsgFlowViewReq
+{
+  required int32 shopseq = 1;//??????
+  required int32 termseq = 2;//?ն?????
+  required int32 userid  = 3;//?û?????
+  required int32 tableid = 4;//???��?
+}
+//流水查看返回
+message CMsgFlowViewRsp
+{
+  required sint32 status  = 1;//????״̬
+  optional int32  tableid = 2;//?��?
+  
+  //??????Ϣ
+  message CMsgCheckout
+  {
+    required string paidtime  = 1;//????ʱ??
+    required string amount    = 2;//???˽???
+    required string paid      = 3;//ʵ?ս???
+    optional string discount  = 4;//????ϵ??
+    optional string decamount = 5;//?ۿ۶?
+    optional string addamount = 6;//???Ӷ?
+    optional string mealfee   = 7;//??Ʒ????
+    optional string tablefee  = 8;//???��???
+    
+    //??ˮ??Ϣ
+    message CMsgSerial
+    {
+      required string id     = 1;//??ˮ??
+      
+      message CMsgMeal
+      {
+        required int32  order        = 1;//??Ʒ??????
+        required int32  id           = 2;//??Ʒ????
+        required bytes  name         = 3;//??Ʒ??
+        required string price        = 4;//??Ʒ?۸?
+        optional int32  validcount   = 5;//??Ч????
+        optional int32  invalidcount = 6;//ȡ???ķ???
+        optional bytes  cancelreason = 7;//?˲?????
+      }
+      repeated CMsgMeal meal = 2;//??ˮ?Ŷ?Ӧ??Ʒ
+    }
+    repeated CMsgSerial serial = 9;//?ôξͲ????е???ˮ????Ϣ
+   
+    message CMsgTablePrice
+    {
+      required int32 id      = 1;//?��???
+      required string amount = 2;//?????ܷ???
+      required int32 times   = 3;//?ܹ?ʹ??ʱ??(??)
+     
+      message CMsgTimeUse
+      {
+        required int32 st     = 1;//??????ʼʱ??
+        required int32 et     = 2;//????????ʱ??
+        required string fee   = 3;//?ܼ?
+        optional string price = 4;//????(????)
+        optional int32 used   = 5;//ʹ??ʱ??(??)
+       
+        message CMsgTimeBlock
+        {
+          required int32 begin  = 1;//?Ʒ???ʼʱ??
+          required int32 end    = 2;//?Ʒѽ???ʱ??
+          required int32 used   = 3;//?Ʒ?ʹ??ʱ??
+          required string price = 4;//?Ʒѵ???
+        }
+        repeated CMsgTimeBlock block = 6;
+      }
+      repeated CMsgTimeUse time = 4;
+    }
+    repeated CMsgTablePrice table = 10;
+  }
+  repeated CMsgCheckout pay = 3;//???еĽ?????Ϣ
+}
+
+//???˲鿴
+message CMsgAccountReq
+{
+  required int32  shopseq  = 1;//??????
+  required int32  termseq  = 2;//?ն?????
+  required int32  userid   = 3;
+  required int32  timetype = 4;//?鿴???ͣ?1???????鿴??2?????²鿴
+  optional string time     = 5;
+}
+
+//???˲鿴????
+message CMsgAccountRsp
+{
+  required sint32 status = 1;//״̬
+  optional string amount = 2;//ʵ?ս???(???ۺ???)
+  
+  message CMsgMeal
+  {
+    required int32  id        = 1;//??Ʒ????
+    required bytes  name      = 2;//??Ʒ??
+    required int32  mainclass = 3;//??Ʒ??????
+    optional int32  subclass  = 4;//??Ʒ??????
+    required bytes  from      = 5;//??Ʒ???����?
+    required int32  count     = 6;//ʱ?????ڱ???????(??????ȡ????)
+    optional string price     = 7;//????
+  } 
+  repeated CMsgMeal meal = 3;//??ѡʱ???????ѵ???Ʒ??Ϣ
+}
+
+//定期同步
+message CMsgIntervalSyncReq
+{
+  required int32 shopseq = 1;//??????
+  required int32 termseq = 2;//?ն?????
+  required int32 userid  = 3;
+  optional int32 hall    = 4;
+}
+//定期同步返回
+message CMsgIntervalSyncRsp
+{
+  required sint32 status = 1;//返回状态
+  
+  message CMsgTableInfo
+  {
+    required int32 id      = 1;//餐台编号
+    required int32 state   = 2;//使用状态
+    required int32 jzcount = 3;//结账次数
+    
+    message CMsgOrdainInfo
+    {
+      required string id   = 1;//预订流水号
+      required bytes  time = 2;//预订时间
+    }
+    repeated CMsgOrdainInfo ordain = 4;//预订信息
+  }
+  repeated CMsgTableInfo table = 2;
+  
+  message CMsgMealInfo
+  {
+    required int32  id    = 1;//菜品编号
+    required sint32 count = 2;//可点份数
+  }
+  repeated CMsgMealInfo  meal = 3;
+}
+
+//复合消息
+message CMsgComplex
+{
+  optional sint32 count = 1;//????Ϣ????
+  optional bytes data  = 2;//????Ϣ??????
+}
+//复合消息返回
+message CMsgComplexResult
+{
+  required sint32 status = 1;//????״̬
+  optional int32  count  = 2;//????Ϣ????
+}
+
+//即时消息
+message CMsgInstantReq
+{
+  required int32 shopseq = 1;//??????
+  required int32 termseq = 2;//?ն?????
+  optional int32 tableid = 3;//???��???
+  required int32 suid    = 4;//???ͷ??û?????
+  optional int32 ruid    = 5;//???շ??û?????
+  required int32 tag     = 6;//?ı???Ϣ��Դ
+  required int32 len     = 7;//?ı???Ϣ????
+  required bytes data    = 8;//?ı???Ϣ
+  required string time   = 9;//ʱ????
+}
+//即时消息返回
+message CMsgInstantRsp
+{
+  required sint32 status = 1;
+}
+
+//?޸????뷵??
+message CMsgModifyPwdReq
+{
+  required int32 shopseq  = 1;//??????
+  required int32 termseq  = 2;//?ն?????
+  required int32 userid   = 3;//?û?????
+  required bytes pwd      = 4;//?û???????
+  required int32 authcode = 5;//??Ȩ??
+}
+
+message CMsgModifyPwdRsp
+{
+  required sint32 status = 1;
+}
+
+
+//?޸Ĳ?Ʒ????
+message CMsgModifyMealInfoReq
+{
+  required int32 shopseq = 1;//??????
+  required int32 termseq = 2;//?ն?????
+  required int32 userid   = 3;
+  
+  message CMsgMeal
+  {
+    required int32  id        = 1;//??Ʒ????
+    optional bytes  name      = 2;//????
+    optional int32  mtype     = 3;//??????
+    optional int32  stype     = 4;//??????
+    optional bytes  from      = 5;//????
+    optional bytes  unit      = 6;//??λ
+    optional string price     = 7;//????
+    optional string discount  = 8;//?ۿ?ϵ??
+    optional sint32 count     = 9;//?ɵ?????
+    optional bytes  desc      = 10;//????
+    optional bytes  res       = 11;//??Դ?ļ?·??
+  }
+  repeated CMsgMeal meal = 5;
+}
+
+//?޸Ĳ?Ʒ??Ϣ????
+message CMsgModifyMealInfoRsp
+{
+  required sint32 status = 1;//?޸?״̬
+  optional int32  count  = 2;//?޸ĵĸ???
+}
+
+//??????Ϣ
+message CMsgRequestDataReq
+{
+  required int32 shopseq = 1;
+  required int32 termseq = 2;
+  required int32 userid  = 3;
+}
+
+//?޸Ĳ?????Ϣ
+message CMsgModifyTableInfoReq
+{
+  required int32 shopseq = 1;
+  required int32 termseq = 2;
+  required int32 useid   = 3;
+  
+  message CMsgTable
+  {
+    required int32  id     = 1;//?��???
+    optional bytes  name   = 2;//????
+    optional bytes  type   = 3;//??????
+    optional int32  people = 4;//??????ʹ??????
+    optional string limit  = 5;//????????
+    optional int32  state  = 6;//״̬
+  }
+  repeated CMsgTable table = 4;
+}
+
+//?޸Ĳ?????Ϣ
+message CMsgModifyTableInfoRsp
+{
+  required sint32 status = 1;
+  optional int32  count  = 2;//?޸ĵĸ???
+}
+
+//?޸ļ?????Ϣ
+message CMsgModifyTableClockInfoReq
+{
+  required int32 shopseq = 1;
+  required int32 termseq = 2;
+  required int32 userid  = 3;
+  
+  message CMsgTable
+  {
+    required int32 id = 1;//?��???
+    
+    message CMsgClock
+    {
+      required int32  stime = 1;//??????ʼʱ??
+      required int32  etime = 2;//???۽???ʱ??
+      required string price = 3;//????
+    }
+    repeated CMsgClock clock = 2;//?Ʒ?ʱ????
+  }
+  repeated CMsgTable table = 4;
+}
+
+//?޸ļ?????Ϣ????
+message CMsgTableClockInfoRsp
+{
+  required sint32 status = 1;//״̬
+  
+  message CMsgTable
+  {
+    required int32 id        = 1;//?��???
+    required int32 clocksize = 2;//???Ӽ۸??޸ĵĸ???
+  }
+  repeated CMsgTable table = 2;
+}
+
+//??Դ??Ϣˢ??
+message CMsgRefreshResReq
+{
+  required int32 shopseq   = 1;
+  required int32 termseq   = 2;
+  required int32 userid    = 3;
+  optional int32 hallsort  = 4;//分厅大类版本号
+  optional int32 hall      = 5;//分厅版本号
+  optional int32 tabletype = 6;//餐台类型版本号
+  optional int32 table     = 7;//餐台版本号
+  optional int32 mtype     = 8;//菜品主类别版本号
+  optional int32 stype     = 9;//菜品子类别版本号
+  optional int32 unit      = 10;//菜品单位版本号
+  optional int32 product   = 11;//菜品版本号
+  optional int32 price     = 12;//单价版本号
+  optional int32 applypro  = 13;//开台项目版本号
+  optional int32 from      = 14;//档口版本号
+  optional int32 mtype_hall   = 15;//菜品主类-分厅大类版本号
+  optional int32 cookingreq   = 16;//做法版本号
+  optional int32 deliver      = 17;//传菜类型版本号
+  optional int32 cookingsort  = 18;//做法类别版本号
+  optional int32 pcookingsort = 19;//菜品-做法类别版本号
+  optional int32 sector       = 20;//出品部门版本号
+  optional int32 sprint       = 21;//出品部门-打印机
+  optional int32 reason       = 22;//赠送/退菜理由版本号
+}
+
+
+//??Դ??Ϣˢ?·???
+message CMsgRefreshResRsp
+{
+  required sint32 status = 1;
+
+  optional int32 hallsort_version  = 2;//分厅大类版本号
+  optional int32 hall_version      = 3;//分厅版本号
+  optional int32 tabletype_version = 4;//餐台类型版本号
+  optional int32 table_version     = 5;//餐台版本号
+  optional int32 mtype_version     = 6;//菜品主类别版本号
+  optional int32 stype_version     = 7;//菜品子类别版本号
+  optional int32 unit_version      = 8;//菜品单位版本号
+  optional int32 product_version   = 9;//菜品版本号
+  optional int32 price_version     = 10;//单价版本号
+  optional int32 applypro_version  = 11;//开台项目版本号
+  optional int32 from_version      = 12;//档口版本号
+  optional int32 mtype_hall_version    = 13;//菜品主类-分厅
+  optional int32 cookingreq_version    = 14;//做法版本号
+  optional int32 deliver_version       = 15;//传菜版本号
+  optional int32 cookingsort_version   = 16;//做法类别版本号
+  optional int32 pcookingsort_version  = 17;//菜品-做法类别版本号
+  optional int32 sector_version        = 18;//出品部门版本号
+  optional int32 sprint_version        = 19;//出品部门-打印机版本号
+  optional int32 reason_version        = 20;//赠送/退菜理由版本号
+
+  //分厅大类编号
+  message CMsgHallSort
+  {
+    required int32 id     = 1;//分厅大类编号
+    required int32 actype = 2;//操作类型
+    optional bytes name   = 3;//分厅大类名
+  }
+  repeated CMsgHallSort hallsort = 21;
+  
+  //分厅编号
+  message CMsgHall
+  {
+    required int32 id       = 1;//分厅编号
+    required int32 actype   = 2;//操作类型
+    optional bytes code     = 3;//分厅编码
+    optional int32 hallsort = 4;//所属分厅大类编号
+    optional bytes name     = 5;//分厅名
+  }
+  repeated CMsgHall hall = 22;
+  
+  //餐台类型编号
+  message CMsgTableType
+  {
+    required int32 id     = 1;//餐台类型编号
+    required int32 actype = 2;//操作类型
+    optional int32 hall   = 3;//所属分厅编号
+    optional bytes code   = 4;//餐台类型编码
+    optional bytes name   = 5;//餐台名
+    optional int32 seat   = 6;//默认座位数
+  }
+  repeated CMsgTableType tbtype = 23;
+  
+  //餐台编号
+  message CMsgTable
+  {
+    required int32  id     = 1;//餐台编号
+    required int32  actype = 2;//操作类型
+    optional int32  type   = 3;//餐台类型编号
+    optional bytes  code   = 4;//餐台编码
+    optional bytes  name   = 5;//餐台名
+    optional int32  guest  = 6;//最大可使用人数
+    optional string limit  = 7;//最低消费
+    optional bytes  remark = 8;//备注
+    optional bytes  simplecode = 9;//搜索简码
+  }
+  repeated CMsgTable table = 24;
+  
+  //菜品主类别版本号
+  message CMsgProductMainType
+  {
+    required int32 id     = 1;//主类别编号
+    required int32 actype = 2;//操作类型
+    optional bytes name   = 3;//主类别编号                                                                                                    
+  }
+  repeated CMsgProductMainType pmt = 25;
+  
+  //菜品子类别版本号
+  message CMsgProductSubType
+  {
+    required int32 id     = 1;//子类别编号
+    required int32 actype = 2;//操作类型
+    optional int32 main   = 3;//所属主类别编号
+    optional int32 sector = 4;//所属出品部门
+    optional bytes name   = 5;//子类别名
+  }
+  repeated CMsgProductSubType pst = 26;
+  
+  //菜品单位
+  message CMsgProductUnit
+  {
+    required int32 id     = 1;//单位编号
+    required int32 actype = 2;//操作类型
+    optional bytes name   = 3;//单位名
+  }
+  repeated CMsgProductUnit pu = 27;
+  
+  //菜品
+  message CMsgProduct
+  {
+    required int32  id        = 1;//菜品编号
+    required int32  actype    = 2;//操作类型
+    optional int32  unit      = 3;//菜品单位版本号
+    optional int32  mtype     = 4;//主类别编号
+    optional int32  stype     = 5;//子类别编号
+    optional bytes  code      = 6;//菜品编码
+    optional bytes  name      = 7;//菜名
+    optional int32  from      = 8;//档口
+    optional string discount  = 9;//默认折扣系数
+    optional string disamount = 10;//默认折扣额
+    optional int32  left      = 11;//可点份数
+    optional bytes  desc      = 12;//菜品说明
+    optional bytes  path      = 13;//图片文件路径
+    optional bytes  remark    = 14;//菜品备注
+    optional bytes  simplecode = 15;//搜索简码
+  }
+  repeated CMsgProduct product = 28;
+  
+  //菜品单价
+  message CMsgProductPrice
+  {
+    required int32  id      = 1;//单价编码
+    required int32  actype  = 2;//操作类型
+    optional int32  product = 3;//菜品编号
+    optional int32  unit    = 4;//单位编号
+    optional string price   = 5;//单价编号
+  }
+  repeated CMsgProductPrice pp = 29;
+  
+  //开台项目 
+  message CMsgApplyProject
+  {
+    required int32 id        = 1;//编号
+    required int32 actype    = 2;//操作类型
+    optional int32 price     = 3;//单价编号
+    optional int32 tabletype = 4;//餐台类型编号
+    optional int32 count     = 5;//份数
+    optional int32 free      = 6;//是否收费，0，不收费，1，收费
+    optional int32 print     = 7;//是否打单，0，不打单，1，打单
+  }
+  repeated CMsgApplyProject ap = 30;
+
+  //打印档口
+  message CMsgFrom
+  {
+    required int32 id     = 1;//档口编号
+    required int32 actype = 2;//操作类型
+    required bytes name   = 3;//档口名 
+  }
+  repeated CMsgFrom from = 31;
+  
+  //菜品主类别-分厅
+  message CMsgProductMtypeHall
+  {
+    required int32 id       = 1;//序号
+    required int32 actype   = 2;//操作类型
+    required int32 mtype    = 3;//菜品主类别
+    required int32 hall     = 4;//分厅
+  }
+  repeated CMsgProductMtypeHall pmh = 32;
+  
+  //菜品传菜要求
+  message CMsgDeliverProduct
+  {
+    required int32 id     = 1;//传菜类型编号
+    required int32 actype = 2;//操作类型
+    optional int32 flag   = 3;//菜品类型，1-单个菜品，2-全部菜品
+    optional bytes name   = 4;//传菜名
+  }
+  repeated CMsgDeliverProduct dp = 33;
+  
+  //做法类别编号
+  message CMsgCookingSort
+  {
+    required int32 id     = 1;//做法类别编号
+    required int32 actype = 2;//操作类型
+    optional bytes name   = 4;//做法类别名
+  }
+  repeated CMsgCookingSort cs = 34;
+  
+  //做法要求编号
+  message CMsgCookingRequire
+  {
+    required int32 id          = 1;//做法要求编号
+    required int32 actype      = 2;//操作类型
+    optional int32 cookingsort = 3;//做法类别
+    optional bytes name        = 4;//做法名
+    optional string addamount  = 5;//做法加价
+  }
+  repeated CMsgCookingRequire cr = 35;
+  
+  //菜品-做法类别
+  message CMsgProductCookingSort
+  {
+    required int32 id          = 1;//编号
+    required int32 actype      = 2;//操作类型
+    optional int32 mealid      = 3;//菜品编号
+    optional int32 cookingsort = 4;//做法类别编号
+  }
+  repeated CMsgProductCookingSort pcs = 36;
+  
+  //出品部门编号
+  message CMsgProductSector
+  {
+    required int32 id        = 1;//出品部门编号
+    optional int32 actype    = 2;//操作类型
+    required bytes name      = 3;//出品部门名
+    required int32 printid   = 4;//打印机编号
+    required bytes printaddr = 5;//打印机地址
+  }
+  repeated CMsgProductSector sector = 37;
+  
+  //出品部门打印设置
+  message CMsgSectorPrint
+  {
+    required int32 id     = 1;//出品部门-打印关联编号
+    optional int32 actype = 2;//操作类型
+    required int32 sector = 3;//出品部门编号
+    required int32 from   = 4;//打印档口编号
+  }
+  repeated CMsgSectorPrint sectorprint = 38;
+
+  //赠送/退菜理由
+  message CMsgReason
+  {
+    required int32 id     = 1;//编号
+    required int32 actype = 2;//类型
+    required int32 flag   = 3;//理由类型,1-赠送，2-退菜
+    required bytes name   = 4;//赠送/退菜理由名
+  }
+  repeated CMsgReason reason = 39;
+}
+
+//????/ɾ??/?޸Ĳ?Ʒ??????
+message CMsgMainTypeReq
+{
+  required int32 shopseq = 1;
+  required int32 termseq = 2;
+  required int32 userid  = 3;
+  
+  //????????Ϣ
+  message CMsgType
+  {
+    required int32 id   = 1;//??????????
+    required int32 act  = 2;//???????ͣ?1-???ӣ?2-ɾ????3-?޸ģ?4-????
+    optional bytes name = 3;//????????
+  }
+  repeated CMsgType type = 4;
+}
+//
+message CMsgMainTypeRsp
+{
+  required sint32 status = 1;//????״̬
+  optional int32 count = 2;//?޸ĸ??? 
+}
+
+//????/ɾ??/?޸Ĳ?Ʒ??????
+message CMsgSubTypeReq
+{
+  required int32 shopseq = 1;
+  required int32 termseq = 2;
+  required int32 userid  = 3;
+  
+  //??????
+  message CMsgType
+  {
+    required int32 id   = 1;//??????????
+    required int32 mid  = 2;//??????????
+    required int32 act  = 3;//????????,1-???ӣ?2-ɾ????3-?޸ģ?4-????
+    optional bytes name = 4;//????????
+  }
+  repeated CMsgType type = 4;
+}
+
+//
+message CMsgSubTypeRsp
+{
+  required sint32 status = 1;//????״̬
+  optional int32 count   = 2;//?޸ĸ??? 
+}
+
+//????/ɾ??/?޸Ĳ???????
+message CMsgTableTypeReq
+{
+  required int32 shopseq = 1;
+  required int32 termseq = 2;
+  required int32 userid  = 3;
+  
+  //??????????Ϣ
+  message CMsgType
+  {
+    required int32 id   = 1;//????????????
+    required int32 act  = 2;//????????,1-???ӣ?2-ɾ????3-?޸ģ?4-????
+    optional bytes name = 3;//??????????
+  }
+  repeated CMsgType type = 4;
+}
+
+//
+message CMsgTableTypeRsp
+{
+  required sint32 status = 1;//????״̬
+  optional int32  count  = 2;//?޸ĸ??? 
+}
+
+//????/ɾ??/?޸??û?
+message CMsgUserReq
+{
+  required int32 shopseq = 1;
+  required int32 termseq = 2;
+  required int32 userid  = 3;
+  
+  //?û???Ϣ
+  message CMsgUserInfo
+  {
+    required int32 id       = 1;//?û?????
+    required int32 act      = 2;//???????ͣ?1-???ӣ?2-ɾ????3-?޸ģ?4-????
+    optional int32 authcode = 3;//??Ȩ??
+    optional bytes name     = 4;//?û???
+    optional bytes password = 5;//????
+    optional int32 perm     = 6;//?û?Ȩ??
+    optional bytes remark   = 7;//??ע
+  }
+  repeated CMsgUserInfo user = 4;
+}
+
+//
+message CMsgUserRsp
+{
+  required sint32 status = 1;//????״̬
+  optional int32  count  = 2;//?޸ĸ??? 
+}
+
+//????/ɾ??/?޸Ĳ???
+message CMsgTableReq
+{
+  required int32 shopseq = 1;
+  required int32 termseq = 2;
+  required int32 userid  = 3;
+  
+  //?û???Ϣ
+  message CMsgTableInfo
+  {
+    required int32  id     = 1;//???��???
+    required int32  act    = 2;//???????ͣ?1-???ӣ?2-ɾ????3-?޸ģ?4-????
+    optional bytes  name   = 3;//??????
+    optional int32  type   = 4;//???????ͱ???
+    optional int32  people = 5;//??ʹ??????
+    optional string limit  = 6;//????????
+    optional bytes  remark = 7;//??ע
+  }
+  repeated CMsgTableInfo table = 4;
+}
+
+//
+message CMsgTableRsp
+{
+  required sint32 status = 1;//????״̬
+  optional int32  count  = 2;//?޸ĸ??? 
+}
+
+//????/ɾ??/?޸Ĳ?Ʒ
+message CMsgMealReq
+{
+  required int32 shopseq = 1;
+  required int32 termseq = 2;
+  required int32 userid  = 3;
+  
+  //?û???Ϣ
+  message CMsgMealInfo
+  {
+    required int32  id       = 1;//??Ʒ????
+    required int32  act      = 2;//???????ͣ?1-???ӣ?2-ɾ????3-?޸ģ?4-????
+    optional bytes  name     = 3;//??Ʒ??
+    optional int32  mtype    = 4;//??Ʒ??????????
+    optional int32  stype    = 5;//??Ʒ??????????
+    optional bytes  from     = 7;//??Ʒ???����?
+    optional bytes  unit     = 8;//??Ʒ??λ
+    optional string price    = 9;//??Ʒ????
+    optional string discount = 10;//?ۿ?ϵ??
+    optional int32  count    = 11;//?ɵ?????
+    optional bytes  desc     = 12;//??Ʒ????
+    optional bytes  res      = 13;//??Ʒ??Դ?ļ?·??
+    optional bytes  remark   = 14;//??ע
+  }
+  repeated CMsgMealInfo meal = 4;
+}
+
+//
+message CMsgMealRsp
+{
+  required sint32 status = 1;//????״̬
+  optional int32  count  = 2;//?޸ĸ??? 
+}
+
+//查看商品库存
+message CMsgViewStockReq
+{
+  required int32 shopseq = 1;
+  optional int32 termseq = 2;
+  required int32 userid  = 3;
+}
+
+//查看库存返回
+message CMsgViewStockRsp
+{
+    required sint32       status  = 1;
+    repeated CMsgFrom     from    = 2;//出品部门
+    repeated CMsgMainType mtype   = 3;//主类别
+    repeated CMsgSubType  stype   = 4;//子类别
+    repeated CMsgProduct  product = 5;//菜品
+}
+
+//修改库存
+message CMsgModifyStockReq
+{
+  required int32 shopseq = 1;
+  optional int32 termseq = 2;
+  required int32 userid  = 3;
+
+  message CMsgProduct
+  {
+    required int32 id    = 1;
+    required int32 count = 2;
+  }
+  repeated CMsgProduct product = 4;
+}
+
+//修改库存返回
+message CMsgModifyStockRsp
+{
+  required sint32 status = 1;//
+  optional int32  count  = 2;//
+}
+
+//修改菜单
+message CMsgModifyMenuReq
+{
+  required int32  shopseq         = 1;//店序号
+  required int32  termseq         = 2;//终端序号
+  required int32  userid          = 3;// 操作的用户编号
+  required int32  authcode        = 4;//授权码
+  required int32  tableid         = 5;//结账的餐台编号
+  optional int32  dis_type        = 6;//账单折扣类型，1-照单，2-全单
+  optional string order_discount  = 7;//全折系数
+  optional string order_disamount = 8;//全折金额
+  optional string service_charge  = 9;//服务费率
+  optional string consume_limit   = 10;//最低消费
+  
+  message CMsgSingleDiscount
+  {
+    required int32  id        = 1;//单道折扣的菜品编号
+    required string serialid  = 2;//下单流水号
+    optional string discount  = 3;//折扣系数
+    optional string disamount = 4;//折扣金额
+  }
+  repeated CMsgSingleDiscount single = 11;//单道折扣的菜品编号
+  
+  //减量赠送
+  message CMsgMealHandsel
+  {
+    required string serialid = 1;//下单流水号
+    required int32  id       = 2;//菜品编号
+    required int32  priceid  = 3;//单位编号                                                             
+    required int32  count    = 4;//份数
+    optional bytes  remark   = 5;//赠送理由
+  }
+  repeated CMsgMealHandsel handlesel = 12;
+}
+
+//修改菜单返回
+message CMsgModifyMenuRsp
+{
+  required sint32 status = 1;
+  optional bytes  name   = 2;
+  optional int32  count  = 3;
+}
+

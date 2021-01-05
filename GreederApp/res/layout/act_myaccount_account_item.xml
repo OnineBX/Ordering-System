@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <TextView
+        android:id="@+id/myaccount_txv_paycode"
+        style="@style/AdapterViewItem"
+        android:layout_width="155dp"
+    />
+    <TextView
+        android:id="@+id/myaccount_txv_billcode"
+        style="@style/AdapterViewItem"
+        android:layout_width="155dp"        
+    /> 
+    <TextView
+        android:id="@+id/myaccount_txv_table"
+        style="@style/AdapterViewItem"
+        android:layout_width="105dp"
+    /> 
+     <TextView
+        android:id="@+id/myaccount_txv_person"
+        style="@style/AdapterViewItem"
+        android:layout_width="105dp"        
+    /> 
+    <TextView
+        android:id="@+id/myaccount_txv_foundingtime"
+        style="@style/AdapterViewItem"
+        android:layout_width="115dp"        
+    /> 
+
+     <TextView
+        android:id="@+id/myaccount_txv_paybilltime"
+        style="@style/AdapterViewItem"
+        android:layout_width="125dp"       
+    /> 
+
+     <TextView
+        android:id="@+id/myaccount_txv_money"
+        style="@style/AdapterViewItem"
+        android:layout_width="115dp"        
+    /> 
+
+     <TextView
+        android:id="@+id/myaccount_txv_shift"
+        style="@style/AdapterViewItem"
+        android:layout_width="105dp"        
+    /> 
+
+</LinearLayout>

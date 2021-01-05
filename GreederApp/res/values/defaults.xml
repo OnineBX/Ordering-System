@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 设置界面默认值 -->    
+    <integer name="default_user">1</integer>
+    
+    <!-- 设置界面.公共参数  -->
+    <string name="setting_pref_list_default">1</string> 
+    <string name="setting_pref_list_null">-1</string> 
+    
+    <!-- 资源版本号 -->
+    <integer name="default_version_value">0</integer>
+    
+    <!-- 付款界面 -->
+    <string name="default_money">0.00</string>
+</resources>

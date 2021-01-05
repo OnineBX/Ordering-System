@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 大字体 -->
+    <string name="print_big_font">\\u001D\\u0021\\u0011</string><!-- star:\u001b\u0069\u0001\u0001 -->
+	<!-- 长小字体 -->
+	<string name="print_long_small_font">\\u001D\\u0021\\u0001</string><!-- star:\u001b\u0069\u0001\u0000 -->
+	<!-- 短小字体 -->
+	<string name="print_short_small_font">\\u001D\\u0021\\u0000</string><!-- star:\u001b\u0069\u0000\u0000 -->
+	<!-- 左对齐 -->
+	<string name="print_left_align">\\u001b\\u0061\\u0000</string><!-- star: \u001b\u001d\u0061\u0000-->
+	<!-- 中间对齐 -->
+	<string name="print_center_align">\\u001B\\u0061\\u0001</string><!-- star: \u001b\u001d\u0061\u0001-->
+	<!-- 右对齐 -->
+	<string name="print_right_align">\\u001B\\u0061\\u0002</string><!-- star: \u001b\u001d\u0061\u0002-->
+	<!-- 切纸 -->
+	<string name="print_cut_paper">\\u001D\\u0056\\u0000</string><!-- star: \u001b\u0064\u0001-->
+	<!-- 结束 -->
+	<string name="print_end">\\u0007</string><!-- star:\u0007 -->
+	<!-- 换行 -->
+	<string name="print_enter">\\n</string>
+	<!-- 分隔符 -->
+	<string name="print_split_string">--------------------------------------------</string>
+	<!-- 短留空 -->
+	<string name="print_short_blank">\\n\\n\\n\\n\\n\\n\\n</string>	
+	<!-- 长留空 -->
+    <string name="print_long_blank">\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n</string>
+    												
+	<!-- 	InstructionSet.PRINT_BUZZER				= "\u001B\u0043\u0010\u0002\u0003 ";				 //蜂鸣 -->
+        
+        
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="420dp"
+    android:orientation="vertical" >    
+    <SeekBar
+        android:id="@+id/operatefood_skb_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"      
+        android:visibility="gone" 
+    />
+    <TextView
+        style="@style/DialogLabel"
+        android:layout_marginLeft="@dimen/default_layout_margin"
+        android:gravity="center"
+        android:text="@string/opefood_txv_reason_text"
+    />    
+	<GridView
+	    style="@style/OptionalGridView"
+        android:id="@+id/operatefood_gdv_reason"        
+        android:layout_height="0dp"
+        android:layout_weight="1"        
+    />
+	<EditText
+	    android:id="@+id/operatefood_edt_reason"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:hint="@string/opefood_edt_reason_hint"	    
+	/>	
+</LinearLayout>

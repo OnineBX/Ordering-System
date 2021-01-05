@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/default_header_height_high"
+    android:background="@color/order_total_background"
+    android:orientation="vertical" 
+    >
+	<EditText
+	    android:id="@+id/edt_header_search"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:singleLine="true"
+	    android:hint="@string/cashing_txv_header_hint"
+	    android:gravity="left"
+	    android:textSize="@dimen/font_size_middle"
+	    android:text=""
+	/>
+
+	<!-- <TextView
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="15dip"
+	    android:text="@string/cashing_txv_header_name"
+	    android:textSize="@dimen/font_size_big" /> -->
+
+</LinearLayout>

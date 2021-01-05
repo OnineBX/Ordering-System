@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceCategory android:title="@string/setting_cate_server_title">
+		<EditTextPreference 
+			android:key="pref_host"
+			android:title="@string/setting_pref_ip_title"
+			android:dialogTitle="@string/setting_pref_ip_dlgtitle"
+			android:defaultValue="@string/default_null_string"
+			android:summary="@string/setting_pref_ip_summary"
+		/>
+		<EditTextPreference
+    		android:key="pref_port"
+    		android:title="@string/setting_pref_port_title" 
+    		android:dialogTitle="@string/setting_pref_port_dlgtitle"
+    		android:defaultValue="@integer/default_null_integer"		   		
+    		android:summary="@string/setting_pref_port_summary"
+    	/>
+	</PreferenceCategory>                         
+	<PreferenceCategory android:title="@string/setting_cate_use_title">		
+		<ListPreference
+			android:key="pref_hallsort"
+			android:title="@string/setting_pref_hallsort_title" 
+			android:dialogTitle="@string/setting_pref_hallsort_dlgtitle"
+			android:summary="@string/setting_pref_hallsort_summary"
+			android:defaultValue="@string/setting_pref_list_default"		
+		/>
+		<ListPreference
+			android:key="pref_hall"
+			android:title="@string/setting_pref_hall_title"
+			android:dialogTitle="@string/setting_pref_hall_dlgtitle"
+			android:summary="@string/setting_pref_hall_summary"
+			android:defaultValue="@string/setting_pref_list_default" 
+		/>
+	</PreferenceCategory>    	
+</PreferenceScreen>

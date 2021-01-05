@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/default_row_height"
+    android:background="@color/cmn_lsv_header_background"
+    android:orientation="horizontal" >
+
+    <TextView
+        style="@style/ListViewHeaderTxv"
+        android:id="@+id/antipay_txv_table"
+        android:layout_width="50dp"
+        android:text="@string/cashing_txv_header_name" />
+
+    <TextView
+        style="@style/ListViewHeaderTxv"
+        android:id="@+id/antipay_txv_payorder"
+        android:layout_width="90dp"
+        android:text="@string/cashing_txv_antipay_payorder_text" />
+
+</LinearLayout>

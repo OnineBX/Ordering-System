@@ -1,0 +1,2 @@
+SimpleDateFormat sDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");			//年月日时分秒 
+		addedInfo.add(sDateFormat.format(System.currentTimeMillis()));

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/default_row_height"
+    android:background="@color/cmn_lsv_header_background" >
+
+    <TextView
+        style="@style/ListViewHeaderTxv"
+        android:layout_width="155dp"
+        android:text="@string/myaccount_txv_payorder"/>
+
+    <TextView
+        style="@style/ListViewHeaderTxv"
+        android:layout_width="155dp"
+        android:text="@string/myaccount_txv_cusbill"
+    /> 
+
+    <TextView
+        style="@style/ListViewHeaderTxv"
+        android:layout_width="105dp"
+        android:text="@string/myaccount_txv_table"
+    /> 
+
+     <TextView
+        style="@style/ListViewHeaderTxv"
+        android:layout_width="105dp"
+        android:text="@string/myaccount_txv_personnum"
+    /> 
+    <TextView
+        style="@style/ListViewHeaderTxv"
+        android:layout_width="115dp"
+        android:text="@string/myaccount_txv_applytime"
+    /> 
+
+     <TextView
+        style="@style/ListViewHeaderTxv"
+        android:layout_width="125dp"
+        android:text="@string/myaccount_txv_buytime"
+    /> 
+
+     <TextView
+        style="@style/ListViewHeaderTxv"
+        android:layout_width="115dp"
+        android:text="@string/myaccount_txv_cashnum"
+    /> 
+
+     <TextView
+        style="@style/ListViewHeaderTxv"
+        android:layout_width="105dp"
+        android:text="@string/myaccount_txv_shift"
+    /> 
+
+</LinearLayout>

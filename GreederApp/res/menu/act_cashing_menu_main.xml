@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <item
+		android:id="@+id/cashing_menu_main_myaccounts"
+		android:title="@string/cashing_omi_myaccounts"   
+	/>
+    <item
+        android:id="@+id/cashing_menu_main_changeshift"
+        android:title="@string/cashing_omi_changeshift" 
+    />
+	<item 
+	    android:id="@+id/cashing_menu_main_changeday"
+	    android:title="@string/cashing_omi_changeday"
+	/>
+	<item
+		android:id="@+id/cashing_menu_main_antipay"
+		android:title="@string/cashing_omi_antipay"   
+	/>
+    <item
+		android:id="@+id/cashing_menu_main_paymethod"
+		android:title="@string/cashing_omi_paymethod"   
+	/>
+</menu>

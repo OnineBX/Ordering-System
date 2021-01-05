@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="88dp"
+        android:background="@drawable/top" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="88dp" >
+
+            <include layout="@layout/top" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="@dimen/left_area_width"
+            android:layout_height="wrap_content"
+            android:gravity="right" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical" >
+
+                
+                <ImageButton
+                    android:id="@+id/menu_left"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/left" />
+
+                <LinearLayout
+                    android:id="@+id/menus_container_mainsort"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_margin="5dp"
+                    android:gravity="center" />
+
+                <ImageButton
+                    android:id="@+id/menu_right"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/right" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TableRow android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="@dimen/left_area_width"
+                android:layout_height="fill_parent"
+                android:background="@drawable/info" 
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" 
+                    android:layout_marginTop="45dp"
+                    android:background="@color/cmn_lsv_header_font_color"
+                    >
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="菜名"
+                        android:textSize="@dimen/font_size_middle" 
+                        android:textColor="#000000" >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/number"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="45dp"
+                        android:text="份数"
+                        android:textSize="@dimen/font_size_middle" 
+                        android:textColor="#000000" >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/price"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:text="总价"
+                        android:textSize="@dimen/font_size_middle" 
+                        android:textColor="#000000" >
+                    </TextView>
+                </LinearLayout>
+               <LinearLayout
+                    android:layout_width="@dimen/left_area_width"
+                    android:layout_height="460dp" 
+                    >
+                <ListView
+                    android:id="@+id/list_order_info"
+                    android:layout_width="@dimen/left_area_width"
+                    android:layout_height="460dp"
+                     />
+                </LinearLayout>
+               <LinearLayout
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                 >
+	                <TextView
+	                    android:id="@+id/waiterorder_txv_countinfo_total"
+	                    android:layout_width="150dp"
+	                    android:layout_height="wrap_content"
+	                    android:textSize="@dimen/font_size_middle"
+	                    android:layout_marginLeft="20dp"
+	                    android:text="0/0.00"
+	                    />
+	        	        
+	                <Button android:id="@+id/orders"
+	                     android:layout_width="wrap_content"
+	                     android:layout_height="wrap_content"
+	                     android:layout_marginLeft="25dp"
+	                     android:text="@string/worder_btn_placeorder_text"
+	                     android:textSize="@dimen/font_size_big"
+	                     />
+	            </LinearLayout>	        	        
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_1"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/order_edt_search"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/border"
+                    android:hint="@string/common_edt_search_hint"
+                    android:textColor="#00000000"
+                    android:textSize="20dp" />
+
+              <!--   
+                <com.hithing.util.ScrollLayout
+                    android:id="@+id/scr"
+                    android:layout_width="730dp"
+                    android:layout_height="500dp"
+                    android:layout_gravity="center" >
+                </com.hithing.util.ScrollLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_scr_bottom"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:gravity="center" >
+                </LinearLayout>
+             
+             -->
+                <GridView 
+                    android:id="@+id/gv_foods"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numColumns="3"
+                    android:verticalSpacing="10dp"
+                    android:horizontalSpacing="10dp"
+                    /> 
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

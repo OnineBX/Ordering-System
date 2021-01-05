@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:id="@+id/dialog" >
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/table_edt_tableId"
+            android:textSize="@dimen/font_size_big" />
+
+        <AutoCompleteTextView
+            android:id="@+id/table_auto"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:completionThreshold="1"
+            android:hint="@string/table_edt_tableName_hint"
+            />
+    </LinearLayout>
+    
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/table_edt_customers" 
+            android:textSize="@dimen/font_size_big"/>
+
+        <EditText
+            android:id="@+id/table_num_people"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/table_edt_customers_hint"
+            android:inputType="number"
+             />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        >
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/common_edt_authcode"
+            android:textSize="@dimen/font_size_big" />
+
+        <EditText
+            android:id="@+id/authcode_edt_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/common_edt_authcode_hint"
+            android:inputType="number"
+            android:password="true" />
+    </LinearLayout>
+
+</LinearLayout>

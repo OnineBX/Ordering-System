@@ -1,0 +1,484 @@
+#
+# generated on 2012/07/26 02:32:03
+#
+# --table-start--
+dataClass=com.hithing.hsc.dataentity.HallSortEntity
+tableName=tb_hallSort
+# --table-fields-start--
+# --field-start--
+fieldName=id
+columnName=pk_hs_id
+id=true
+# --field-end--
+# --field-start--
+fieldName=name
+columnName=hs_name
+canBeNull=false
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.hithing.hsc.dataentity.HallEntity
+tableName=tb_hall
+# --table-fields-start--
+# --field-start--
+fieldName=id
+columnName=pk_hall_id
+id=true
+# --field-end--
+# --field-start--
+fieldName=code
+columnName=hall_code
+width=8
+canBeNull=false
+unique=true
+# --field-end--
+# --field-start--
+fieldName=name
+columnName=hall_name
+width=20
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=sort
+columnName=fk_hs_id
+canBeNull=false
+foreign=true
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.hithing.hsc.dataentity.DinnerTableTypeEntity
+tableName=tb_dinTabType
+# --table-fields-start--
+# --field-start--
+fieldName=id
+columnName=pk_dtt_id
+id=true
+# --field-end--
+# --field-start--
+fieldName=code
+columnName=dtt_code
+width=8
+canBeNull=false
+unique=true
+# --field-end--
+# --field-start--
+fieldName=name
+columnName=dtt_name
+width=20
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=hall
+columnName=fk_hall_id
+canBeNull=false
+foreign=true
+# --field-end--
+# --field-start--
+fieldName=timeItmes
+foreignCollection=true
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.hithing.hsc.dataentity.DinnerTableEntity
+tableName=tb_dinTable
+# --table-fields-start--
+# --field-start--
+fieldName=id
+columnName=pk_dt_id
+id=true
+# --field-end--
+# --field-start--
+fieldName=code
+columnName=dt_code
+unique=true
+# --field-end--
+# --field-start--
+fieldName=name
+columnName=dt_name
+# --field-end--
+# --field-start--
+fieldName=index
+columnName=dt_index
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=type
+columnName=fk_dtt_id
+canBeNull=false
+foreign=true
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.hithing.hsc.dataentity.FoodMainSortEntity
+tableName=tb_foodMainSort
+# --table-fields-start--
+# --field-start--
+fieldName=id
+columnName=pk_fms_id
+id=true
+# --field-end--
+# --field-start--
+fieldName=name
+columnName=fms_name
+width=20
+unique=true
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.hithing.hsc.dataentity.HallFoodMainSortEntity
+tableName=tb_hallFms
+# --table-fields-start--
+# --field-start--
+fieldName=id
+columnName=pk_hfms_id
+id=true
+# --field-end--
+# --field-start--
+fieldName=hall
+columnName=fk_hall_id
+foreign=true
+# --field-end--
+# --field-start--
+fieldName=foodMainSort
+columnName=fk_fms_id
+foreign=true
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.hithing.hsc.dataentity.FoodSubSortEntity
+tableName=tb_foodSubSort
+# --table-fields-start--
+# --field-start--
+fieldName=id
+columnName=pk_fss_id
+id=true
+# --field-end--
+# --field-start--
+fieldName=name
+columnName=fss_name
+width=20
+unique=true
+# --field-end--
+# --field-start--
+fieldName=mainSort
+columnName=fk_fms_id
+canBeNull=false
+foreign=true
+# --field-end--
+# --field-start--
+fieldName=produce
+columnName=fss_produce
+canBeNull=false
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.hithing.hsc.dataentity.FoodUnitEntity
+tableName=tb_foodUnit
+# --table-fields-start--
+# --field-start--
+fieldName=id
+columnName=pk_fu_id
+id=true
+# --field-end--
+# --field-start--
+fieldName=name
+columnName=fu_name
+width=10
+unique=true
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.hithing.hsc.dataentity.FoodEntity
+tableName=tb_food
+# --table-fields-start--
+# --field-start--
+fieldName=id
+columnName=pk_food_id
+id=true
+# --field-end--
+# --field-start--
+fieldName=code
+columnName=food_code
+width=8
+canBeNull=false
+unique=true
+# --field-end--
+# --field-start--
+fieldName=name
+columnName=food_name
+width=20
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=index
+columnName=food_index
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=isStock
+columnName=food_is_stock
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=photoName
+columnName=food_pho_name
+defaultValue=N/A
+# --field-end--
+# --field-start--
+fieldName=remark
+columnName=food_remark
+# --field-end--
+# --field-start--
+fieldName=subSort
+columnName=fk_fss_id
+canBeNull=false
+foreign=true
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.hithing.hsc.dataentity.FoodPriceEntity
+tableName=tb_foodPrice
+# --table-fields-start--
+# --field-start--
+fieldName=id
+columnName=pk_fp_id
+id=true
+# --field-end--
+# --field-start--
+fieldName=unit
+columnName=fk_fu_id
+canBeNull=false
+foreign=true
+# --field-end--
+# --field-start--
+fieldName=price
+columnName=fp_price
+defaultValue=0.0
+width=20
+# --field-end--
+# --field-start--
+fieldName=food
+columnName=fk_food_id
+canBeNull=false
+foreign=true
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.hithing.hsc.dataentity.FoodRecipeSortEntity
+tableName=tb_foodRecSort
+# --table-fields-start--
+# --field-start--
+fieldName=id
+columnName=pk_frs_id
+id=true
+# --field-end--
+# --field-start--
+fieldName=name
+columnName=frs_name
+width=20
+canBeNull=false
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.hithing.hsc.dataentity.FoodRecipeEntity
+tableName=tb_foodRecipe
+# --table-fields-start--
+# --field-start--
+fieldName=id
+columnName=pk_fr_id
+id=true
+# --field-end--
+# --field-start--
+fieldName=name
+columnName=fr_name
+width=20
+# --field-end--
+# --field-start--
+fieldName=sort
+columnName=fk_frs_id
+canBeNull=false
+foreign=true
+# --field-end--
+# --field-start--
+fieldName=markup
+columnName=frt_markup
+defaultValue=0.00
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.hithing.hsc.dataentity.FoodFrsortEntity
+tableName=tb_foodFrsort
+# --table-fields-start--
+# --field-start--
+fieldName=id
+columnName=pk_ffrs_id
+id=true
+# --field-end--
+# --field-start--
+fieldName=food
+columnName=fk_food_id
+canBeNull=false
+foreign=true
+# --field-end--
+# --field-start--
+fieldName=recipeSort
+columnName=fk_frs_id
+canBeNull=false
+foreign=true
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.hithing.hsc.dataentity.DemandEntity
+tableName=tb_foodDemand
+# --table-fields-start--
+# --field-start--
+fieldName=id
+columnName=pk_dmd_id
+id=true
+# --field-end--
+# --field-start--
+fieldName=name
+columnName=dmd_name
+width=20
+unique=true
+# --field-end--
+# --field-start--
+fieldName=type
+columnName=dmd_type
+canBeNull=false
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.hithing.hsc.dataentity.OperateReasonEntity
+tableName=tb_opeReason
+# --table-fields-start--
+# --field-start--
+fieldName=id
+columnName=pk_or_id
+id=true
+# --field-end--
+# --field-start--
+fieldName=title
+columnName=or_title
+width=20
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=type
+columnName=or_type
+canBeNull=false
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.hithing.hsc.dataentity.ProducePrintEntity
+tableName=tb_proPrint
+# --table-fields-start--
+# --field-start--
+fieldName=id
+columnName=pk_pp_id
+id=true
+# --field-end--
+# --field-start--
+fieldName=produce
+columnName=pp_produce
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=print
+columnName=pp_print
+canBeNull=false
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.hithing.hsc.dataentity.TimeItemEntity
+tableName=tb_timeItem
+# --table-fields-start--
+# --field-start--
+fieldName=id
+columnName=pk_ti_id
+id=true
+# --field-end--
+# --field-start--
+fieldName=name
+columnName=ti_name
+width=20
+canBeNull=false
+unique=true
+# --field-end--
+# --field-start--
+fieldName=price
+columnName=ti_price
+width=10
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=unitTime
+columnName=ti_unit_time
+width=10
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=unit
+columnName=ti_unit
+width=10
+canBeNull=false
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.hithing.hsc.dataentity.DinTabTypeTimItemEntity
+tableName=tb_dttypeTitem
+# --table-fields-start--
+# --field-start--
+fieldName=id
+columnName=pk_dttti_id
+id=true
+# --field-end--
+# --field-start--
+fieldName=type
+columnName=fk_dtt_id
+canBeNull=false
+foreign=true
+# --field-end--
+# --field-start--
+fieldName=item
+columnName=fk_ti_id
+canBeNull=false
+foreign=true
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################

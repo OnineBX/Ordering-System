@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"        
+    android:descendantFocusability= "blocksDescendants"  >
+    <LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:descendantFocusability="blocksDescendants"
+	    android:orientation="vertical"	    
+	    android:background="@drawable/cmn_bg_plain_item" >
+	    <LinearLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="30dp"
+		    android:orientation="horizontal"
+		    android:descendantFocusability= "blocksDescendants" >
+		    <TextView
+		        android:id="@+id/waiterorder_txv_food_name"
+		        android:layout_width="100dp"
+		        android:layout_height="match_parent"
+		        android:textSize="@dimen/font_size_big"
+		        android:layout_weight="1" 
+	    	/>
+	    	<TextView
+	    	    style="@style/AdapterViewItem.Clickable"	    	    
+	    	    android:id="@+id/waiterorder_txv_food_count"
+	    	    android:layout_width="60dp"		        
+		        android:onClick="onOrderItem"		                
+		        android:textSize="@dimen/font_size_big"        
+	    	/>
+	    	<TextView
+		        android:id="@+id/waiterorder_txv_food_cost"
+		        android:layout_width="60dp"
+		        android:layout_height="match_parent"
+		        android:textSize="@dimen/font_size_big" 
+			/>	      	   
+		</LinearLayout>			
+	   	<TextView
+	   	    android:layout_width="match_parent"
+	   	    android:layout_height="20dp"
+	   	    android:textSize="@dimen/font_size_normal"
+		    android:id="@+id/waiterorder_txv_food_description"
+		    android:layout_weight="1"		    
+		/> 					  			
+	</LinearLayout>
+</FrameLayout>
